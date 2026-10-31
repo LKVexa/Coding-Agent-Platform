@@ -1,0 +1,118 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0267-01",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "correlation_definition",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "alignment_cases",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "gradient",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "fail",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0267/P0267-01-spatial-correlation-distillation.md (F07220)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "05a37c7326b0d494a7bbdfbed58cecdd914df44a010e03bf5e2b3fbb3bdb2e69"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0267.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "eae095374f3ca21bfe996e1358187485a434e4acf57b25e8c79bdae2558329ee"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0267.pdf",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "56113ff0e70e47a3d817c7c248db723cf59a15aebff823ce83af99854c9c6ae8"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "P0267.Lcg (64-bit LCG, Knuth MMIX constants, Box-Muller normals); fixed literal seeds; every value is reproduced by the determinism rerun",
+      "p01_train": 1,
+      "p01_heldout": 2,
+      "p01_check_local": [
+        3,
+        7,
+        8,
+        21,
+        22,
+        "300 + k (k = 0..19)"
+      ],
+      "p02_targets": "100 + k (k = 0..19)",
+      "p02_contexts": "500 + 1000 k",
+      "p02_refiner_train": 5,
+      "p02_refiner_heldout": 999,
+      "p02_check_local": [
+        31,
+        32,
+        41
+      ]
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T05:36:05-07:00"
+}

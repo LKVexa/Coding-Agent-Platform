@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "adapter_id": "d0001-assistant-token-count",
+  "adapter_version": "0.1.0",
+  "component_id": "D0001/C0081-03",
+  "scope": "authored_fixture",
+  "entrypoint": "entry.py",
+  "runtime": "python",
+  "runtime_arguments": ["-I", "-B"],
+  "cases": ["baseline", "negative-control"],
+  "supported_profile": {"python": "3.12.14", "numpy": "2.3.5", "platform": "Windows"},
+  "timeout_seconds": 30,
+  "stdout_limit_bytes": 1000000,
+  "writes": false,
+  "network": false,
+  "source_manifest": "SOURCE-MANIFEST.json",
+  "package_paths": ["entry.py", "SOURCE-MANIFEST.json", "ADAPTER.json", "README.md", "vendor", "historical"],
+  "historical_versions": {"python": "3.14.0", "numpy": "2.5.1"},
+  "claim": "Original bounded token-role fixture and explicit faulty-candidate rejection only"
+}

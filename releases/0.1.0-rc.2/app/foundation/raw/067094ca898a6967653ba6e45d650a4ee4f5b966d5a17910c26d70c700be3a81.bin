@@ -1,0 +1,167 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "P0062-04",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Learning",
+ "inputs": [
+  {
+   "name": "catalog prompt P0062-04-consistency-distillation.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "89f38ef25e5e089571b8993e83d201cf5c2d1d8226a3aff3eb193e528de74471"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0001/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6"
+  },
+  {
+   "name": "artifact/d0001/__init__.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1"
+  },
+  {
+   "name": "artifact/d0001/pairkit.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21"
+  },
+  {
+   "name": "artifact/d0001/pairs_p1.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "67cf028ae080f95262fc6724456fc1bc5161b5f7c762dcead61b0516b89c2633"
+  },
+  {
+   "name": "artifact/d0001/t2v.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "40fa81e23e1051bc161ba571f4e2f8b5e2ed42862ec295b10c7aa8f2db2586a5"
+  },
+  {
+   "name": "artifact/d0001/bilevel.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "b79c34a40c5d033d9f2b9a6a500691d38d76aea82ab0769166fa4f97ed967b0c"
+  },
+  {
+   "name": "source T2V-Turbo-v2 (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2410.05677v3",
+   "sha256": "ff895167b12ab401e1905c852a0dee172ccfedb7127d136edac6f234757830ab"
+  },
+  {
+   "name": "source T2V-Turbo-v2 (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2410.05677v3",
+   "sha256": "26cd6218de79cf654775587d97b28d40d73c41e40f123ae637540adcde818760"
+  }
+ ],
+ "checks": [
+  {
+   "name": "boundary_condition",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/boundary_condition",
+   "iterations": 1
+  },
+  {
+   "name": "stop_gradient_target",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/stop_gradient_target",
+   "iterations": 1
+  },
+  {
+   "name": "intended_signal",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/intended_signal",
+   "iterations": 1
+  },
+  {
+   "name": "separated_evaluation",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/separated_evaluation",
+   "iterations": 1
+  },
+  {
+   "name": "only_intended_state",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/only_intended_state",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://arxiv.org/abs/2410.05677v3": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T13:33:30-07:00"
+}

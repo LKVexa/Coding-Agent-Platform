@@ -1,0 +1,834 @@
+{
+  "schema": "product-gate/1",
+  "product": "D0003",
+  "gate": "G2",
+  "phase": "COMP",
+  "result": "fail",
+  "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+  "core_pairs": 39,
+  "pairs_meeting_gate": 3,
+  "pair_status_counts": {
+    "complete": 3,
+    "partial": 36
+  },
+  "pairs_not_meeting_gate": {
+    "P0020-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0020-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0020-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0020-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0020-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "withheld_render=unverified",
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0020-06": {
+      "status": "partial",
+      "unresolved_checks": [
+        "leakage_downstream=unverified",
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0026-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0026-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0026-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0030-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "mmworld_main_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0030-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "mmworld_synthetic_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0200-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "pds_pretraining_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0200-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "proxy_lm_training_execution=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0200-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "pmp_conditions_at_scale=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0200-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "approximation_quality_at_scale=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0225-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_table1=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0249-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0249-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0249-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0249-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0328-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0328-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0328-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0328-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0331-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0331-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0331-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0331-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0350-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0350-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "zero_shot_benchmark=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "heldout_retention=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0559-06": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    }
+  },
+  "all_schema_valid": true,
+  "all_A1_A6_pass": true,
+  "all_output_hashes_verify": true,
+  "rerun_verification": "PASS",
+  "per_pair": {
+    "C0156-01": {
+      "in_pairs_jsonl": true,
+      "status": "complete",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [],
+      "blocked_reason": null,
+      "meets_G2": true
+    },
+    "C0496-01": {
+      "in_pairs_jsonl": true,
+      "status": "complete",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [],
+      "blocked_reason": null,
+      "meets_G2": true
+    },
+    "C0496-02": {
+      "in_pairs_jsonl": true,
+      "status": "complete",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [],
+      "blocked_reason": null,
+      "meets_G2": true
+    },
+    "P0020-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0020-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0020-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0020-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0020-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "withheld_render=unverified",
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0020-06": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "leakage_downstream=unverified",
+        "paper_validation_outcome=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0026-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0026-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0026-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "mmr_test_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0030-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "mmworld_main_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0030-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "mmworld_synthetic_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0200-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "pds_pretraining_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0200-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "proxy_lm_training_execution=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0200-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "pmp_conditions_at_scale=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0200-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "approximation_quality_at_scale=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0225-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_table1=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0249-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0249-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0249-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0249-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0328-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0328-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0328-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0328-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0331-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0331-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0331-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0331-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_figures=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0350-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0350-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "zero_shot_benchmark=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "heldout_retention=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0559-06": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    }
+  },
+  "evaluated": "2026-10-28T05:12:02-07:00",
+  "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and delivery are stopped per ORCHESTRATION.md Gate G2."
+}

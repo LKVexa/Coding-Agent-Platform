@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:component-foundation:adapter-result:1.0.0",
+  "title": "adapter-result contract version 1.0.0",
+  "description": "Common stdout contract for both fixture adapters. Extra adapter metadata is allowed. Empty checks can describe an adapter error; the runtime separately rejects empty/duplicate checks on a successful process.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "component_id",
+    "scope",
+    "execution",
+    "checks",
+    "metrics",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "component_id": {
+      "type": "string",
+      "pattern": "^D[0-9]{4}/[A-Za-z0-9_-]+$",
+      "maxLength": 96
+    },
+    "adapter_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "adapter_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+    },
+    "case": {
+      "type": "string",
+      "enum": [
+        "all",
+        "initial",
+        "correct",
+        "regression",
+        "baseline",
+        "negative-control"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "const": "authored_fixture"
+    },
+    "execution": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "scientific_validation": {
+      "type": "string",
+      "const": "unverified"
+    },
+    "parent_integration": {
+      "type": "string",
+      "const": "unverified"
+    },
+    "candidate_accepted": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "maxItems": 4096,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "expected",
+          "actual"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "unverified",
+              "blocked",
+              "not_attempted"
+            ]
+          },
+          "expected": {},
+          "actual": {},
+          "description": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 16384
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "candidate_checks": {
+      "type": "array",
+      "maxItems": 4096,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "expected",
+          "actual"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "unverified",
+              "blocked",
+              "not_attempted"
+            ]
+          },
+          "expected": {},
+          "actual": {},
+          "description": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 16384
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "records": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "historical_comparison": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 16384
+      }
+    },
+    "error": {
+      "type": "object",
+      "required": [
+        "type",
+        "message"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "message": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 65536
+        }
+      },
+      "additionalProperties": false
+    },
+    "validation_target": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    }
+  },
+  "additionalProperties": true
+}

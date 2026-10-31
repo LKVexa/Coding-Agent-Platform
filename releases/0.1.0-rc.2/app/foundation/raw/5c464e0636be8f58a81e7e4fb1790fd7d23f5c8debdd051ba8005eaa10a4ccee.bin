@@ -1,0 +1,99 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0225-01",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "constraint_predicate",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "admissibility_and_degenerate",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "rank_one_commit",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "enforcement_and_observability",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_table1",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0225/P0225-01-multi-stage-inference-constraint.md (F07016)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "91a0fdc1f16d21ae5f327e3b8c18b7b635c16cb39ae2cb7ad1604bdd4ea95991"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0225.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "f5a8b6855fa919a2eb899c264b9e18a002ff7dba0219a955e14dc330ad2738e1"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T03:12:13-07:00"
+}

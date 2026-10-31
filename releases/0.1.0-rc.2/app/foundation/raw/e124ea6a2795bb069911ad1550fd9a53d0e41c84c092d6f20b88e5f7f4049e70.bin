@@ -1,0 +1,173 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0295-04",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "valid_record_and_label_alignment",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "malformed_and_nonexecuting_decoder",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "raw_source_coverage",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "split_information_boundary",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluator_fields_isolated",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 2
+    },
+    {
+      "name": "parent_language_execution",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/core/C0295/C0295-04-go-tasks.md (F05737)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "c910cead682d06858893b1d52632839604c86076e50a0c2fdadb6e5c645e2be6"
+    },
+    {
+      "name": "../../../../../evidence/sources/article.pdf",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57"
+    },
+    {
+      "name": "../../../../../evidence/sources/article-page13.png",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "0b13e56d88afeafd846836a9698479fc80545a8d085ed93505219b2d980c0d65"
+    },
+    {
+      "name": "../../../../../evidence/sources/SOURCES.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "7d7dd3dbdf0ee4957db5d773f153ecbf62d68855b1d075f2ec91b26807492488"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/info.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "c9ffe614a757f8c72b504748fc6074b7a6a2d7f6286860f086861d41622d4f80"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/README.md",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "243f51de326a4502f0e353eb3e25cb712c465e78d80e15cdaac4db70e5a9b83f"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-000.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "bf9f60442316c2e0386bf8712d431fad45321de1eed07159fed30c9f9ce9f18d"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-100.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "c6c219d0c3a1e84ebdc65a0c41896e0492e398429bac20ba57c3aed56d469fa6"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-200.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "2df6fdb032c5552e9ebd20b7c6708c6ca07809163d656dd7d1841fc4213f8fca"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-300.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "0755f58af862f5a7a9da2173ad6a641bdd7cc8bb725c7dedf1c4aa95874d32da"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-400.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "0ca00d020e02d4b85bb54fe03ffc4bfd82c4446cdfd33a8e0dda3b0c08a6dd27"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-500.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "45b4f34a80a8ef2ca408677a7397412b311dede1012ba38619a91815387cdfa5"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-600.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "3b69dbc3c155915c6dcda89661ecd5e95f0df16aa55fd81b495ff553cb0f269f"
+    },
+    {
+      "name": "../../../../../evidence/sources/swebench-pro-v1/raw/rows-700.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "9c74634755073afb379da9406d7e28c01d8f43e711531183b484ca5234d90af6"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "see evidence/sources/SOURCES.json; preserved provenance"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-30T13:06:43-07:00"
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0328-03",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "combination_rule",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0328/P0328-03-diffusion-verifier.md (F07532)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "c147de4cfbf256f2b07925139390a452a764a9db936f26c2a08a63edbea739b5"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0328.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "5d6c2a700a4b98268fd25b034d75d34adc579c07d0d8610c1f9f87303958b218"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "seeded LCG fixture (MD.Lcg via Rng, Box-Muller normals) with hashed stream seeds Ex.Seed(family, ...) = FNV-1a + splitmix64 finaliser; every value is reproduced by the determinism rerun",
+      "generator": "MD.Lcg: x = 1664525 x + 1013904223 mod 2^32, U = x / 2^32",
+      "data": "Seed(1, seed)",
+      "exicl_generation": "Seed(2, seed, iteration, start index)",
+      "simulation": "Seed(3, j), j = 0..17 (6 final starts x 3)",
+      "objective_noise": "Seed(4, 100 iteration + step)",
+      "check_local": "Seed(5, k) literals inside individual checks",
+      "main_seed": 0,
+      "replication_seeds": [
+        1,
+        2
+      ]
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T03:55:10-07:00"
+}

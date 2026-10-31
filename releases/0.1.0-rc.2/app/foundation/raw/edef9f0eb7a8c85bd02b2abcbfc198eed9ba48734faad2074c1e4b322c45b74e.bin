@@ -1,0 +1,102 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "TOPIC",
+  "id": "T37-C035-S08",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "role": "supporting",
+  "owner": "D0347",
+  "run_by": "D0004",
+  "unit": "T37-C035",
+  "status": "complete",
+  "stage": {
+    "last_completed": 8,
+    "total": 8,
+    "label": "Stage 8 package and hand off"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "prompt_section_identity",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "tiny_fit",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "representation_and_error_mode",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt task-prompt-workflows/topics/37-generative-imagination/C035.md (F03710)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "a840e464458aadfa862523719749b73842a5fd289de379d453699927d6baaf98"
+    },
+    {
+      "name": "prompt section #t37-c035-s08 of F03710",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "e44ece555e9d63c0d1e1c426fdfb82eb26148fd6358c82745ef766d3c1eed2ab"
+    },
+    {
+      "name": "../../../../../evidence/sources/T37-GIRL-2604.07426v1.pdf",
+      "state": "present",
+      "version": "retrieved 2026-10-28 (see evidence/sources/SOURCES.json)",
+      "sha256": "a063bc1ab466454b0c67aa4324d8d51b8673f313cd28f433d6d3295278a115db"
+    },
+    {
+      "name": "../../../../../evidence/sources/T37-GIRL-2604.07426v1.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-28 (see evidence/sources/SOURCES.json)",
+      "sha256": "09e7b6b76a91fb83e59893cd6e410fa1f17a19c1a2de6bf59b2042467454b9a9"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "fixed LCG seeds; no wall-clock or OS randomness",
+      "fixture_seed": 37035,
+      "noise_seed": 37036,
+      "f_psi_init_seed": 37037,
+      "Psi_init_seed": 37038
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "topic_kit": "TopicKit/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-28"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T11:00:44-07:00"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "product": "coding-agent-platform",
+  "product_version": "0.1.0-rc.2",
+  "foundation": {
+    "version": "0.1.0-rc.1",
+    "manifest_sha256": "e01d3f340239f4abe0daa27cb3e7c64190f95f4f3a0419f493bc14e7b07d571d"
+  },
+  "evaluator": {
+    "version": "1.0.0",
+    "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6"
+  },
+  "provider": {
+    "adapter_version": "1.0.1",
+    "cli_version": "codex-cli 0.166.0-alpha.5.1",
+    "cli_sha256": "3097c909fb6d5cd63510d44aceb1d42df9f6e85722a3e447e477def1ecf60e16",
+    "catalog_sha256": "8c88ee259973cae57cfd64953538d56c1d6b47ad22b8a7c4796bd1c69303dcda",
+    "expected_reported_model": "gpt-6.1-sol",
+    "discovery_policy": "explicit override, otherwise PATH and bounded desktop installation lookup; exact existing binary hash and version required"
+  },
+  "prompt_version": "1.0.0",
+  "tool_policy_version": "1.0.0",
+  "task_schema_version": "1.0.0",
+  "tested_runtime": {
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.14",
+    "python_sha256": "f8b45d63047da9d9adf09892e4cc4317b859e86a93a478cc9616bc69d3b176e5",
+    "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333"
+  },
+  "python_packages": "standard library only for platform; preserved foundation dependency keeps its own runtime requirements",
+  "dependency_mutation": "none; provider and Git executables are not redistributed"
+}

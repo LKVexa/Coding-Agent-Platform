@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-10-31T07:43:36.381846+00:00",
+  "status": "pass_with_reported_edge_case",
+  "app_manifest_sha256": "5891521a9195e917bd47a57b8ddefd7a835f7127168e49b44de6418a24faa9c7",
+  "provider_sha256": "4c9dbf316bbce8b1db9741ca5b23cee5e2616c9878f9cc3b7035535a3a20dacb",
+  "provider_tests": {
+    "passed": 25,
+    "evidence": "provider-tests-second.txt"
+  },
+  "integration_tests": {
+    "passed": 6,
+    "evidence": "integration-tests.txt",
+    "provider": "fake only"
+  },
+  "live_model_calls_by_reviewer": 0,
+  "unchanged_provider_functions": [
+    "_digest",
+    "_environment",
+    "_guidance_presence",
+    "_capture",
+    "_verify_catalog",
+    "_argv",
+    "_check_schema",
+    "_validate"
+  ],
+  "manifest_inventory_matches": true,
+  "first_attempt": {
+    "evidence": "provider-tests.txt",
+    "passed": 18,
+    "failed": 7,
+    "cause": "Test harness set empty explicit override instead of removing variable; candidate correctly rejected empty override.",
+    "resolution": "Changed only fresh test setup to remove CODING_AGENT_CODEX before automatic-discovery tests."
+  },
+  "review_note": "Managed discovery limit is checked before PATH candidate qualification; an otherwise approved PATH entry is blocked when managed root has >128 children. Reported to parent; no implementation edits by reviewer.",
+  "files": {
+    "tests/test_provider_refresh.py": "6ec5db85e08a92ad377e123a79388b309be8c7c74bca7227b41ec670d6cfa580",
+    "tests/integration.py": "c07541762b01e4da3539782799c24306e5c96c6be15f3c3f2b2db52ce9e4130c",
+    "review/provider-tests.txt": "157eca3ce3f51794d86cf27d706b8709078c4a78f7b48327a3549675dd785cec",
+    "review/provider-tests-second.txt": "9af19ea0a1ac83290399ea757262f73a02dc29d886fe2d640938563b641077ed",
+    "review/integration-tests.txt": "6bdd9e0255eb8e41333fdf0e6b909437171d871e51f9457db5414ff416d2cb7a"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "custom-absolute",
+  "cases": [
+    {"id": "positive-preserved", "args": [7], "expected": 7},
+    {"id": "zero-preserved", "args": [0], "expected": 0},
+    {"id": "negative-repaired", "args": [-8], "expected": 8},
+    {"id": "fraction-repaired", "args": [-2.5], "expected": 2.5}
+  ]
+}

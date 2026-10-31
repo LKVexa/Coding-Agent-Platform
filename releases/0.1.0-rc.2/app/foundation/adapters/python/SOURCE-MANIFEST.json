@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "D0001/C0081-03",
+  "adapter_version": "0.1.0",
+  "files": [
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\harness\\d0001\\__init__.py",
+      "path": "vendor/d0001/__init__.py",
+      "modified": false,
+      "sha256": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\harness\\d0001\\frog_sim.py",
+      "path": "vendor/d0001/frog_sim.py",
+      "modified": false,
+      "sha256": "c93cf55c92ba752e91a8bb4269ea5eb77daeb8eed808300fe90a95d73d3abc58"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\harness\\d0001\\frog.py",
+      "path": "vendor/d0001/frog.py",
+      "modified": false,
+      "sha256": "9841753452220c1a55c4d10c391658249f52e118bf6a61522baf68d741e55d11"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\harness\\d0001\\pairkit.py",
+      "path": "vendor/d0001/pairkit.py",
+      "modified": false,
+      "sha256": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\harness\\d0001\\pairs_c.py",
+      "path": "vendor/d0001/pairs_c.py",
+      "modified": false,
+      "sha256": "8f6fab2725fb703803afb872c2307efc69e07fdd9e923b5bf85c0f73797e5a0d"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\evidence\\acceptance.json",
+      "path": "historical/acceptance.json",
+      "modified": false,
+      "sha256": "4c1ec3078015a36d68bc4dec746b83ab0e484f84f9cdc1e05eb45b4e996e0058"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\HANDOFF.md",
+      "path": "historical/HANDOFF.md",
+      "modified": false,
+      "sha256": "6f76baeb6ff71d55f6067f8f9d9d90dc5cfc990aa82f951500ed0fdd0db2f430"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\evidence\\records.json",
+      "path": "historical/records.json",
+      "modified": false,
+      "sha256": "92510d2fcae12ae2882345e9ae658057cb285074843a43b02b7927463c0d4809"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\RESULTS.md",
+      "path": "historical/RESULTS.md",
+      "modified": false,
+      "sha256": "4b72b783e09a84ff8143c00a41967a7227fa694b2a6107df527bff2a450c643e"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\SPEC.md",
+      "path": "historical/SPEC.md",
+      "modified": false,
+      "sha256": "69a06fb1422d038d8914d0e37151ee98f34194d6797c7728b6c5f4ffa52be570"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\STATUS.json",
+      "path": "historical/STATUS.json",
+      "modified": false,
+      "sha256": "124fc3fa65fbbdb5986ed0cb79fd1e0bb5e011ac779d1123e7b514c037a5dc08"
+    },
+    {
+      "source": "D:\\Deliverables\\product-work\\D0001\\pairs\\COMP\\C0081-03\\component-work\\C0081-03\\VALIDATION.md",
+      "path": "historical/VALIDATION.md",
+      "modified": false,
+      "sha256": "0eb833c1affdae2979f074151ba492bbedcbeceb28bee5822ac959128caafd68"
+    }
+  ]
+}

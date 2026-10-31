@@ -1,0 +1,179 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "P0392-01",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Loss",
+ "inputs": [
+  {
+   "name": "catalog prompt P0392-01-per-instance-loss-history.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "2cd0cd037b6d317f6593ff69d4660a3bf30d79edd200c5a645cf7d4297cd06fd"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0001/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6"
+  },
+  {
+   "name": "artifact/d0001/__init__.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1"
+  },
+  {
+   "name": "artifact/d0001/pairkit.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21"
+  },
+  {
+   "name": "artifact/d0001/pairs_p2.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "176afbdbde5e313187ce40237e41c84d2caab31e6dedf543a14fc29b99bd9b1c"
+  },
+  {
+   "name": "artifact/d0001/cbwk.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "3c62f5defe92cb881dc793d360413f7f6550747296a9b7743456dc74266aba8b"
+  },
+  {
+   "name": "artifact/d0001/lasso.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8f32b666b86167418962b94c60799f0395ad7c6b8c2147ef9b54209085283a1e"
+  },
+  {
+   "name": "artifact/d0001/ies.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "752d93f9d5c97f66d60ef59149824468de54729ef87f006c11b78eb4c5e2ac14"
+  },
+  {
+   "name": "artifact/d0001/flowdec.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "9e237751103b324f2931b319bad4593d3a8b82a0c7980a4c12cda71e2690931a"
+  },
+  {
+   "name": "artifact/d0001/tetsphere.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "2572896b0b65e1336f59c05439c63b887dd6cc5fe441ad2d275809b9f5b136b3"
+  },
+  {
+   "name": "source IES (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2502.07547v1",
+   "sha256": "77c892b96ba85938e2af52b6055d6f9c12c41196ab7e7d7024c8257ba368ddd8"
+  },
+  {
+   "name": "source IES (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2502.07547v1",
+   "sha256": "821480a1dba981e1bce1b0100f084ad405ee6ceeec92a02343142eba5dcee20a"
+  }
+ ],
+ "checks": [
+  {
+   "name": "partial_vector",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/partial_vector",
+   "iterations": 1
+  },
+  {
+   "name": "non_finite",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/non_finite",
+   "iterations": 1
+  },
+  {
+   "name": "rolling_window",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/rolling_window",
+   "iterations": 1
+  },
+  {
+   "name": "loss_independent",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/loss_independent",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://arxiv.org/abs/2502.07547v1": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T13:30:55-07:00"
+}

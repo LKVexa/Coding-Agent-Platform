@@ -1,0 +1,62 @@
+[
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\STATUS.json",
+    "destination": "historical/STATUS.json",
+    "sha256": "c1e655a208f3752b4919e08d63b30e971880e125fb1b1fa8f967e2552454aa78",
+    "bytes": 7861
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\source\\PLAN.md",
+    "destination": "historical/PLAN.md",
+    "sha256": "c41f27de7ff6cec21d8ccd94a70ea64e372a63cec0edfbd49925879a48301f9d",
+    "bytes": 14387
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\evidence\\totals.json",
+    "destination": "historical/totals.json",
+    "sha256": "681c12de15f3f2bbff4d8b8cd2fb0f06c0b8ebb1cb9372bc431760f67407d924",
+    "bytes": 1089
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\artifact\\P2PDiagnostics.cs",
+    "destination": "src/P2PDiagnostics.cs",
+    "sha256": "4353fe7fc1fdb14b082048fbb4e70544ac9f49bac49b2b0aa5c964dfaca7b97b",
+    "bytes": 42401
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\data\\raw-outcomes.json",
+    "destination": "historical/raw-outcomes.json",
+    "sha256": "109811ddb0292a4e118143e04fe670768ebe313306784b2f91680e568e68ebf4",
+    "bytes": 12102
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\artifact\\writer\\HarnessCommon.cs",
+    "destination": "src/HarnessCommon.cs",
+    "sha256": "f34c5cb6aefc070ad362ec61acd77aab549d81fcdc3333a307369010d1b524a5",
+    "bytes": 13281
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\operation\\correct-trace.json",
+    "destination": "historical/correct-trace.json",
+    "sha256": "07a3c7981890ee08ff6ef5777075271dec657b9478fcb77ad54e319760a75569",
+    "bytes": 6207
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\evidence\\diagnostics.json",
+    "destination": "historical/diagnostics.json",
+    "sha256": "95ce1292856485c35c6bb2c3acb8202d6716d51003392fe2de33c69d92f19b8d",
+    "bytes": 44848
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\data\\raw-inputs.json",
+    "destination": "historical/raw-inputs.json",
+    "sha256": "1d4b49f83bc778e2b952720f43e0c6a91f918cf3094d4c808eddde13ec522461",
+    "bytes": 3552
+  },
+  {
+    "source": "D:\\Deliverables\\product-work\\D0007\\pairs\\COMP\\C0322-01\\component-work\\C0322-01\\operation\\regression-trace.json",
+    "destination": "historical/regression-trace.json",
+    "sha256": "39a9b68d6c170c3192157d513866e7cb732b7c100879affdba275ae4b8c710e9",
+    "bytes": 6280
+  }
+]

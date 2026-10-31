@@ -1,0 +1,264 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0322-02",
+  "prompt_version": "3.0.0",
+  "status": "complete",
+  "stage": {
+    "last_completed": 8,
+    "total": 8,
+    "label": "Bounded component packaged; writer verification required"
+  },
+  "checks": [
+    {
+      "name": "actual_method_call_count",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#actual_method_call_count",
+      "iterations": 1
+    },
+    {
+      "name": "input_count",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#input_count",
+      "iterations": 1
+    },
+    {
+      "name": "P2P_ids_literal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#P2P_ids_literal",
+      "iterations": 1
+    },
+    {
+      "name": "F2P_exclusions_literal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#F2P_exclusions_literal",
+      "iterations": 1
+    },
+    {
+      "name": "literal_pass_totals",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#literal_pass_totals",
+      "iterations": 1
+    },
+    {
+      "name": "literal_P2P_totals",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#literal_P2P_totals",
+      "iterations": 1
+    },
+    {
+      "name": "literal_F2P_totals",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#literal_F2P_totals",
+      "iterations": 1
+    },
+    {
+      "name": "order_independent_label_alignment",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#order_independent_label_alignment",
+      "iterations": 1
+    },
+    {
+      "name": "raw_inputs_unchanged",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#raw_inputs_unchanged",
+      "iterations": 1
+    },
+    {
+      "name": "dataset_serialization_replay",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#dataset_serialization_replay",
+      "iterations": 1
+    },
+    {
+      "name": "normal_preservation_handoff",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#normal_preservation_handoff",
+      "iterations": 1
+    },
+    {
+      "name": "regression_preservation_handoff",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#regression_preservation_handoff",
+      "iterations": 1
+    },
+    {
+      "name": "regression_ids_literal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#regression_ids_literal",
+      "iterations": 1
+    },
+    {
+      "name": "regression_preserved_literal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#regression_preserved_literal",
+      "iterations": 1
+    },
+    {
+      "name": "F2P_only_control_insufficient",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#F2P_only_control_insufficient",
+      "iterations": 1
+    },
+    {
+      "name": "consumer_replay_from_saved_inputs",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#consumer_replay_from_saved_inputs",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_missing_field",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_missing_field",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_extra_field",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_extra_field",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_wrong_version",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_wrong_version",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_numeric_string",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_numeric_string",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_duplicate",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_duplicate",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_missing",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_missing",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_unknown",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_unknown",
+      "iterations": 1
+    },
+    {
+      "name": "loader_reject_cross_split",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#loader_reject_cross_split",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_duplicate",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_duplicate",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_missing",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_missing",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_corrupt",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_corrupt",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_runtime_error",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_runtime_error",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_wrong_version",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_wrong_version",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_wrong_task",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_wrong_task",
+      "iterations": 1
+    },
+    {
+      "name": "outcome_reject_wrong_ordinal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#outcome_reject_wrong_ordinal",
+      "iterations": 1
+    },
+    {
+      "name": "duplicate_label",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#duplicate_label",
+      "iterations": 1
+    },
+    {
+      "name": "swapped_label",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#swapped_label",
+      "iterations": 1
+    },
+    {
+      "name": "downstream_reject_contradictory_accept",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#downstream_reject_contradictory_accept",
+      "iterations": 1
+    },
+    {
+      "name": "downstream_reject_wrong_manifest",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#downstream_reject_wrong_manifest",
+      "iterations": 1
+    },
+    {
+      "name": "downstream_reject_duplicate_case",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#downstream_reject_duplicate_case",
+      "iterations": 1
+    },
+    {
+      "name": "downstream_reject_wrong_preservation_flag",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#downstream_reject_wrong_preservation_flag",
+      "iterations": 1
+    },
+    {
+      "name": "processed_provenance_corruption",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json#processed_provenance_corruption",
+      "iterations": 1
+    }
+  ],
+  "updated": "2026-10-30T16:35:17-07:00",
+  "integration_status": "fixture_tested",
+  "parent_integration_status": "unverified",
+  "inputs": [
+    {
+      "name": "FrogNano v2 primary source",
+      "state": "present",
+      "sha256": "6b4a629a61af45f208e7cd5e4fcba60f9d5961812bcfe66178b0e767b0eb090c"
+    },
+    {
+      "name": "Frozen authored fixture protocol",
+      "state": "present",
+      "sha256": "c41f27de7ff6cec21d8ccd94a70ea64e372a63cec0edfbd49925879a48301f9d"
+    }
+  ],
+  "scope": "Bounded authored P2P data/preservation artifact; original repository/model reproduction outside this scope",
+  "source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "accepted_upstream_artifacts": [],
+  "producer_mode": "fresh_raw_fixture_no_prior_producer_accepted",
+  "method_calls": 42,
+  "criteria_assessment": "evidence/criteria-assessment.json",
+  "mechanical_writer_qualification_required": true
+}

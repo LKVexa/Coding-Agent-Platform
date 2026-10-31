@@ -39,3 +39,9 @@ Python, NumPy, Git, Windows and provider runtimes, where required, remain
 external dependencies under their respective terms. No credentials or
 external runtime installations are bundled. This NOTICE adds no restriction
 to the GPL license; explicit dataset permissions remain separately available.
+
+Update: 0.1.0-rc.2 is provided separately in releases/0.1.0-rc.2/.
+It corrects approved CLI discovery and setup diagnostics; runtime/catalog pins
+and tool policy are unchanged. The original release/ remains preserved.
+The same authored-software GPL-3.0-only declaration and retained third-party
+attributions apply to the update. Its own NOTICE records update provenance.

@@ -1,0 +1,105 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0140-01",
+  "prompt_version": "3.0.0",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Original Stage1 source-method inspection/specification remains unfinished; authored diagnostics are separate"
+  },
+  "earliest_unfinished_native_stage": 1,
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "raw_actual_candidate_outcomes",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "literal_failed_attempt_ids",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "missing_field",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "duplicate_record",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "permuted_label_identity_join",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "fixed_partition_counts",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "group_split_leakage",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "development_repeated_selection",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "final_records_cannot_select_training_data",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_stage1_exact_method_specification",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    },
+    {
+      "name": "original_source_method_and_parent_validation",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    }
+  ],
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "native_identity": {
+    "bytes": 23079,
+    "contract_sha256": "02f6057e980f5045d89f26498bf3004f7da9c2132b43b80cd50d485d25247122",
+    "file": "C0140-01.md",
+    "original_path": "component-prompts-workflows/core/C0140/C0140-01-repeatedly-failed-tasks.md",
+    "pair": "C0140-01",
+    "parent_focus": "Incorporate documented failure-analysis information into consolidation.",
+    "parent_id": "C0140",
+    "parent_title": "GPT-5.6-Sol negative-information generation",
+    "parent_validation": "Verify provenance and separate privileged training information from evaluation inputs.",
+    "payload": "F05118",
+    "sha256": "c3155bdbc0fe9425e344363f4b56fa9de3b5828d0b0e77518c27b33cd19d8326",
+    "work_type": "Data, annotations, examples, or evaluation records."
+  },
+  "source_availability": {
+    "article": "present",
+    "exact_method": "unverified",
+    "runtime_inputs": "unverified"
+  },
+  "accepted_native_dependencies": [],
+  "fixture_substitution": "Shared authored raw fixture; no partial native producer accepted",
+  "updated": "2026-10-30T19:10:23-07:00"
+}

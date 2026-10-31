@@ -1,0 +1,73 @@
+{
+ "id": "C0081-03",
+ "A1": {
+  "result": "pass",
+  "schema_errors": [],
+  "id_matches": true,
+  "validator_selftest": true
+ },
+ "A2": {
+  "result": "pass",
+  "checked": 4,
+  "missing_or_invalid": [],
+  "note": "A1-A6 evidence entries are verified after acceptance.json is written (post-write verification below)"
+ },
+ "A3": {
+  "result": "pass",
+  "snapshot_scope": [
+   "product-work/D0001 excluding this pair folder",
+   "D0001 spec folder",
+   "catalog prompt file",
+   "catalog POLICY folder"
+  ],
+  "files_compared": {
+   "work": 480,
+   "spec": 6,
+   "prompt": 1,
+   "catalog_policy": 2
+  },
+  "differences": {
+   "work": [],
+   "spec": [],
+   "prompt": false,
+   "catalog_policy": []
+  }
+ },
+ "A4": {
+  "result": "pass",
+  "max_iterations": 1,
+  "pair_iterations": 1,
+  "repair_log": []
+ },
+ "A5": {
+  "result": "pass",
+  "method": "pair recomputed in-process with unchanged inputs; STATUS (minus 'updated') and every package file compared",
+  "status_identical_except_updated": true,
+  "package_files_identical": true,
+  "files_compared": 11,
+  "seeds_and_tools_recorded": true,
+  "on_disk_rerun": "see product-work/D0001/logs/rerun-verification.json (separate process)"
+ },
+ "A6": {
+  "result": "pass",
+  "section_order": [
+   "Status",
+   "Integration status",
+   "Acceptance results",
+   "Artifact paths",
+   "Open issues",
+   "Next action"
+  ],
+  "required_order": [
+   "Status",
+   "Integration status",
+   "Acceptance results",
+   "Artifact paths",
+   "Open issues",
+   "Next action"
+  ],
+  "status_in_reply": "complete",
+  "status_in_file": "complete",
+  "integration_in_reply": "fixture_tested"
+ }
+}

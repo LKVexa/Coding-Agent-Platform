@@ -1,0 +1,163 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0027-04",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Stage 1 Verify meaning and scope incomplete; metadata intake only"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "intake_bindings_and_native_contracts",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "primary_source_verification",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "source_specific_input_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_required_work",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_diagnostic_cases",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_integration_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0027/P0027-04-token-shuffling.md (F06154)",
+      "state": "present",
+      "version": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+      "sha256": "c65cab566ca810651c5cb845069262db5c2f865ae40b88ce02d7c2e56cd06d0e"
+    },
+    {
+      "name": "pairs/COMP/P0027-04/component-work/P0027-04/intake/READINESS-AUDIT.json (scoped readiness metadata; not primary material)",
+      "state": "present",
+      "version": "comp-source-intake-readiness/2",
+      "sha256": "587e9c9ba3de9c6171d1ae048118a9bcf48bdc503f25420333b7c6d9de51e402"
+    },
+    {
+      "name": "preflight/PREFLIGHT-codex-ps5-20261030T163355040-a.json",
+      "state": "present",
+      "version": "passed preflight/cs-1; exact immutable pin",
+      "sha256": "7b8efa804399ec4fe7a5c39604e0aafbf074fb78f66d76ddf8bb4f09f56dd275"
+    },
+    {
+      "name": "Primary material unverified/not provided for this scoped intake: https://iclr.cc/virtual/2025/poster/28421 (displayed abstract)",
+      "state": "missing",
+      "version": "Not positively verified in bounded audit scopes; no global absence claim."
+    },
+    {
+      "name": "Source-specific runtime/configuration or review prerequisites for P0027-04 (Observed signal, interaction record, context, or information available to the method.)",
+      "state": "missing",
+      "version": "Not established by source verification; generic tools are not the named method's runnable inputs."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Signal origin.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: acquisition time.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: units and schema.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: identity.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: access boundary.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: transformations.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: consuming operation.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Versioned long-video/grounding question-answer records, temporal labels, model/tokenizer/checkpoint, training budget and length-stratified evaluation split.",
+      "state": "missing",
+      "version": "For P0027-04 (Token shuffling), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "Deterministic metadata packaging only; no random sampling or scientific fixture."
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "kit": "source-intake-pairkit/2.0.0",
+    "retrieved": {
+      "sources": "See immutable readiness audit; no primary source retrieval or scientific execution is claimed."
+    }
+  },
+  "blocked_reason": "Native Stage1 unfinished for P0027-04 (Token shuffling). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+  "updated": "2026-10-30T16:37:57-07:00"
+}

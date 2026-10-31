@@ -1,0 +1,181 @@
+{
+ "schema": "d0002-gate/1",
+ "gate": "G2",
+ "phase": "COMP",
+ "result": "fail",
+ "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+ "core_pairs": 11,
+ "pair_status_counts": {
+  "complete": 7,
+  "partial": 1,
+  "failed": 3
+ },
+ "pairs_not_meeting_gate": {
+  "P0009-02": {
+   "status": "partial",
+   "unresolved_checks": [
+    "contribution_to_parent_task"
+   ],
+   "blocked_reason": "requires LLaMA-3 generations for all classes, CLIP ViT-B/16 weights, Kinetics-400/HMDB-51 video and GPU fine-tuning - none available locally under the USD 0 / existing-resources budget"
+  },
+  "P0113-01": {
+   "status": "failed",
+   "unresolved_checks": [
+    "structure_contribution_vs_data_shapley"
+   ],
+   "blocked_reason": null
+  },
+  "P0113-02": {
+   "status": "failed",
+   "unresolved_checks": [
+    "constraint_contribution_ablation"
+   ],
+   "blocked_reason": null
+  },
+  "P0113-04": {
+   "status": "failed",
+   "unresolved_checks": [
+    "convergence_criterion"
+   ],
+   "blocked_reason": null
+  }
+ },
+ "all_schema_valid": true,
+ "all_A1_A6_pass": true,
+ "all_output_hashes_verify": true,
+ "kernel_integrity": "PASS",
+ "rerun_verification": "PASS",
+ "per_pair": {
+  "C0491-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0491-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0491-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0009-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0009-02": {
+   "status": "partial",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "contribution_to_parent_task"
+   ],
+   "blocked_reason": "requires LLaMA-3 generations for all classes, CLIP ViT-B/16 weights, Kinetics-400/HMDB-51 video and GPU fine-tuning - none available locally under the USD 0 / existing-resources budget",
+   "meets_G2": false
+  },
+  "P0113-01": {
+   "status": "failed",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "structure_contribution_vs_data_shapley"
+   ],
+   "blocked_reason": null,
+   "meets_G2": false
+  },
+  "P0113-02": {
+   "status": "failed",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "constraint_contribution_ablation"
+   ],
+   "blocked_reason": null,
+   "meets_G2": false
+  },
+  "P0113-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0113-04": {
+   "status": "failed",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "convergence_criterion"
+   ],
+   "blocked_reason": null,
+   "meets_G2": false
+  },
+  "P0289-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0289-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  }
+ },
+ "evaluated": "2026-10-27T14:38:32-07:00",
+ "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and executable delivery are stopped per ORCHESTRATION.md Gate G2."
+}

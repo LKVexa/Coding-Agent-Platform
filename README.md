@@ -1,48 +1,48 @@
 # Coding Agent Platform
 
-A bounded coding-agent workflow with model proposals, independent evaluation and patch export.
+A bounded coding-agent workflow with model proposals, independent evaluation
+and patch export for one committed numeric Python function.
 
-**Version 0.1.0-rc.1 · GPL-3.0-only**  
+**Current version: 0.1.0-rc.2 · GPL-3.0-only**  
 **Copyright (C) 2026 RUSSELL PHILIP SMITHSON**
 
-## Getting started
+## Windows startup fix
 
-Read the [start guide](release/README.md) and [environment requirements](release/INSTALL.md).
-This is a Windows prerelease using the declared, pinned local runtimes.
-Use a short checkout path and keep new run state outside the release folder.
-The application and all its source are under [release/app](release/app).
+Version 0.1.0-rc.2 fixes the misleading CLI-mismatch error when the Windows
+launcher does not inherit Codex on PATH. It discovers the already-approved
+desktop installation while retaining exact executable hash/version checks.
+No global PATH or login changes are needed for that installation.
 
-This prerelease handles one committed numeric Python function per task. It requires the exact qualified local Codex runtime and an existing login; provider updates can require requalification.
+Use [releases/0.1.0-rc.2/app/Coding-Agent.cmd](releases/0.1.0-rc.2/app/Coding-Agent.cmd),
+then follow the [start guide](releases/0.1.0-rc.2/app/START_HERE.md).
+See [installation requirements](releases/0.1.0-rc.2/app/INSTALL.md) for the
+supported environment and explicit CODING_AGENT_CODEX override.
+Keep new state outside the application and use a short checkout path.
 
-## Integrity and evidence
+The final application passed 26 provider/discovery tests and 6 integration
+tests. A real repair launched without Codex on PATH passed independent checks,
+replayed and exported a patch in one provider call. Scope remains the bounded
+authored diagnostics; this does not establish general coding performance.
 
-The [release](release/) contains the original verified package, source,
-documentation, examples and acceptance evidence. Its files are unchanged.
-Run the following with an installed Python interpreter to check every file
-against the preserved release manifest (this check needs only the standard
-library and does not run the application):
+## Source, evidence and previous release
 
-```text
-python verify_release.py
-```
+The [current release](releases/0.1.0-rc.2/) includes runtime source, documentation,
+validation evidence and an accepted example patch.
+The original [0.1.0-rc.1 release](release/) remains unchanged for historical
+inspection and replay. Old run evidence is not migrated or rewritten.
 
-The repository disables Git text conversion so sealed file hashes survive
-checkout. Historical local-only and earlier product-status descriptions in
-the evidence describe the original build, not current publication status.
-New publication metadata and licensing live outside the sealed release.
+Run `python verify_release.py` to check both release inventories and manifest
+pins using only Python's standard library. Git text conversion is disabled to
+preserve sealed bytes across checkout.
 
-## Three separate products
+## Separate products
 
 - [Research Toolkit](https://github.com/LKVexa/Research-Toolkit)
 - [Research Workbench](https://github.com/LKVexa/Research-Workbench)
 - [Coding Agent Platform](https://github.com/LKVexa/Coding-Agent-Platform)
 
-Each repository has its own application, state, version and release evidence.
-The shared foundation is pinned within each release. Original deliveries and
-the earlier local release packages remain preserved separately.
-
-## License and attribution
+The workbench, research toolkit, shared foundation and original deliveries
+remain separate and unchanged by this fix.
 
 See [LICENSE](LICENSE), [NOTICE](NOTICE) and [COPYRIGHT](COPYRIGHT).
-GPL version 3 applies to the authored software and supplied authored material;
-existing third-party notices and explicit dataset permissions are preserved.
+Existing third-party notices and terms are retained.

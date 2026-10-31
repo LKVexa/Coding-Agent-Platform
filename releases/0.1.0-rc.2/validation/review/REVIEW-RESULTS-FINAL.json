@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "status": "pass",
+  "reviewed_at": "2026-10-31T07:45:31.250305+00:00",
+  "app_manifest_sha256": "31d98f33b363cfc9a1b64764b41b20fba1d58ac73774bbbb484b0c0c1e715856",
+  "provider_sha256": "3b5876369fc853c04f1882e5827bd15fb8842f99eb35fe9b9cd121d621ad2f4d",
+  "provider_tests": {
+    "passed": 26,
+    "evidence": "provider-tests-final.txt"
+  },
+  "integration_tests": {
+    "passed": 6,
+    "evidence": "integration-tests-final.txt",
+    "provider": "fake only"
+  },
+  "live_model_calls_by_reviewer": 0,
+  "unchanged_provider_functions": [
+    "_digest",
+    "_environment",
+    "_guidance_presence",
+    "_capture",
+    "_verify_catalog",
+    "_argv",
+    "_check_schema",
+    "_validate"
+  ],
+  "manifest_inventory_matches": true,
+  "previous_review": {
+    "file": "REVIEW-RESULTS.json",
+    "sha256": "b584271a9169f3fe68005060e1590ea803e1df61a6176baf79d4afd993bcd895"
+  },
+  "finding_resolution": "Approved PATH executable is now returned before managed discovery. Added and passed regression with 129 managed entries. Original runtime/catalog pins and process/model boundaries unchanged.",
+  "files": {
+    "tests/test_provider_refresh.py": "75d4a686526f8ef8b11728abe82769a3409a9bc8140229dce9ee193a03a0f3b0",
+    "tests/integration.py": "c07541762b01e4da3539782799c24306e5c96c6be15f3c3f2b2db52ce9e4130c",
+    "review/provider-tests-final.txt": "30b8ac12519c9ce77c6fd90122f1b70cad6692fa75fd451164b81b49c6495ed2",
+    "review/integration-tests-final.txt": "8f3ce1833a69d29f4bff36043e5f79a93c63bd343e93815d22236d8b45f508a1",
+    "review/test_provider_refresh-before-edge.py": "6ec5db85e08a92ad377e123a79388b309be8c7c74bca7227b41ec670d6cfa580"
+  }
+}

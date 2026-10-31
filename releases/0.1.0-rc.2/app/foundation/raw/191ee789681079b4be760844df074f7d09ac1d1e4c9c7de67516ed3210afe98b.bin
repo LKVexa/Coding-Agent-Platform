@@ -1,0 +1,688 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "D0008",
+  "prompt_version": "3.0.0",
+  "spec_version": "1.1.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used (per pair; see preflight prompt_sources rows and ../_catalog-map/r2/PROMPT-MAP.json)",
+  "status": "partial",
+  "stage": {
+    "last_completed": 1,
+    "total": 7,
+    "label": "Stage 2 COMP outcomes recorded (0/20 core pairs complete); G2 fail - downstream stopped"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "stage0_preflight",
+      "result": "pass",
+      "evidence": "preflight/PREFLIGHT-codex-ps5-20261030T184458147-a.json",
+      "iterations": 1
+    },
+    {
+      "name": "phase_TOPIC_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_PORT_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_SHEP_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "G2_COMP_gate",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "unit_crosswalk_built",
+      "result": "pass",
+      "evidence": "integration/UNIT-CROSSWALK.json",
+      "iterations": 1
+    },
+    {
+      "name": "pair_rerun_verification",
+      "result": "pass",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC1_core_pairs_complete_100pct",
+      "result": "fail",
+      "evidence": "pairs.jsonl",
+      "iterations": 1
+    },
+    {
+      "name": "AC2_applicable_gates_G2_G5",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC3_interfaces_and_e2e",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "AC4_product_status_schema",
+      "result": "pass",
+      "evidence": "STATUS.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC5_rerun_stability",
+      "result": "unverified",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC6_release_manifest_checksums",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "cmd_delivery",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/delivery",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "D0008/AUDIT.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "257ece0853d93bb34c8074c5a0ae68138e349ee5c8c7644a40432288f2e35dff"
+    },
+    {
+      "name": "D0008/CHANGELOG.txt",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "262c213983b60c1b6ed403314ad0a6ca95719d4efd80b46855258d37a4892a7a"
+    },
+    {
+      "name": "D0008/DELIVERABLE.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "ea2cfe23919ec2a537d0e3c0413e13b6cf9d203fe51236f00c44226422abbe9d"
+    },
+    {
+      "name": "D0008/ORCHESTRATION.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "14894e8498141c1a1a799c13a2fec47e3b374881ad30b0ea76aae3519b55533b"
+    },
+    {
+      "name": "D0008/UNIT-CROSSWALK.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "95a24fed02c297af93d8a4ce0e2e8f59a2cbaa043d71fe2ddb6b16e9b436e646"
+    },
+    {
+      "name": "D0008/manifest.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-map\\r2\\PROMPT-MAP.json",
+      "state": "present",
+      "version": "r2",
+      "sha256": "b8543d2e4719fa069a8e77f763b2bc1fdd43b9505c4d3e0f88520f735b14e84d"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "per pair: literal seeds recorded in each pair STATUS.json (C# System.Random(seed) or deterministic enumeration)"
+    },
+    "tools": {
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "clr": "4.0.30319.42000",
+      "langversion": "5",
+      "harness": "harness-cs/0.1.0",
+      "python_numpy_java": "not used"
+    },
+    "retrieved": {}
+  },
+  "blocked_reason": "G2 fail: C0126-01 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0126-02 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0126-03 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0126-04 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0127-01 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0127-02 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0127-03 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0127-04 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0128-01 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0128-02 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0128-03 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0128-04 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0129-01 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0129-02 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0129-03 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0129-04 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0140-01 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0140-02 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0140-03 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified); C0140-04 partial (original_stage1_exact_method_specification=unverified, original_source_method_and_parent_validation=unverified)",
+  "updated": "2026-10-30T19:26:27-07:00",
+  "pair_states": {
+    "C0126-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0126-01/component-work/C0126-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0126-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0126-02/component-work/C0126-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0126-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0126-03/component-work/C0126-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0126-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0126-04/component-work/C0126-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0127-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0127-01/component-work/C0127-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0127-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0127-02/component-work/C0127-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0127-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0127-03/component-work/C0127-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0127-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0127-04/component-work/C0127-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0128-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0128-01/component-work/C0128-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0128-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0128-02/component-work/C0128-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0128-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0128-03/component-work/C0128-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0128-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0128-04/component-work/C0128-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0129-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0129-01/component-work/C0129-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0129-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0129-02/component-work/C0129-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0129-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0129-03/component-work/C0129-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0129-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0129-04/component-work/C0129-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0140-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0140-01/component-work/C0140-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0140-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0140-02/component-work/C0140-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0140-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0140-03/component-work/C0140-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0140-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0140-04/component-work/C0140-04/STATUS.json",
+      "hashes_verified": true
+    }
+  },
+  "core_pair_counts": {
+    "partial": 20
+  },
+  "supporting_pair_states": {},
+  "supporting_pair_counts": {},
+  "manifest_core_pairs": 20,
+  "manifest_supporting_pairs": 0,
+  "phase_applicability": {
+    "TOPIC": {
+      "stage": 1,
+      "gate": "G1",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0008/manifest.json#/execution/phase_gates/G1",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "result": "not_applicable"
+    },
+    "COMP": {
+      "stage": 2,
+      "gate": "G2",
+      "applicable": true,
+      "core_pairs": 20,
+      "supporting_pairs": 0,
+      "evidence": "D0008/manifest.json#/execution/phase_gates/G2",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "result": "unverified"
+    },
+    "PORT": {
+      "stage": 3,
+      "gate": "G3",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0008/manifest.json#/execution/phase_gates/G3",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "result": "not_applicable"
+    },
+    "SHEP": {
+      "stage": 4,
+      "gate": "G4",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0008/manifest.json#/execution/phase_gates/G4",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "result": "not_applicable"
+    }
+  },
+  "checkpoint": {
+    "schema": "product-checkpoint/1",
+    "tool": "status-checkpoint/1.1.0",
+    "product": "D0008",
+    "recorded": "2026-10-30T19:20:41-07:00",
+    "last_pair_id": "C0140-04",
+    "preflight": "preflight/PREFLIGHT-codex-ps5-20261030T184458147-a.json",
+    "preflight_run_id": "codex-ps5-20261030T184458147-a",
+    "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+    "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+    "schema_sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8",
+    "harness": "harness-cs/0.2.0",
+    "checkpoint_exe": "D:\\Deliverables\\Tools-harness-cs\\versions\\status-checkpoint-v1_1\\bin\\StatusCheckpointFast.exe",
+    "checkpoint_exe_sha256": "a1a6c53def9faaf1153b8f596adb75e8bb5194ffdb0d9af172f9c99e7ade07b1",
+    "harness_assembly": "D:\\Deliverables\\Tools-harness-cs\\versions\\status-checkpoint-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "clr": "4.0.30319.42000",
+    "ledger_files": [
+      {
+        "path": "pairs.jsonl",
+        "sha256": "b1f437f8f03d335a11999472854bb558c5fce60d53df9f6d03dc6ea09b2fae34",
+        "rows": 20
+      }
+    ],
+    "output_files_verified": 1095,
+    "input_hashes_verified": 740,
+    "previous_status_sha256": "071db3d925602a793e29770e880b6f7f84f80095fedb13177bb18b491ffd78c8",
+    "backup": "backups/STATUS.pre-checkpoint.20261030T192101558-694a7ab2e0b5498ca18c801f75b8ede7.json",
+    "verification": {
+      "COMP|C0126-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0126-01/component-work/C0126-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 52,
+        "input_hashes_verified": 37,
+        "status_sha256": "c98124b554271b9d360ac7852509a315788308ea179270144a8a42bd7442fd3a"
+      },
+      "COMP|C0126-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0126-02/component-work/C0126-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 54,
+        "input_hashes_verified": 37,
+        "status_sha256": "3880d628280b062e129d6fbbbad09fa8328da03f3e2122b8212838df42a7cbd8"
+      },
+      "COMP|C0126-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0126-03/component-work/C0126-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 56,
+        "input_hashes_verified": 37,
+        "status_sha256": "7443fb9775305dc2b39177f3e2d560877e94e36cce9c844fcb485ff1db62aab7"
+      },
+      "COMP|C0126-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0126-04/component-work/C0126-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 57,
+        "input_hashes_verified": 37,
+        "status_sha256": "4637fbcef531a4e0806652af53c64d835032fcb9a30ba3af4dbfa2c2b29a0d9c"
+      },
+      "COMP|C0127-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0127-01/component-work/C0127-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 52,
+        "input_hashes_verified": 37,
+        "status_sha256": "fcb0884dd7de4ae8af360033d4521fdc55b925b517e28fc5da99e10613af5079"
+      },
+      "COMP|C0127-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0127-02/component-work/C0127-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 54,
+        "input_hashes_verified": 37,
+        "status_sha256": "aa559cfde86ab42664bb7693de97cf9deb206d0ab502d1376989771e5f10af4c"
+      },
+      "COMP|C0127-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0127-03/component-work/C0127-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 56,
+        "input_hashes_verified": 37,
+        "status_sha256": "6583ce7697a362e5483d30ef4861e40c9c7cb7063273f719debea5af2a9a6495"
+      },
+      "COMP|C0127-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0127-04/component-work/C0127-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 57,
+        "input_hashes_verified": 37,
+        "status_sha256": "3ebc575c2ccf28d564bae377f41fa63def974dd22bcddec82a64f57950afc145"
+      },
+      "COMP|C0128-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0128-01/component-work/C0128-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 52,
+        "input_hashes_verified": 37,
+        "status_sha256": "b33b468d86e3102f7f05a9911ca9410aef97d2110b825b6ee554c2ce36e4a57b"
+      },
+      "COMP|C0128-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0128-02/component-work/C0128-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 54,
+        "input_hashes_verified": 37,
+        "status_sha256": "f0467923a36d72cd6a39eadbb96368db180c1f54f663b10977190b509ce906bd"
+      },
+      "COMP|C0128-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0128-03/component-work/C0128-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 56,
+        "input_hashes_verified": 37,
+        "status_sha256": "d51cac1d514e92fceac243e01cef07934d0579b55e762d9046ce735a9b88b12b"
+      },
+      "COMP|C0128-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0128-04/component-work/C0128-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 57,
+        "input_hashes_verified": 37,
+        "status_sha256": "1c7c15e6f0f33b1c6b9a58c1fbf7edf9e138036e2a96966da07116cb489286d0"
+      },
+      "COMP|C0129-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0129-01/component-work/C0129-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 52,
+        "input_hashes_verified": 37,
+        "status_sha256": "10db9869ac8ae44515f70a19575bc764135f5148c093484a75ebcf9f6c66139c"
+      },
+      "COMP|C0129-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0129-02/component-work/C0129-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 54,
+        "input_hashes_verified": 37,
+        "status_sha256": "01e79e672564376d5e937c9653c75ce04d48ee8a813e2413e530eb183313df4c"
+      },
+      "COMP|C0129-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0129-03/component-work/C0129-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 56,
+        "input_hashes_verified": 37,
+        "status_sha256": "49c988162f7a83800ee3e4176e5f1f591680566e05882ba79763ec1018fe9cbb"
+      },
+      "COMP|C0129-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0129-04/component-work/C0129-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 57,
+        "input_hashes_verified": 37,
+        "status_sha256": "40cc62d7f2e1b40f7c1039a4a5888bc06bbec84f3f4e83b417f6e038fc5b7389"
+      },
+      "COMP|C0140-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0140-01/component-work/C0140-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 52,
+        "input_hashes_verified": 37,
+        "status_sha256": "d47c6c6f07378204a9de61c35745ae0298bba486340d94c06226158220f25348"
+      },
+      "COMP|C0140-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0140-02/component-work/C0140-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 54,
+        "input_hashes_verified": 37,
+        "status_sha256": "4ed4262d0b9cf34427adea6bebac50f585675660dc83cc315640df1ded102b44"
+      },
+      "COMP|C0140-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0140-03/component-work/C0140-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 56,
+        "input_hashes_verified": 37,
+        "status_sha256": "af4a49913e85d1601742b4932449a52ee6ac0e8bd296ca760ef783dedc6adff2"
+      },
+      "COMP|C0140-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0140-04/component-work/C0140-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 57,
+        "input_hashes_verified": 37,
+        "status_sha256": "56838a6e83c8283118fa5b92ba7b452ecbb252dc1956b5f3545673cb41152efd"
+      }
+    }
+  },
+  "checkpoint_history": [
+    {
+      "recorded": "2026-10-30T18:45:06-07:00",
+      "last_pair_id": null,
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 20
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "a20560fce8798751af994bcbb5ef4e35721d37dd3b5b3e520eb3a01e67f6083c",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T184506779-596e1c8b87e24f6eafdd17722bbf0391.json"
+    },
+    {
+      "recorded": "2026-10-30T18:47:00-07:00",
+      "last_pair_id": "C0126-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 16,
+        "partial": 4
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "c45a970103d7aaf3bc7835109ab7a84691603fab6531503d24dce3150d8ac7a8",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T184704317-a4736d2051874c00a8cf1657f97d4a8b.json"
+    },
+    {
+      "recorded": "2026-10-30T18:51:00-07:00",
+      "last_pair_id": "C0127-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 12,
+        "partial": 8
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "ba9cb7ab910b0f2c41da70ee68d94c01c3fc1e931161c87d8ab767d87022caef",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T185114407-464826caab0343a9bb3ad8c4dbebc129.json"
+    },
+    {
+      "recorded": "2026-10-30T18:58:33-07:00",
+      "last_pair_id": "C0128-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 8,
+        "partial": 12
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "b3a3c2e70e374a226436ea28e69a7d6e6831223390a0df3cba68d2ed2efba233",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T185853663-a5031ad15baa4ee9b90c7a278fa6e6a7.json"
+    },
+    {
+      "recorded": "2026-10-30T19:09:42-07:00",
+      "last_pair_id": "C0129-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 4,
+        "partial": 16
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "233e602ff4799e4f4d4e8c8ce575793c1bd989fbd857969be36609e7b4fc3b7e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T190951906-dfab6b15b7dd43fba8a428c107fc58a4.json"
+    },
+    {
+      "recorded": "2026-10-30T19:20:41-07:00",
+      "last_pair_id": "C0140-04",
+      "status": "partial",
+      "core_counts": {
+        "partial": 20
+      },
+      "preflight_sha256": "e929f2ca1ba09671dddc8c6dd536ca7c321a3961d77275e544c8a3c290b121ac",
+      "manifest_sha256": "0ac839fd1a515552613ad151450f13123ced4401619a0bc8528692d2bd377bfd",
+      "previous_status_sha256": "071db3d925602a793e29770e880b6f7f84f80095fedb13177bb18b491ffd78c8",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T192101558-694a7ab2e0b5498ca18c801f75b8ede7.json"
+    }
+  ],
+  "notes": [
+    "Constituent COMP outcomes include per-pair diagnostics and may include metadata-only intake. Each native pair STATUS, stage, results and intake records define the work actually performed and its limits; no blanket scientific implementation or fixture execution is claimed. Product integration (Stage 6/G5) was not attempted.",
+    "AC3/AC5/AC6 unverified: Stages 5-7 not run because G2 failed (pair-level rerun stability is evidenced separately by pair_rerun_verification).",
+    "Close recorded 2026-10-30T19:26:27-07:00 by ProductCloseReporting product-close-reporting/1.1.0; previous STATUS backed up at backups/STATUS.pre-close.20261030T192650.json.",
+    "Rerun verification PASS: 20 executed core pairs rechecked identical, 0 mismatched, 0 not rechecked (not reopened; build-time evidence cited in logs/rerun-verification.json), 0 operator-skipped (never run, nothing to recheck)."
+  ],
+  "operator_decision": {
+    "decision": "standing policy OP-2026-10-27-1553: record as partial and continue",
+    "decided_by": "Russell Smithson (operator)",
+    "decided_at": "2026-10-27T15:53:00-07:00",
+    "scope": "D0008 under the standing policy (no new operator decision)",
+    "effect": "D0008 remains partial: not complete, not counted as built, no .cmd delivered",
+    "gate": {
+      "G2": "fail",
+      "evidence": "gates/G2.json"
+    },
+    "downstream_not_run": [
+      "Stage 5 readiness",
+      "Stage 6 integration (G5)",
+      "Stage 7 release",
+      "cmd delivery"
+    ]
+  },
+  "close_reporting": {
+    "version": "product-close-reporting/1.1.0",
+    "executable_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\ProductCloseReporting.exe",
+    "executable_sha256": "1cd7b1d2e4cd96ea98a06104f13d4a002b1d1864fec5dc022b9f8af341f2a6cf",
+    "harness_assembly_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "harness_version": "harness-cs/0.2.0",
+    "source_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\src\\ProductCloseReporting.cs",
+    "source_sha256": "5212c733d84eba42f5eca3eda8c17364ef925ff0a7cd0ada4b1555a9953be31d",
+    "source_state": "observed",
+    "fingerprint_scope": "observed running executable/helper and adjacent version source; source-to-binary correspondence requires retained build evidence"
+  }
+}

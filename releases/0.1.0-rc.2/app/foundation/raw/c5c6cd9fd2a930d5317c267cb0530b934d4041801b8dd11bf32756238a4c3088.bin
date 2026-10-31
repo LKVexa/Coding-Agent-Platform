@@ -1,0 +1,203 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "P0113-03",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Reasoning stage",
+ "inputs": [
+  {
+   "name": "catalog prompt P0113-03-winter-value-attribution.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "777387262f065218f9b56e20528ff27c1f4e36617af1675758998660b4a71a23"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0002/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "2140a5c2a536ffb52ec64767e1626cb93ffc703157a6fe3de41e297fbdceb4d4"
+  },
+  {
+   "name": "artifact/d0002/__init__.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "cea617576c3e3a351b4a146825706ec3e5fe7568c75fb903b00ba8b8a9f5a70f"
+  },
+  {
+   "name": "artifact/d0002/pairkit.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "c083a6b8613fb30cefe3b86dcf322b5d09907e56b3d0fe65535fea553c94e0a0"
+  },
+  {
+   "name": "artifact/d0002/pairs_p113.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "5ef2ff3bdeec1020c2b4bd3cb4ce4cdce4d9f5a7d52fff32cc966c1a672fdf59"
+  },
+  {
+   "name": "artifact/d0002/pcwinter.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "b0f5f5279ea627ce2290d14c516f7cc8e46156d5bea06c9408bed88470d806a0"
+  },
+  {
+   "name": "source Precedence-Constrained Winter Value for Effective Graph Data Valuation (ICLR 2025) (pdf)",
+   "state": "present",
+   "version": "https://openreview.net/forum?id=tVRVE0OAyb",
+   "sha256": "46357ca21a8116e7a05182d3e83ba5c19dee42bb6ecb096b809fa76baf9646f3"
+  },
+  {
+   "name": "source Precedence-Constrained Winter Value for Effective Graph Data Valuation (ICLR 2025) (text_extract)",
+   "state": "present",
+   "version": "https://openreview.net/forum?id=tVRVE0OAyb",
+   "sha256": "02c845d80167472c3f3233ff83eb615b5c07e30a2b1bdec5f422bed4073669ef"
+  },
+  {
+   "name": "source Precedence-Constrained Winter Value for Effective Graph Data Valuation (ICLR 2025) (html)",
+   "state": "present",
+   "version": "https://openreview.net/forum?id=tVRVE0OAyb",
+   "sha256": "bbc6e70ff1cb5072dc1685b3227cddd66ce0e24cd4a184c76f754b26c687cb35"
+  },
+  {
+   "name": "source PC-Winter arXiv 2402.01943v2 (secondary) (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2402.01943v2",
+   "sha256": "98ee26c3a5975e95173dd8ca7b393da90090b7b83d9479950c76830c1475dc2a"
+  },
+  {
+   "name": "source PC-Winter arXiv 2402.01943v2 (secondary) (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2402.01943v2",
+   "sha256": "ad6c83df60409d9f92aa8067acee2952b187fa94c364d353b144f2cb0ac85069"
+  }
+ ],
+ "checks": [
+  {
+   "name": "known_answer_additive",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/known_answer_additive",
+   "iterations": 1
+  },
+  {
+   "name": "known_answer_chain",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/known_answer_chain",
+   "iterations": 1
+  },
+  {
+   "name": "plausible_wrong_proposal_detected",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/plausible_wrong_proposal_detected",
+   "iterations": 1
+  },
+  {
+   "name": "independent_eq3",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/independent_eq3",
+   "iterations": 1
+  },
+  {
+   "name": "efficiency",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/efficiency",
+   "iterations": 1
+  },
+  {
+   "name": "missing_validation_evidence",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/missing_validation_evidence",
+   "iterations": 1
+  },
+  {
+   "name": "conflicting_evidence",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/conflicting_evidence",
+   "iterations": 1
+  },
+  {
+   "name": "non_finite_utility",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/non_finite_utility",
+   "iterations": 1
+  },
+  {
+   "name": "beats_simpler_stage",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/beats_simpler_stage",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://iclr.cc/virtual/2025/poster/28048": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T14:25:41-07:00"
+}

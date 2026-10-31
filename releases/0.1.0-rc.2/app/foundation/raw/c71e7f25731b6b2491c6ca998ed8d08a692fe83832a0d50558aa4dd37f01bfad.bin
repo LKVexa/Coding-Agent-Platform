@@ -1,0 +1,173 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "C0079-02",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Parameter",
+ "inputs": [
+  {
+   "name": "catalog prompt C0079-02-top-64-logits.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "0211bfb015b8c62dca8623b79d4d8aee1a289596822868955dc91ead746c5ae3"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0001/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6"
+  },
+  {
+   "name": "artifact/d0001/__init__.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1"
+  },
+  {
+   "name": "artifact/d0001/pairkit.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21"
+  },
+  {
+   "name": "artifact/d0001/pairs_c.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8f6fab2725fb703803afb872c2307efc69e07fdd9e923b5bf85c0f73797e5a0d"
+  },
+  {
+   "name": "artifact/d0001/frog.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "9841753452220c1a55c4d10c391658249f52e118bf6a61522baf68d741e55d11"
+  },
+  {
+   "name": "artifact/d0001/frog_sim.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "c93cf55c92ba752e91a8bb4269ea5eb77daeb8eed808300fe90a95d73d3abc58"
+  },
+  {
+   "name": "source FrogNano (primary method source cited by the uploaded article) (html)",
+   "state": "present",
+   "version": "https://arxiv.org/html/2609.07925v2",
+   "sha256": "6b4a629a61af45f208e7cd5e4fcba60f9d5961812bcfe66178b0e767b0eb090c"
+  },
+  {
+   "name": "source Uploaded article: Exhaustive Analysis of Technological Concepts and Modes in Compact Coding Agents (catalog sources/article.pdf) (sha256)",
+   "state": "present",
+   "version": "catalog sources/article.pdf",
+   "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57"
+  }
+ ],
+ "checks": [
+  {
+   "name": "central_config",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/central_config",
+   "iterations": 1
+  },
+  {
+   "name": "topk_independent",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/topk_independent",
+   "iterations": 1
+  },
+  {
+   "name": "deterministic_ties",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/deterministic_ties",
+   "iterations": 1
+  },
+  {
+   "name": "boundary_k_equals_V",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/boundary_k_equals_V",
+   "iterations": 1
+  },
+  {
+   "name": "k_gt_V",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/k_gt_V",
+   "iterations": 1
+  },
+  {
+   "name": "k_zero",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/k_zero",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://arxiv.org/html/2609.07925v2": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T13:31:02-07:00"
+}

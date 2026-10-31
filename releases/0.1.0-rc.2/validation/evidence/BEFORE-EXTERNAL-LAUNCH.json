@@ -1,0 +1,10 @@
+{
+  "scenario": "Windows launcher environment without Codex-specific PATH injection",
+  "codex_on_path": false,
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "{\"status\": \"error\", \"message\": \"The installed Codex CLI differs from the verified release; re-verification is required.\"}\n",
+  "installed_cli_sha256": "3097c909fb6d5cd63510d44aceb1d42df9f6e85722a3e447e477def1ecf60e16",
+  "expected_cli_sha256": "3097c909fb6d5cd63510d44aceb1d42df9f6e85722a3e447e477def1ecf60e16",
+  "root_cause": "Missing runtime discovery is reported as binary drift."
+}

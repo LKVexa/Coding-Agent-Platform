@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "product": "coding-agent-platform",
+  "document_role": "inclusion-contract-not-execution-evidence",
+  "foundation": {
+    "version": "0.1.0-rc.1",
+    "manifest_sha256": "e01d3f340239f4abe0daa27cb3e7c64190f95f4f3a0419f493bc14e7b07d571d",
+    "mutable": false
+  },
+  "included": [
+    {
+      "id": "foundation-safety",
+      "source": "component_foundation/safety.py",
+      "role": "Bounded parsing, integrity hashes, relative paths, protected state and evidence primitives",
+      "limit": "Product-specific checks remain necessary; not operating-system isolation"
+    },
+    {
+      "id": "foundation-contracts",
+      "source": "component_foundation/contracts.py",
+      "role": "Strict validation using the explicitly supported schema vocabulary",
+      "limit": "Not a complete JSON Schema implementation"
+    },
+    {
+      "id": "foundation-registry",
+      "source": "registry/components.jsonl",
+      "role": "Historical traceability and original claim/status preservation",
+      "limit": "Registry inclusion does not confer executable or scientifically validated status"
+    },
+    {
+      "id": "D0007/C0322-01",
+      "source": "adapters/d0007/bin/WorkbenchD7.exe",
+      "role": "Correct and regression authored cases invoked by the product selftest",
+      "limit": "No general repository repair or original scientific-completion claim"
+    },
+    {
+      "id": "D0007/C0322-02",
+      "source": "adapters/d0007/bin/WorkbenchD7.exe",
+      "role": "Preserved embedded foundation capability; not invoked by the product selftest",
+      "limit": "No substitute for real-provider and independent-evaluator evidence"
+    }
+  ],
+  "product_owned": [
+    "Committed Git baseline and one-file task boundary",
+    "Authenticated Codex provider adapter with no model tools",
+    "At most two proposals with public-only feedback",
+    "Bounded numeric AST interpreter",
+    "Independent final private checks",
+    "Two development and one held-out authored diagnostic task",
+    "Separate run state, source replacement and unified-diff export",
+    "Product schemas, version, gates, manifest and release evidence"
+  ],
+  "excluded": [
+    "Automatic patch application to the original repository",
+    "Automatic merging, publishing or deployment",
+    "Arbitrary candidate execution, shell access, package installs or builds",
+    "Training, benchmark-superiority or original scientific-reproduction claims",
+    "Implicit execution of other historical delivery components",
+    "Changes to the workbench, shared release or research toolkit"
+  ],
+  "historical_status_policy": "Preserve original status, gate, execution and scientific-validation fields without promotion",
+  "gate_results": "Consult release gate files; this capability map does not assert pass status"
+}

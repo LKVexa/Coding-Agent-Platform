@@ -1,0 +1,117 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0581-03",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "reference_small_example",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "gradients",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evidence_handling",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "integration_and_determinism",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "reasoning_quality",
+      "result": "fail",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0581/P0581-03-lightweight-reasoning.md (F08755)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "7e919abd6bfdf7f3eb2341ae6d69fc6b4a4a1be6d6799b563c56bc47f5f8cdbf"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0581.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "f3524140f2e7e4e2b787631a9969d433157d4a1b4d3bf8c104f00e62898ad912"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0581.pdf",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "7e82c96aac52fde394be873edb82d3f76dfe147e077a0077c198974777d5f7bc"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "P0446.Lcg (64-bit LCG); P0463.Gauss Box-Muller normals; fixed literal seeds; reproduced by the determinism rerun",
+      "text_and_visual_fixture": [
+        61000
+      ],
+      "train_instances": "61100 + 10 o + i (o = object 0..23, i = 0..7, both affordances share the class token draw)",
+      "seen_test_instances": "61500 + 10 o + i (i = 0..3)",
+      "unseen_test_instances": "61800 + 10 o + i (o = 24..29, i = 0..7)",
+      "mlp_init": [
+        61900
+      ],
+      "gradient_checks": [
+        61990
+      ]
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T07:11:48-07:00"
+}

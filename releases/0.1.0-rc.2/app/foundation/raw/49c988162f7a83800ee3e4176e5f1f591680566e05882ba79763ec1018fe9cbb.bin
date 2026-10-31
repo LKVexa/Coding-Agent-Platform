@@ -1,0 +1,123 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0129-03",
+  "prompt_version": "3.0.0",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Original Stage1 source-method inspection/specification remains unfinished; authored diagnostics are separate"
+  },
+  "earliest_unfinished_native_stage": 1,
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "known_training_view",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "missing_observation",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "future_information",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "delayed_information",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "duplicate_observations",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "duplicate_alignment_window",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "wrong_task_alignment",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "wrong_version",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_privileged_access",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "final_training_access",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "perturbed_signal_provenance",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "public_input_field_boundary",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_stage1_exact_method_specification",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    },
+    {
+      "name": "original_source_method_and_parent_validation",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    }
+  ],
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "native_identity": {
+    "bytes": 22974,
+    "contract_sha256": "f4e1341f1f18fb46e0e20a8d3771f8eda37302e02dbe4241aa8bf6ea34866b3b",
+    "file": "C0129-03.md",
+    "original_path": "component-prompts-workflows/core/C0129/C0129-03-negative-privileged-information.md",
+    "pair": "C0129-03",
+    "parent_focus": "Incorporate documented failure-analysis information into consolidation.",
+    "parent_id": "C0129",
+    "parent_title": "Contrastive learning from failures",
+    "parent_validation": "Verify provenance and separate privileged training information from evaluation inputs.",
+    "payload": "F05078",
+    "sha256": "a050ef56d57a2e3ed4b2d36c036f290e9c6f364916ebf93b2141ffb23a737fde",
+    "work_type": "Observed signal, interaction record, context, or information available to the method."
+  },
+  "source_availability": {
+    "article": "present",
+    "exact_method": "unverified",
+    "runtime_inputs": "unverified"
+  },
+  "accepted_native_dependencies": [],
+  "fixture_substitution": "Shared authored raw fixture; no partial native producer accepted",
+  "updated": "2026-10-30T19:03:08-07:00"
+}

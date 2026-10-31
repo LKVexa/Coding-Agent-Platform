@@ -1,0 +1,40 @@
+Coding Agent Platform
+Copyright (C) 2026 RUSSELL PHILIP SMITHSON
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License, version 3, as published
+by the Free Software Foundation (SPDX: GPL-3.0-only).
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See LICENSE for the full terms.
+
+The repository's authored product software and supplied authored delivery
+material are published under GPL version 3 at the owner's direction.
+Existing third-party copyright, attribution, license and provenance notices
+are retained; this declaration does not reassign third-party ownership.
+
+The file app/coding_agent/resources/no-tools-models.json is derived
+from the installed OpenAI Codex runtime catalog. It contains model metadata
+and generic instructions, not credentials. Its upstream content is not
+claimed as Russell-authored work. Existing third-party terms remain intact.
+The external Codex runtime itself is not bundled. OpenAI Codex's upstream
+Apache-2.0 license and NOTICE are retained in third-party-notices/ with their
+source URLs in SOURCES.json; this is attribution, not a claim that a retrieved
+upstream license establishes terms for every runtime-generated catalog field.
+The pinned catalog and provider evidence remain unchanged.
+
+This 0.1.0-rc.2 compatibility fix derives from the preserved 0.1.0-rc.1
+release. It corrects approved-runtime discovery when Windows does not inherit
+Codex on PATH. The original release, shared foundation, evaluator, approved CLI
+hash/version, catalog and tool policy remain intact. New evidence qualifies the
+updated application; older qualification records remain historical evidence.
+
+Historical source instructions and scientific claims are provenance, not
+current commands or evidence of successful paper-scale replication. Retain
+the limitations, negative results, attributions and notices with copies.
+
+Python, NumPy, Git, Windows and provider runtimes, where required, remain
+external dependencies under their respective terms. No credentials or
+external runtime installations are bundled. This NOTICE adds no restriction
+to the GPL license; explicit dataset permissions remain separately available.

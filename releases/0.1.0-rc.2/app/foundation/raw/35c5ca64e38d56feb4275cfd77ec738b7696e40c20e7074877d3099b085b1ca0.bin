@@ -1,0 +1,107 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0331-03",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "trigger_rule",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "renewal_boundary",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "run_invariants",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_figures",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0331/P0331-03-heterogeneous-trigger-conditions.md (F07548)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "b46ccfae288aa8f21b1f0d8ab3f1ce1bde27d7990a37723da13e375435abab73"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0331.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "a598118b7160ab74c5f249eff381cd800d7cf4268c7a1e9650c4dbe47b21ac73"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "seeded LCG streams (FqRng: x = 1664525 x + 1013904223 mod 2^32, U = x / 2^32) with hashed stream seeds Fq.Seed(family, ...) = FNV-1a + splitmix64 finaliser; every value is reproduced by the determinism rerun",
+      "mdp": "Seed(1, mdp_seed)",
+      "agent": "Seed(2, 1000 run_seed + m)",
+      "check_local": "Seed(5, k) literals inside individual checks",
+      "main_seed": 0,
+      "replication_seeds": [
+        1,
+        2
+      ],
+      "independent_agent_seeds": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T04:05:32-07:00"
+}

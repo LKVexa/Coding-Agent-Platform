@@ -1,0 +1,30 @@
+test_capture_cancellation (__main__.ProviderTests.test_capture_cancellation) ... ok
+test_capture_limit (__main__.ProviderTests.test_capture_limit) ... ok
+test_capture_timeout (__main__.ProviderTests.test_capture_timeout) ... ok
+test_catalog_tool_surface (__main__.ProviderTests.test_catalog_tool_surface) ... ok
+test_cli_drift_fails_closed_and_persists_safe_metadata (__main__.ProviderTests.test_cli_drift_fails_closed_and_persists_safe_metadata) ... ok
+test_doctor_still_rejects_version_mismatch (__main__.ProviderTests.test_doctor_still_rejects_version_mismatch) ... ok
+test_environment_has_no_agent_pipes_or_api_key (__main__.ProviderTests.test_environment_has_no_agent_pipes_or_api_key) ... ok
+test_guidance_presence_only (__main__.ProviderTests.test_guidance_presence_only) ... ok
+test_invalid_schema_response (__main__.ProviderTests.test_invalid_schema_response) ... ok
+test_model_drift_fails_closed (__main__.ProviderTests.test_model_drift_fails_closed) ... ok
+test_proposal_still_rejects_version_mismatch (__main__.ProviderTests.test_proposal_still_rejects_version_mismatch) ... ok
+test_explicit_approved_absolute_path_with_spaces (__main__.ResolverTests.test_explicit_approved_absolute_path_with_spaces) ... ok
+test_explicit_junction_parent_is_rejected (__main__.ResolverTests.test_explicit_junction_parent_is_rejected) ... ok
+test_explicit_missing_does_not_fall_back (__main__.ResolverTests.test_explicit_missing_does_not_fall_back) ... ok
+test_explicit_relative_does_not_fall_back (__main__.ResolverTests.test_explicit_relative_does_not_fall_back) ... ok
+test_explicit_script_wrapper_is_not_a_native_executable (__main__.ResolverTests.test_explicit_script_wrapper_is_not_a_native_executable) ... ok
+test_explicit_symlink_is_rejected (__main__.ResolverTests.test_explicit_symlink_is_rejected) ... ok
+test_explicit_unapproved_does_not_fall_back (__main__.ResolverTests.test_explicit_unapproved_does_not_fall_back) ... ok
+test_managed_approved_found_when_path_missing (__main__.ResolverTests.test_managed_approved_found_when_path_missing) ... ok
+test_managed_home_fallback_without_localappdata (__main__.ResolverTests.test_managed_home_fallback_without_localappdata) ... ok
+test_managed_search_does_not_accept_deeper_descendant (__main__.ResolverTests.test_managed_search_does_not_accept_deeper_descendant) ... ok
+test_no_files_reports_not_found_without_execution (__main__.ResolverTests.test_no_files_reports_not_found_without_execution) ... ok
+test_path_approved_is_selected (__main__.ResolverTests.test_path_approved_is_selected) ... ok
+test_unapproved_candidates_fail_without_execution (__main__.ResolverTests.test_unapproved_candidates_fail_without_execution) ... ok
+test_unapproved_path_falls_back_to_qualified_managed (__main__.ResolverTests.test_unapproved_path_falls_back_to_qualified_managed) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.985s
+
+OK

@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:component-foundation:component:1.0.0",
+  "title": "component contract version 1.0.0",
+  "description": "Normalized audit registry preserves raw historical records and source references. Extra audit metadata is retained intentionally; current capability eligibility is separately pinned.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "component_id",
+    "delivery_id",
+    "pair_id",
+    "collection",
+    "role",
+    "original_status",
+    "original_g2",
+    "maturity",
+    "native_check_counts",
+    "acceptance_check_counts",
+    "source_refs",
+    "executable",
+    "exclusion_reason"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "component_id": {
+      "type": "string",
+      "pattern": "^D[0-9]{4}/[A-Za-z0-9_-]+$",
+      "maxLength": 96
+    },
+    "delivery_id": {
+      "type": "string",
+      "pattern": "^D[0-9]{4}$"
+    },
+    "pair_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "collection": {
+      "type": "string",
+      "enum": [
+        "COMP",
+        "TOPIC"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "core",
+        "supporting"
+      ]
+    },
+    "original_status": {
+      "type": "string",
+      "enum": [
+        "complete",
+        "partial",
+        "failed",
+        "blocked",
+        "unverified",
+        "not_attempted",
+        "unknown"
+      ]
+    },
+    "original_status_verbatim": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_g2": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "maturity": {
+      "type": "string",
+      "enum": [
+        "metadata_only",
+        "authored_fixture",
+        "source_method_implemented",
+        "original_protocol_executed",
+        "product_integrated",
+        "not_attempted",
+        "unknown"
+      ]
+    },
+    "native_check_counts": {
+      "type": "object",
+      "properties": {
+        "pass": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fail": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unverified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocked": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_attempted": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_applicable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "acceptance_check_counts": {
+      "type": "object",
+      "properties": {
+        "pass": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fail": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unverified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocked": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_attempted": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_applicable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "required": [
+          "available",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "available": {
+            "type": "boolean"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "source_status_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_status": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true
+    },
+    "raw_pair_manifest": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true
+    },
+    "raw_gate_pair": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true
+    },
+    "intake_only": {
+      "type": "boolean"
+    },
+    "executable": {
+      "type": "boolean"
+    },
+    "exclusion_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_execution": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "current_scientific_validation": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "release_eligibility": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "runtime_family": {
+      "type": "string",
+      "enum": [
+        "python",
+        "dotnet-framework",
+        "unknown"
+      ]
+    },
+    "native_failed_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      }
+    },
+    "prompt_mismatch_labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 16384
+      }
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

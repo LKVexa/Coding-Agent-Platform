@@ -1,0 +1,104 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0249-02",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "frame_mask_predicate",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "encoder_boundary",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "shared_weights_and_known_answers",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0249/P0249-02-contrastive-modeling-of-masked-motion.md (F07132)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "c3d7c53b5debc884542198ed92ffcc1ba54083f3681878d797fce7d73a5b8fed"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0249.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "7a06911ab0a98290ab501c61495b47dff2c4186f2f3b4cb394c23b0fddd5a135"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "seeded LCG fixture (MD.Lcg, Box-Muller normals, Fisher-Yates permutations); every value is reproduced by the determinism rerun",
+      "generator": "MD.Lcg: x = 1664525 x + 1013904223 mod 2^32, U = x / 2^32",
+      "data": "1000 + seed",
+      "init": "2000 + seed",
+      "training": "3000 + 10 seed + k (k = 0 LexMLM / MLM-only, 1 CMMM / no-InfoNCE, 2 LexMMM / shuffled, 3 LexCMLP / shuffled)",
+      "shuffle_permutation": "4007 + seed",
+      "main_seed": 0,
+      "replication_seeds": [
+        1,
+        2
+      ],
+      "check_local": "literal Rng seeds inside individual checks (listed in the check code)"
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T03:38:33-07:00"
+}

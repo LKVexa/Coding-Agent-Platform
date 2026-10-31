@@ -1,0 +1,160 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0598-01",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "reference_small_example",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "diagnostics_permute_omit_duplicate_scale",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "calibration_and_leakage",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "integration_and_determinism",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "alignment_quality",
+      "result": "fail",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0598/P0598-01-alignment.md (F08842)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "03545caf05c5d313e8047889ef343ed97b483c3cbe1a7db42860fd3dc1472335"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0598.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "4e71b8e3044d5b197ab8c5a2fd8c9d2c2e8402dad600e691dbd1e25e130c48e3"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0598.pdf",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "0c2e481434398bd78c2f9b2e3636257ecdb71aa247ec248a6a70807475f0266e"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "P0446.Lcg (64-bit LCG); fixed literal seeds; calibration (grid search, delta) and test fixtures are built from disjoint seeds; rebuilding is compared by the determinism check and the rerun",
+      "calibration_cases": [
+        59801,
+        59802,
+        59803,
+        59804,
+        59805,
+        59806,
+        59807,
+        59808,
+        59809,
+        59810
+      ],
+      "test_cases": [
+        59821,
+        59822,
+        59823,
+        59824,
+        59825,
+        59826,
+        59827,
+        59828,
+        59829,
+        59830,
+        59831,
+        59832,
+        59833,
+        59834,
+        59835,
+        59836,
+        59837,
+        59838,
+        59839,
+        59840,
+        59841,
+        59842,
+        59843,
+        59844,
+        59845,
+        59846,
+        59847,
+        59848,
+        59849,
+        59850,
+        59851,
+        59852,
+        59853,
+        59854,
+        59855,
+        59856,
+        59857,
+        59858,
+        59859,
+        59860
+      ],
+      "query_noise": "case seed * 31 + t"
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T10:24:20-07:00"
+}

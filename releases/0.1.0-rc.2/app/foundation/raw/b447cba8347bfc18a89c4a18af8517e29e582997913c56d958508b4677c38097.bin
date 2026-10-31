@@ -1,0 +1,191 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "D0001",
+ "prompt_version": "3.0.0",
+ "spec_version": "1.1.0",
+ "status": "partial",
+ "stage": {
+  "last_completed": 1,
+  "total": 7,
+  "label": "Stage 2 COMP executed (49/51 core pairs complete); G2 fail - downstream stopped"
+ },
+ "integration_status": "fixture_tested",
+ "checks": [
+  {
+   "name": "stage0_preflight",
+   "result": "pass",
+   "evidence": "preflight/PREFLIGHT.json",
+   "iterations": 1
+  },
+  {
+   "name": "phase_TOPIC_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "phase_PORT_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "phase_SHEP_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "G2_COMP_gate",
+   "result": "fail",
+   "evidence": "gates/G2.json",
+   "iterations": 1
+  },
+  {
+   "name": "unit_crosswalk_built",
+   "result": "pass",
+   "evidence": "integration/UNIT-CROSSWALK.json",
+   "iterations": 1
+  },
+  {
+   "name": "pair_rerun_verification",
+   "result": "pass",
+   "evidence": "logs/rerun-verification.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC1_core_pairs_complete_100pct",
+   "result": "fail",
+   "evidence": "pairs.jsonl",
+   "iterations": 1
+  },
+  {
+   "name": "AC2_applicable_gates_G2_G5",
+   "result": "fail",
+   "evidence": "gates/G2.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC3_interfaces_and_e2e",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "AC4_product_status_schema",
+   "result": "pass",
+   "evidence": "STATUS.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC5_rerun_stability",
+   "result": "unverified",
+   "evidence": "logs/rerun-verification.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC6_release_manifest_checksums",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "exe_delivery",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/delivery",
+   "iterations": 1
+  }
+ ],
+ "inputs": [
+  {
+   "name": "D0001/AUDIT.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "5a1290af229fa3a84a9951142756f179545246cc51cb86dacb664c7ba60cedf4"
+  },
+  {
+   "name": "D0001/CHANGELOG.txt",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "7a9c89f53304d4df2ea86b247681430661ef92944654c97bf0e7c39c0e67b255"
+  },
+  {
+   "name": "D0001/DELIVERABLE.md",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "e6b19d1fdaa8c52ef5812b1cd49c49ed3d8d4c54db487e3001d00e9eec84683b"
+  },
+  {
+   "name": "D0001/ORCHESTRATION.md",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "f415deac1d3d3834bf4987f17cb3440f69f355c5e5c58315effd69dea90c25e0"
+  },
+  {
+   "name": "D0001/UNIT-CROSSWALK.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "3d57bb4fac812f578e55dc07dbaf6945f4a956f170c026999900ef73f3950a8e"
+  },
+  {
+   "name": "D0001/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6"
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "per pair: literal numpy default_rng seeds in artifact sources (see each pair STATUS.json)"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "evidence/sources/SOURCES.json": "2026-10-27"
+  }
+ },
+ "blocked_reason": "G2 fail: P0062-01 partial (required external asset not present on the laptop and not obtainable under the USD 0 / existing-local-resources budget (WebVid-10M distribution withdrawn; VidGen-1M multi-TB)); P0517-01 partial (no trained audio codec, no audio corpus and no GPU available locally; not obtainable under USD 0)",
+ "notes": [
+  "Specification-audit status is not a built product; this STATUS reflects executed fixture-scale COMP work only.",
+  "AC3/AC5/AC6 unverified: Stages 5-7 not run because G2 failed (AC5 pair-level rerun stability is evidenced separately by pair_rerun_verification).",
+  "Operator skip recorded 2026-10-27 13:38 PDT: D0001 left partial by explicit operator decision; it is not complete and is not counted as built."
+ ],
+ "updated": "2026-10-27T13:39:41-07:00",
+ "operator_decision": {
+  "decision": "record as partial and move on",
+  "decided_by": "Russell Smithson (operator)",
+  "decided_at": "2026-10-27T13:38:00-07:00",
+  "channel": "chat, relayed by the parent agent",
+  "scope": "D0001 only; does not apply to any other product",
+  "effect": "D0001 remains partial: not complete, not counted as a built product, no executable delivered; queue released to D0002",
+  "blockers": [
+   {
+    "pair": "P0062-01",
+    "check": "real_dataset_slice",
+    "result": "unverified",
+    "reason": "licensed real video dataset slice not present locally and not obtainable under USD 0 (WebVid-10M distribution withdrawn; VidGen-1M multi-TB)"
+   },
+   {
+    "pair": "P0517-01",
+    "check": "perceptual_real_audio",
+    "result": "unverified",
+    "reason": "no trained audio codec, audio corpus or GPU available locally; not obtainable under USD 0"
+   }
+  ],
+  "gate": {
+   "G2": "fail",
+   "evidence": "gates/G2.json"
+  },
+  "downstream_not_run": [
+   "Stage 5 readiness",
+   "Stage 6 integration (G5)",
+   "Stage 7 release",
+   "exe delivery"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "verified",
+  "version": "0.1.0-rc.2",
+  "scope": "Approved CLI discovery and actionable setup diagnostics",
+  "app_manifest_sha256": "31d98f33b363cfc9a1b64764b41b20fba1d58ac73774bbbb484b0c0c1e715856",
+  "provider_tests": {
+    "passed": 26,
+    "evidence": "provider-tests-final.txt"
+  },
+  "integration_tests": {
+    "passed": 6,
+    "evidence": "integration-tests-final.txt",
+    "provider": "fake only"
+  },
+  "live_workflow": "pass",
+  "live_provider_calls": 1,
+  "cli_binary_changed": false,
+  "provider_model_or_tool_policy_changed": false,
+  "changed_app_files": [
+    "CHANGELOG.md",
+    "COMPONENT-LOCK.json",
+    "INSTALL.md",
+    "PROTECTED-ROOTS.json",
+    "RUNBOOK.md",
+    "VERSION",
+    "coding_agent/__init__.py",
+    "coding_agent/cli.py",
+    "coding_agent/provider.py",
+    "docs/CHANGELOG.md",
+    "docs/INSTALL.md",
+    "docs/RUNBOOK.md"
+  ],
+  "prior_releases_preserved": {
+    "Research_Replication_Toolkit_v0.1.0-rc.1": 1047,
+    "Local_Component_Workbench_v0.1.0-rc.1": 685,
+    "Coding_Agent_Platform_v0.1.0-rc.1": 724
+  }
+}

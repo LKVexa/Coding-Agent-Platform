@@ -1,0 +1,142 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0605-04",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Stage 1 Verify meaning and scope incomplete; metadata intake only"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "intake_prompt_and_audit_identity",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "primary_source_verification",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "source_specific_runtime_inputs",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_required_work",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_scientific_diagnostics",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_integration_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0605/P0605-04-temporal-links-between-chains.md (F08878)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "1b168c43949e352615cf38ba8cc6a98131cfb022a5aa43cbaeb8608f0d7d3737"
+    },
+    {
+      "name": "Readiness audit metadata (not primary research content): ../../../../../evidence/sources/POSTER-READINESS.json",
+      "state": "present",
+      "version": "immutable scoped audit; source verification remains unverified",
+      "sha256": "aa9c0b6817f47081fd687ef17a2f44dfaaa7944414a0ddfdb1a630a3119ae9f0"
+    },
+    {
+      "name": "Primary material not provided/positively located for this scoped intake: https://iclr.cc/virtual/2025/poster/30198 (displayed abstract)",
+      "state": "missing",
+      "version": "Unverified in audited scopes; prompt instructions do not supply primary content."
+    },
+    {
+      "name": "Source-method runtime/configuration or review prerequisites for P0605-04 (Data, annotations, examples, or evaluation records.)",
+      "state": "missing",
+      "version": "Not established/provided for this scoped intake; applicability must be resolved after source verification."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: Raw records and provenance.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: schema and units.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: labels if any.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: intended population.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: access conditions.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided for scoped intake: split dependencies.",
+      "state": "missing",
+      "version": "For P0605-04 (Temporal links between chains), this source-specific definition/input has not been established from a positively located primary resource in the audited scopes. Global absence is not claimed."
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "kit": "source-intake-pairkit/1.0.0",
+    "retrieved": {
+      "sources": "See immutable readiness audit; no primary source retrieval or scientific execution is claimed."
+    }
+  },
+  "blocked_reason": "Native Stage1 source verification is unfinished: original displayed-abstract content/version and the exact source role of P0605-04 (Temporal links between chains) have not been verified from a positively located primary resource in the enumerated scopes. The authored prompt/citation does not supply or verify primary method/data.",
+  "updated": "2026-10-30T15:26:58-07:00"
+}

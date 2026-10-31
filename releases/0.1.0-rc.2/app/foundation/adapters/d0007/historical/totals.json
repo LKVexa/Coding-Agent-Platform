@@ -1,0 +1,62 @@
+[
+  {
+    "task_id": "DEV-CLAMP",
+    "variant": "initial",
+    "total": 8,
+    "passed": 6,
+    "F2P_total": 2,
+    "F2P_passed": 0,
+    "P2P_total": 6,
+    "P2P_passed": 6
+  },
+  {
+    "task_id": "DEV-CLAMP",
+    "variant": "correct",
+    "total": 8,
+    "passed": 8,
+    "F2P_total": 2,
+    "F2P_passed": 2,
+    "P2P_total": 6,
+    "P2P_passed": 6
+  },
+  {
+    "task_id": "DEV-CLAMP",
+    "variant": "regression",
+    "total": 8,
+    "passed": 6,
+    "F2P_total": 2,
+    "F2P_passed": 2,
+    "P2P_total": 6,
+    "P2P_passed": 4
+  },
+  {
+    "task_id": "FINAL-MAGNITUDE",
+    "variant": "initial",
+    "total": 6,
+    "passed": 5,
+    "F2P_total": 1,
+    "F2P_passed": 0,
+    "P2P_total": 5,
+    "P2P_passed": 5
+  },
+  {
+    "task_id": "FINAL-MAGNITUDE",
+    "variant": "correct",
+    "total": 6,
+    "passed": 6,
+    "F2P_total": 1,
+    "F2P_passed": 1,
+    "P2P_total": 5,
+    "P2P_passed": 5
+  },
+  {
+    "task_id": "FINAL-MAGNITUDE",
+    "variant": "regression",
+    "total": 6,
+    "passed": 4,
+    "F2P_total": 1,
+    "F2P_passed": 1,
+    "P2P_total": 5,
+    "P2P_passed": 3
+  }
+]

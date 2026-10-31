@@ -1,0 +1,115 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0350-02",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "input_contract",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "edge_cases",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "output_invariants",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "synthetic_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "zero_shot_benchmark",
+      "result": "fail",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0350/P0350-02-neural-recognizer-predicting-initial-conditions-and-deri.md (F07639)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "1d1e9512b707213f7dc9f1e751f523d79047093d0df693a3587f21650f8e87b3"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0350.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "1d039dc509ac9f9a31870d499ab5ee46c8b560539b3186b4fee44632759491e0"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "SplitMix64 streams (FimRng; U = top 53 bits / 2^53; Normal = Box-Muller with 2 uniforms per draw; Beta(a,b) = G_a/(G_a+G_b) with integer-shape gammas as sums of Exp(1)) seeded by Fim.Seed(...) = FNV-1a + splitmix64 finaliser; every value is reproduced by the determinism rerun",
+      "instance": "Seed(seed, j) (train seed 1, test seed 2)",
+      "model_init": "Seed(3, 0)",
+      "fit_batches": "Seed(4, 0)",
+      "benchmark_masks": "Seed(7, mask_seed), mask_seed 0..4",
+      "valid_example": "Seed(6, 11)",
+      "configuration": {
+        "n_train": 20000,
+        "n_test": 500,
+        "steps": 1500,
+        "batch": 256,
+        "lr": 0.001,
+        "hidden": 384,
+        "train_seed": 1,
+        "test_seed": 2,
+        "model_seed": 0
+      }
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T04:51:38-07:00"
+}

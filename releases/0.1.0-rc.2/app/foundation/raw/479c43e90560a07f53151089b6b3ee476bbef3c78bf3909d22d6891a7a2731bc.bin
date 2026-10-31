@@ -1,0 +1,531 @@
+{
+  "schema": "product-gate/1",
+  "product": "D0004",
+  "gate": "G2",
+  "phase": "COMP",
+  "result": "fail",
+  "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+  "core_pairs": 21,
+  "pairs_meeting_gate": 0,
+  "pair_status_counts": {
+    "blocked": 3,
+    "partial": 18
+  },
+  "pairs_not_meeting_gate": {
+    "P0267-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0267-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0361-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0361-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0446-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0446-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0463-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0463-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "ablation_contribution=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0463-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0581-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "refinement_workflow=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0581-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0581-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "reasoning_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0590-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0590-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0597-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0597-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "c2_denoiser_accuracy=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0597-03": {
+      "status": "blocked",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "operator_skip": "D0004-OPSKIP-2026-10-28-1001"
+    },
+    "P0597-04": {
+      "status": "blocked",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "operator_skip": "D0004-OPSKIP-2026-10-28-1001"
+    },
+    "P0597-05": {
+      "status": "blocked",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "operator_skip": "D0004-OPSKIP-2026-10-28-1001"
+    },
+    "P0598-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "P0598-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "refinement_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null
+    }
+  },
+  "all_schema_valid": true,
+  "all_A1_A6_pass": true,
+  "all_output_hashes_verify": true,
+  "rerun_verification": "INCOMPLETE",
+  "rerun_counts": {
+    "identical": 16,
+    "mismatch": 0,
+    "not_rechecked": 2,
+    "operator_skipped": 3
+  },
+  "operator_skipped_pairs": [
+    "P0597-03",
+    "P0597-04",
+    "P0597-05"
+  ],
+  "aggregates_scope": "all_schema_valid / all_A1_A6_pass / all_output_hashes_verify cover executed core pairs only; operator-skipped pairs were never opened and are not evaluated",
+  "per_pair": {
+    "P0267-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "evaluation_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0267-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0361-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0361-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0446-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0446-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0463-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0463-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "ablation_contribution=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0463-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0581-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "refinement_workflow=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0581-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0581-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "reasoning_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0590-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0590-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0597-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": null,
+      "rerun_status": "not_rechecked",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0597-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": null,
+      "rerun_status": "not_rechecked",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "c2_denoiser_accuracy=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0597-03": {
+      "in_pairs_jsonl": false,
+      "status": "blocked",
+      "schema_valid": null,
+      "A1_A6_all_pass": null,
+      "output_hashes_verify": null,
+      "hash_mismatch": [],
+      "rerun_identical": null,
+      "rerun_status": "not_applicable",
+      "disposition": "operator skip D0004-OPSKIP-2026-10-28-1001 (not opened, not run)",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "meets_G2": false,
+      "evaluation": "not evaluated: operator skip D0004-OPSKIP-2026-10-28-1001 (pair never opened)"
+    },
+    "P0597-04": {
+      "in_pairs_jsonl": false,
+      "status": "blocked",
+      "schema_valid": null,
+      "A1_A6_all_pass": null,
+      "output_hashes_verify": null,
+      "hash_mismatch": [],
+      "rerun_identical": null,
+      "rerun_status": "not_applicable",
+      "disposition": "operator skip D0004-OPSKIP-2026-10-28-1001 (not opened, not run)",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "meets_G2": false,
+      "evaluation": "not evaluated: operator skip D0004-OPSKIP-2026-10-28-1001 (pair never opened)"
+    },
+    "P0597-05": {
+      "in_pairs_jsonl": false,
+      "status": "blocked",
+      "schema_valid": null,
+      "A1_A6_all_pass": null,
+      "output_hashes_verify": null,
+      "hash_mismatch": [],
+      "rerun_identical": null,
+      "rerun_status": "not_applicable",
+      "disposition": "operator skip D0004-OPSKIP-2026-10-28-1001 (not opened, not run)",
+      "unresolved_checks": [],
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run",
+      "meets_G2": false,
+      "evaluation": "not evaluated: operator skip D0004-OPSKIP-2026-10-28-1001 (pair never opened)"
+    },
+    "P0598-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "alignment_quality=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    },
+    "P0598-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "refinement_outcome=fail",
+        "paper_scale_tables=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false
+    }
+  },
+  "evaluated": "2026-10-30T11:55:14-07:00",
+  "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and delivery are stopped per ORCHESTRATION.md Gate G2."
+}

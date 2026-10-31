@@ -1,0 +1,3745 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "D0005",
+  "prompt_version": "3.0.0",
+  "spec_version": "1.1.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used (per pair; see preflight prompt_sources rows and ../_catalog-map/r2/PROMPT-MAP.json)",
+  "status": "partial",
+  "stage": {
+    "last_completed": 1,
+    "total": 7,
+    "label": "Stage 2 COMP outcomes recorded (0/137 core pairs complete); G2 fail - downstream stopped"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "stage0_preflight",
+      "result": "pass",
+      "evidence": "preflight/PREFLIGHT-codex-ps5-20261030T123317229.json",
+      "iterations": 1
+    },
+    {
+      "name": "phase_TOPIC_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_PORT_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_SHEP_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "G2_COMP_gate",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "unit_crosswalk_built",
+      "result": "pass",
+      "evidence": "integration/UNIT-CROSSWALK.json",
+      "iterations": 1
+    },
+    {
+      "name": "pair_rerun_verification",
+      "result": "pass",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC1_core_pairs_complete_100pct",
+      "result": "fail",
+      "evidence": "pairs.jsonl",
+      "iterations": 1
+    },
+    {
+      "name": "AC2_applicable_gates_G2_G5",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC3_interfaces_and_e2e",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "AC4_product_status_schema",
+      "result": "pass",
+      "evidence": "STATUS.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC5_rerun_stability",
+      "result": "unverified",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC6_release_manifest_checksums",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "cmd_delivery",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/delivery",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "D0005/AUDIT.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "6adf7efec0dc952f670251f632791346835cc2fb615750817e37f7110c3f014e"
+    },
+    {
+      "name": "D0005/CHANGELOG.txt",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "6120f890422db2b5d6254101f9ba3a076e9eeb750faf32a7c72edf04f0762d51"
+    },
+    {
+      "name": "D0005/DELIVERABLE.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "9d7ef1e2959201d68fcc1efdc8b741574277920ae60abd388e7d7992e67a594d"
+    },
+    {
+      "name": "D0005/ORCHESTRATION.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "36c6fd4f2fe7223e3de55588c8b20b4021d9155a7cafa9bdca19c747636a8cd8"
+    },
+    {
+      "name": "D0005/UNIT-CROSSWALK.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "7ecae53c24406d7e34ef4485e0693b1b94210c901402bb9ab67f63d7e4c5bfbc"
+    },
+    {
+      "name": "D0005/manifest.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-map\\r2\\PROMPT-MAP.json",
+      "state": "present",
+      "version": "r2",
+      "sha256": "b8543d2e4719fa069a8e77f763b2bc1fdd43b9505c4d3e0f88520f735b14e84d"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "per pair: literal seeds recorded in each pair STATUS.json (C# System.Random(seed) or deterministic enumeration)"
+    },
+    "tools": {
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "clr": "4.0.30319.42000",
+      "langversion": "5",
+      "harness": "harness-cs/0.1.0",
+      "python_numpy_java": "not used"
+    },
+    "retrieved": {}
+  },
+  "blocked_reason": "G2 fail: C0026-01 partial (parent_language_execution=unverified); C0026-02 partial (parent_language_execution=unverified); C0026-03 partial (parent_language_execution=unverified); C0026-04 partial (parent_language_execution=unverified); C0094-01 partial (policy_adaptive_synthesis_and_parent_validation=unverified); C0094-02 partial (required_producers_complete=unverified, policy_adaptive_synthesis_and_parent_validation=unverified); C0094-03 partial (required_producers_complete=unverified, policy_adaptive_synthesis_and_parent_validation=unverified); C0094-04 partial (required_producers_complete=unverified, policy_adaptive_synthesis_and_parent_validation=unverified); C0094-05 partial (required_producers_complete=unverified, policy_adaptive_synthesis_and_parent_validation=unverified, source_numerical_template_discrepancy=unverified); C0107-01 partial (required_producers_complete=unverified, current_policy_frontier_and_refinement_effect=unverified); C0107-02 partial (required_producers_complete=unverified, current_policy_frontier_and_refinement_effect=unverified); C0107-03 partial (required_producers_complete=unverified, current_policy_frontier_and_refinement_effect=unverified); C0107-04 partial (required_producers_complete=unverified, current_policy_frontier_and_refinement_effect=unverified); C0175-01 partial (trained_verifier_and_real_candidate_evaluation=unverified); C0175-02 partial (trained_verifier_and_real_candidate_evaluation=unverified); C0175-03 partial (required_candidate_producers_complete=unverified, trained_verifier_and_real_candidate_evaluation=unverified); C0295-01 partial (parent_language_execution=unverified); C0295-02 partial (parent_language_execution=unverified); C0295-03 partial (parent_language_execution=unverified); C0295-04 partial (parent_language_execution=unverified); C0323-01 partial (required_producers_complete=unverified, real_repository_and_policy_integration=unverified); C0323-02 partial (required_producers_complete=unverified, real_repository_and_policy_integration=unverified); C0336-01 partial (required_producers_complete=unverified, real_repository_and_policy_integration=unverified); C0336-02 partial (required_producers_complete=unverified, real_repository_and_policy_integration=unverified); P0037-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0037-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0037-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0037-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0040-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0040-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0040-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0040-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0040-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0059-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0059-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0059-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0073-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0073-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0073-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0087-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0087-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0087-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0087-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0087-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0115-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0115-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0115-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0154-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0154-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0154-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0154-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0159-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0159-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0159-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0159-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0166-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0166-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0166-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0166-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0180-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0180-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0180-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0180-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0180-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0196-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0196-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0204-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0204-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0204-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0204-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0217-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0217-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0217-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0231-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0231-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0261-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0261-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0261-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0262-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0262-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0262-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0262-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0262-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0293-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0293-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0293-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0385-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0385-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0385-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0385-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0442-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0442-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0442-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0442-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0468-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0468-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0514-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0518-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0518-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0518-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0518-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0521-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0521-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0521-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0521-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0544-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0544-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0544-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0544-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0547-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0547-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0547-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0547-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0549-06 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0566-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0566-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0566-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0574-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0574-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0574-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0574-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0585-06 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0605-01 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0605-02 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0605-03 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0605-04 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified); P0605-05 partial (primary_source_verification=unverified, source_specific_runtime_inputs=unverified, original_required_work=unverified, original_scientific_diagnostics=unverified, original_integration_contract=unverified)",
+  "updated": "2026-10-30T15:36:01-07:00",
+  "pair_states": {
+    "C0026-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0026-01/component-work/C0026-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0026-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0026-02/component-work/C0026-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0026-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0026-03/component-work/C0026-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0026-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0026-04/component-work/C0026-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0094-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0094-01/component-work/C0094-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0094-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0094-02/component-work/C0094-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0094-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0094-03/component-work/C0094-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0094-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0094-04/component-work/C0094-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0094-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0094-05/component-work/C0094-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0107-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0107-01/component-work/C0107-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0107-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0107-02/component-work/C0107-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0107-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0107-03/component-work/C0107-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0107-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0107-04/component-work/C0107-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0175-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0175-01/component-work/C0175-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0175-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0175-02/component-work/C0175-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0175-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0175-03/component-work/C0175-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0295-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0295-01/component-work/C0295-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0295-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0295-02/component-work/C0295-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0295-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0295-03/component-work/C0295-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0295-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0295-04/component-work/C0295-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0323-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0323-01/component-work/C0323-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0323-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0323-02/component-work/C0323-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0336-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0336-01/component-work/C0336-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "C0336-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/C0336-02/component-work/C0336-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0037-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0037-01/component-work/P0037-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0037-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0037-02/component-work/P0037-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0037-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0037-03/component-work/P0037-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0037-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0037-04/component-work/P0037-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0040-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0040-01/component-work/P0040-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0040-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0040-02/component-work/P0040-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0040-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0040-03/component-work/P0040-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0040-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0040-04/component-work/P0040-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0040-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0040-05/component-work/P0040-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0059-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0059-01/component-work/P0059-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0059-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0059-02/component-work/P0059-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0059-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0059-03/component-work/P0059-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0073-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0073-01/component-work/P0073-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0073-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0073-02/component-work/P0073-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0073-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0073-03/component-work/P0073-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0087-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0087-01/component-work/P0087-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0087-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0087-02/component-work/P0087-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0087-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0087-03/component-work/P0087-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0087-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0087-04/component-work/P0087-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0087-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0087-05/component-work/P0087-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0115-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0115-01/component-work/P0115-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0115-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0115-02/component-work/P0115-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0115-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0115-03/component-work/P0115-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0154-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0154-01/component-work/P0154-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0154-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0154-02/component-work/P0154-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0154-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0154-03/component-work/P0154-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0154-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0154-04/component-work/P0154-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0159-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0159-01/component-work/P0159-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0159-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0159-02/component-work/P0159-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0159-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0159-03/component-work/P0159-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0159-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0159-04/component-work/P0159-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0166-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0166-01/component-work/P0166-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0166-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0166-02/component-work/P0166-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0166-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0166-03/component-work/P0166-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0166-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0166-04/component-work/P0166-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0180-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0180-01/component-work/P0180-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0180-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0180-02/component-work/P0180-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0180-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0180-03/component-work/P0180-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0180-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0180-04/component-work/P0180-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0180-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0180-05/component-work/P0180-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0196-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0196-01/component-work/P0196-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0196-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0196-02/component-work/P0196-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0204-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0204-01/component-work/P0204-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0204-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0204-02/component-work/P0204-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0204-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0204-03/component-work/P0204-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0204-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0204-04/component-work/P0204-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0217-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0217-01/component-work/P0217-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0217-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0217-02/component-work/P0217-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0217-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0217-03/component-work/P0217-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0231-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0231-01/component-work/P0231-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0231-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0231-02/component-work/P0231-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0261-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0261-01/component-work/P0261-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0261-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0261-02/component-work/P0261-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0261-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0261-03/component-work/P0261-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0262-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0262-01/component-work/P0262-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0262-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0262-02/component-work/P0262-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0262-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0262-03/component-work/P0262-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0262-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0262-04/component-work/P0262-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0262-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0262-05/component-work/P0262-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0293-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0293-01/component-work/P0293-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0293-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0293-02/component-work/P0293-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0293-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0293-03/component-work/P0293-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0385-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0385-01/component-work/P0385-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0385-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0385-02/component-work/P0385-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0385-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0385-03/component-work/P0385-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0385-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0385-04/component-work/P0385-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0442-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0442-01/component-work/P0442-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0442-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0442-02/component-work/P0442-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0442-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0442-03/component-work/P0442-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0442-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0442-04/component-work/P0442-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0468-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0468-01/component-work/P0468-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0468-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0468-02/component-work/P0468-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0514-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0514-01/component-work/P0514-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0518-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0518-01/component-work/P0518-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0518-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0518-02/component-work/P0518-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0518-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0518-03/component-work/P0518-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0518-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0518-04/component-work/P0518-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0521-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0521-01/component-work/P0521-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0521-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0521-02/component-work/P0521-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0521-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0521-03/component-work/P0521-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0521-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0521-04/component-work/P0521-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0544-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0544-01/component-work/P0544-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0544-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0544-02/component-work/P0544-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0544-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0544-03/component-work/P0544-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0544-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0544-04/component-work/P0544-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0547-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0547-01/component-work/P0547-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0547-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0547-02/component-work/P0547-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0547-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0547-03/component-work/P0547-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0547-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0547-04/component-work/P0547-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-01/component-work/P0549-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-02/component-work/P0549-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-03/component-work/P0549-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-04/component-work/P0549-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-05/component-work/P0549-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0549-06": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0549-06/component-work/P0549-06/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0566-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0566-01/component-work/P0566-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0566-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0566-02/component-work/P0566-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0566-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0566-03/component-work/P0566-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0574-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0574-01/component-work/P0574-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0574-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0574-02/component-work/P0574-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0574-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0574-03/component-work/P0574-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0574-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0574-04/component-work/P0574-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-01/component-work/P0585-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-02/component-work/P0585-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-03/component-work/P0585-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-04/component-work/P0585-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-05/component-work/P0585-05/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0585-06": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0585-06/component-work/P0585-06/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0605-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0605-01/component-work/P0605-01/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0605-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0605-02/component-work/P0605-02/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0605-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0605-03/component-work/P0605-03/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0605-04": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0605-04/component-work/P0605-04/STATUS.json",
+      "hashes_verified": true
+    },
+    "P0605-05": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0605-05/component-work/P0605-05/STATUS.json",
+      "hashes_verified": true
+    }
+  },
+  "core_pair_counts": {
+    "partial": 137
+  },
+  "supporting_pair_states": {},
+  "supporting_pair_counts": {},
+  "manifest_core_pairs": 137,
+  "manifest_supporting_pairs": 0,
+  "phase_applicability": {
+    "TOPIC": {
+      "stage": 1,
+      "gate": "G1",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0005/manifest.json#/execution/phase_gates/G1",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "result": "not_applicable"
+    },
+    "COMP": {
+      "stage": 2,
+      "gate": "G2",
+      "applicable": true,
+      "core_pairs": 137,
+      "supporting_pairs": 0,
+      "evidence": "D0005/manifest.json#/execution/phase_gates/G2",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "result": "unverified"
+    },
+    "PORT": {
+      "stage": 3,
+      "gate": "G3",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0005/manifest.json#/execution/phase_gates/G3",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "result": "not_applicable"
+    },
+    "SHEP": {
+      "stage": 4,
+      "gate": "G4",
+      "applicable": false,
+      "core_pairs": 0,
+      "supporting_pairs": 0,
+      "evidence": "D0005/manifest.json#/execution/phase_gates/G4",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "result": "not_applicable"
+    }
+  },
+  "checkpoint": {
+    "schema": "product-checkpoint/1",
+    "tool": "status-checkpoint/1.1.0",
+    "product": "D0005",
+    "recorded": "2026-10-30T15:27:31-07:00",
+    "last_pair_id": "P0605-05",
+    "preflight": "preflight/PREFLIGHT-codex-ps5-20261030T123317229.json",
+    "preflight_run_id": "codex-ps5-20261030T123317229",
+    "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+    "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+    "schema_sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8",
+    "harness": "harness-cs/0.2.0",
+    "checkpoint_exe": "D:\\Deliverables\\Tools-harness-cs\\versions\\status-checkpoint-v1_1\\bin\\StatusCheckpointFast.exe",
+    "checkpoint_exe_sha256": "a1a6c53def9faaf1153b8f596adb75e8bb5194ffdb0d9af172f9c99e7ade07b1",
+    "harness_assembly": "D:\\Deliverables\\Tools-harness-cs\\versions\\status-checkpoint-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "clr": "4.0.30319.42000",
+    "ledger_files": [
+      {
+        "path": "pairs.jsonl",
+        "sha256": "3e88600840b2de4222cd0255fac5f7ca5a796cd82e9d47594c2d41137ae45d9d",
+        "rows": 137
+      }
+    ],
+    "output_files_verified": 2877,
+    "input_hashes_verified": 1364,
+    "previous_status_sha256": "8952614e921ecc91876f2c46d47583b9b489e4452e883084434e8992d246233e",
+    "backup": "backups/STATUS.pre-checkpoint.20261030T152819353-8086bbb186b74a3fa7d854efb13b3c50.json",
+    "verification": {
+      "COMP|C0026-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0026-01/component-work/C0026-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 19,
+        "input_hashes_verified": 21,
+        "status_sha256": "ff9ac7a7556853ba050507509547b99e1c5f9a609091924b00816a05475721cd"
+      },
+      "COMP|C0026-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0026-02/component-work/C0026-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 19,
+        "input_hashes_verified": 21,
+        "status_sha256": "d4909621643db60fc48d85e422813a722daf3b0a0fd78286f263a1ed989eab39"
+      },
+      "COMP|C0026-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0026-03/component-work/C0026-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 19,
+        "input_hashes_verified": 21,
+        "status_sha256": "a3a41272f6f1661812ffa3e23dfc1d886e5e909beb1c8fb99bfba51ff76d08bd"
+      },
+      "COMP|C0026-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0026-04/component-work/C0026-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 19,
+        "input_hashes_verified": 21,
+        "status_sha256": "8d3c2bb2d3c577061fc306051d93798e7b8dbbbb4b419fe463dc23bb0cc1e398"
+      },
+      "COMP|C0094-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0094-01/component-work/C0094-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 18,
+        "input_hashes_verified": 11,
+        "status_sha256": "6e7f46d05375e9383ab357ff59d83db641c360ec0b07195b161efe81c9eb072d"
+      },
+      "COMP|C0094-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0094-02/component-work/C0094-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 19,
+        "input_hashes_verified": 11,
+        "status_sha256": "dea8873f393bec041334de1c2861c84fa2b524a5ba848d0ed777a766229c3706"
+      },
+      "COMP|C0094-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0094-03/component-work/C0094-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 22,
+        "input_hashes_verified": 11,
+        "status_sha256": "2497be4cf23998472a410539cb8908baf3e66f37c46a81754e275cadce02e467"
+      },
+      "COMP|C0094-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0094-04/component-work/C0094-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 28,
+        "input_hashes_verified": 11,
+        "status_sha256": "c7e229219917e92154aeb8118e20cbd0cafeaf1d7483196abee5451fbf9b82b3"
+      },
+      "COMP|C0094-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0094-05/component-work/C0094-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 31,
+        "input_hashes_verified": 11,
+        "status_sha256": "fb3503e453295da617a61fafdb4f3ce18a0aef4bc55ee6d33e2c5200ff4b6455"
+      },
+      "COMP|C0107-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0107-01/component-work/C0107-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 24,
+        "input_hashes_verified": 11,
+        "status_sha256": "deca9e472775bcce16879fc557857429b1e678ae1c0bea4667840478a3225f37"
+      },
+      "COMP|C0107-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0107-02/component-work/C0107-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 24,
+        "input_hashes_verified": 11,
+        "status_sha256": "7aa2e679f1551664a715f679e8e2e315c61316f36c47df60f2341ce9c3eb311e"
+      },
+      "COMP|C0107-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0107-03/component-work/C0107-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 24,
+        "input_hashes_verified": 11,
+        "status_sha256": "079edaea4a49621e50f069a09a5d5d7bef9425d410933135e795552cd76eac7d"
+      },
+      "COMP|C0107-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0107-04/component-work/C0107-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 26,
+        "input_hashes_verified": 11,
+        "status_sha256": "95f40730d6507b4e660bda663e9d6aada3ee792e4b0ec4f18ebbaa433311670a"
+      },
+      "COMP|C0175-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0175-01/component-work/C0175-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 31,
+        "input_hashes_verified": 12,
+        "status_sha256": "6eef2bf83b43fc08ffbefd175dfb11c9228475c3fa7891cd3de719ce55574f5a"
+      },
+      "COMP|C0175-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0175-02/component-work/C0175-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 31,
+        "input_hashes_verified": 12,
+        "status_sha256": "fd529906afac897d842b98dc66de8006acfc57e7263a62c773ada3f849c19d70"
+      },
+      "COMP|C0175-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0175-03/component-work/C0175-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 47,
+        "input_hashes_verified": 12,
+        "status_sha256": "8c157ab1942b65cebfb2bafa0935bd5ee0a3dd9076c879f07275851fda3c11c0"
+      },
+      "COMP|C0295-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0295-01/component-work/C0295-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 22,
+        "status_sha256": "abd0510e0e58f867e257326b2b92abfd5cf5c61c8f38f86d0e03772837621caf"
+      },
+      "COMP|C0295-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0295-02/component-work/C0295-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 22,
+        "status_sha256": "48356c854d3be2dd1bd3d23048a0566ae6d93ab1971f3f7ce1cd938593a96b56"
+      },
+      "COMP|C0295-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0295-03/component-work/C0295-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 22,
+        "status_sha256": "95a22ea9eae29e25945685cef37b0f8c6b93255cd2db86db70185d12b409e4be"
+      },
+      "COMP|C0295-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0295-04/component-work/C0295-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 22,
+        "status_sha256": "e124ea6a2795bb069911ad1550fd9a53d0e41c84c092d6f20b88e5f7f4049e70"
+      },
+      "COMP|C0323-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0323-01/component-work/C0323-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 29,
+        "input_hashes_verified": 10,
+        "status_sha256": "db3a5a00d42028f400ceb3be56989542da1972dc898b4d8f454fd4baad4b4865"
+      },
+      "COMP|C0323-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0323-02/component-work/C0323-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 29,
+        "input_hashes_verified": 10,
+        "status_sha256": "d71c6753036608aa65ca4081c33cd478561722a0375212319892ed8dd746659e"
+      },
+      "COMP|C0336-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0336-01/component-work/C0336-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 39,
+        "input_hashes_verified": 10,
+        "status_sha256": "8b97bcc853431aa4208327b7888a3dfcde3a21ddb4e96c494631ff78b4a3b7c9"
+      },
+      "COMP|C0336-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/C0336-02/component-work/C0336-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 39,
+        "input_hashes_verified": 10,
+        "status_sha256": "9948f2b38517ff6095d15707abae3ccf250d92aaa71ac1640c6ef58d80662d5c"
+      },
+      "COMP|P0037-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0037-01/component-work/P0037-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "12400d3fac5a4c7701fa647e34de2564f4c42baa04986bd081389f3bbf20b541"
+      },
+      "COMP|P0037-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0037-02/component-work/P0037-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4091a05bb8370f6af551f936d9fbac2f6596338898d677e5608618260952d38c"
+      },
+      "COMP|P0037-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0037-03/component-work/P0037-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "a6a553ce0a93fe66c8e5d7a56282a60825bb4ca158272b63c14bb675d1bb4ff9"
+      },
+      "COMP|P0037-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0037-04/component-work/P0037-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e3adb6d6efbfd7bac839a0acbce65ca4a6d427f7bbbdfb8fc77cc034a6eb22ad"
+      },
+      "COMP|P0040-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0040-01/component-work/P0040-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "c3bf336ae8d9572bc32708fa00f3d3aa3474077e9d0036da9aa6cac3cc1f27f0"
+      },
+      "COMP|P0040-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0040-02/component-work/P0040-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7872fbdefa1c612921a2b94682eb19c405cef783377653e17afd156dfa2ada6b"
+      },
+      "COMP|P0040-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0040-03/component-work/P0040-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d6313f06dfe483f73b06df971ce3a4a24b23b2c499f846ab6c3770a76c96a921"
+      },
+      "COMP|P0040-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0040-04/component-work/P0040-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "2867d06aa336f98b1cc33a43f5c0ebcd98d971ffe61372d23a68cdd1f3517f25"
+      },
+      "COMP|P0040-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0040-05/component-work/P0040-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4f01242c8fe3fce20d603ae0a30af687f9a91bbbcf931d1b02b1a30e850b392d"
+      },
+      "COMP|P0059-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0059-01/component-work/P0059-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6a85a5613867ac772605a76852641a7f0d7be6566ba797476d492e87002e7cf5"
+      },
+      "COMP|P0059-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0059-02/component-work/P0059-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e85941f0f2f52f26c02a5eab239003b13543afc0fa878c3f1138040d9f4dd21b"
+      },
+      "COMP|P0059-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0059-03/component-work/P0059-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "60526b95f9c8696e10ebe162175f00c3e19b7acb7f221886d103362bcad7e648"
+      },
+      "COMP|P0073-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0073-01/component-work/P0073-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1289aba1e5326ed132b80aedb851abda789079bb4e63736cb06c38491a59a74a"
+      },
+      "COMP|P0073-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0073-02/component-work/P0073-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "879f0fe6f36da2a2c1bb817252a8a4d4bb608de595d9f30ee98ccfe97d700977"
+      },
+      "COMP|P0073-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0073-03/component-work/P0073-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6a8cd125aa1204111b1b22673bcf6ee73d09fecdab88e53808df3c8ae942fe43"
+      },
+      "COMP|P0087-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0087-01/component-work/P0087-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f620853fe3a47a7778a3609efded6e1d301c6d7fbc33703c84cb082e6430f603"
+      },
+      "COMP|P0087-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0087-02/component-work/P0087-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1bc424991382aaf5b41ea6d443ff64b81979ea0fabdeda5bbb9e8ef3a66a80b3"
+      },
+      "COMP|P0087-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0087-03/component-work/P0087-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f361247a01448e2c6b4700ad7db81931720e3052bace655a91c1b3feebe68434"
+      },
+      "COMP|P0087-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0087-04/component-work/P0087-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "56d14ff09c76d0d0da69177edd166c4669cea84159bbc66f011267403f342aa1"
+      },
+      "COMP|P0087-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0087-05/component-work/P0087-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7c9cd9daf762a8b584885bacd27d2b7b2d366dd04f64ad0d21d7ef7d505feb11"
+      },
+      "COMP|P0115-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0115-01/component-work/P0115-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "b793f112e145022975963fcf8e1cc9d9ee9a06c64482359af70be84763c8eb93"
+      },
+      "COMP|P0115-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0115-02/component-work/P0115-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1ef6e5a35318e95ac323999651cb1e3a6c73d439d0db7265ace03566bd913cb6"
+      },
+      "COMP|P0115-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0115-03/component-work/P0115-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d40954c99d1914b5cc6a2af832a7850c5ae7b17ad768406cbbe9ef0c5fc338bc"
+      },
+      "COMP|P0154-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0154-01/component-work/P0154-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "85f1ccddcb91023227b0180d84d5c6fe5bcd3455d39510d55099c89d034be0e0"
+      },
+      "COMP|P0154-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0154-02/component-work/P0154-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e5e2e0fb8392a2e67e755df2bcad1a19b702a5b730aa49c5c9715237bff2078e"
+      },
+      "COMP|P0154-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0154-03/component-work/P0154-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "08d543c8e4e03264ff7d43ba628f996608198b227ea7585c3ed77ecdc717bb64"
+      },
+      "COMP|P0154-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0154-04/component-work/P0154-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6c93c6b1dd7c633d7b94d718ab5a29d013b339e427d665e66d6223b92dd4ae6a"
+      },
+      "COMP|P0159-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0159-01/component-work/P0159-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1523d8463f4c1244fab3f282b1addec9afbccfc8a53e9b78b95de721061ed083"
+      },
+      "COMP|P0159-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0159-02/component-work/P0159-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "b1ca903a7bd8913b2c9506da6567e88493a746cd5970e78b1933ac42966089cf"
+      },
+      "COMP|P0159-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0159-03/component-work/P0159-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "9e5083435af1d1744f726790f464c9a7de78221beb01406cdf6187af7d049dfd"
+      },
+      "COMP|P0159-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0159-04/component-work/P0159-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "81f1d48f532c90d613fd0ff91c9bd9fc486a10a980b72860795e075d3bf68223"
+      },
+      "COMP|P0166-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0166-01/component-work/P0166-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1ee6fe16f3a21c755f3e87e9fdf14045a88abea5fb415018ab81c8994f114d9f"
+      },
+      "COMP|P0166-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0166-02/component-work/P0166-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d839622a5f686a907bf28c3033b03ab92c57253746758f3d4d318cd297b9f5f9"
+      },
+      "COMP|P0166-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0166-03/component-work/P0166-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e4194df77203e7ea8585670823dbee2a2c9f4098ba80b6019ec55ae6511413e1"
+      },
+      "COMP|P0166-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0166-04/component-work/P0166-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "9c41856dbdb44a04a0329f0ae398b718ea6ac81e6543d6d30fc4ca2f65053101"
+      },
+      "COMP|P0180-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0180-01/component-work/P0180-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "0875d7e9d64e54434973b8eb233352aa720cc6836dc3b92d523f817a4078d3c2"
+      },
+      "COMP|P0180-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0180-02/component-work/P0180-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e9e9a39ea040482aacda67f07a8714bbf7debdbd94689279a58696dca1b359b1"
+      },
+      "COMP|P0180-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0180-03/component-work/P0180-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6e2c519bfda919c414555547e4787c8022590ecc990ca095077fe43517346735"
+      },
+      "COMP|P0180-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0180-04/component-work/P0180-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f6431c76f2c5b8278ed92b0c768f2554157e3316145e09d8ef2930f06b2bf6b2"
+      },
+      "COMP|P0180-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0180-05/component-work/P0180-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "0a10132910e207dd37dd3991c13286d0a1db79d70d43d9d17cf7979f1a6b6f2f"
+      },
+      "COMP|P0196-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0196-01/component-work/P0196-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "18fda554d16edb4a38c7295d5e80e7ac13de23bdb0ee9eeffe2abb29e21b087f"
+      },
+      "COMP|P0196-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0196-02/component-work/P0196-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "2af16c7f88e4070858fef29efe50a59c9c34bca5360e4639dbead649080ed6e8"
+      },
+      "COMP|P0204-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0204-01/component-work/P0204-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "b53e90164f69d59eefdc1a61dbb9be528b708b022faa1e875525e60b5f1620bb"
+      },
+      "COMP|P0204-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0204-02/component-work/P0204-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "ce01bf160886e0635b66fefb4034a38bf7e2264c2a3c06bf9cdaccf6e735f722"
+      },
+      "COMP|P0204-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0204-03/component-work/P0204-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "479ffdcc4d60e03f94e4f7fe71f77853c9b301bac38c9fdc87b883b02777aebd"
+      },
+      "COMP|P0204-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0204-04/component-work/P0204-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "91d2f066e641702a908fea5e235414da6d7f2162222b58afa69a2c3af49c673c"
+      },
+      "COMP|P0217-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0217-01/component-work/P0217-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "79a3310d40007cb21bd3f68f94284062feee838f701f527676814e3d08956959"
+      },
+      "COMP|P0217-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0217-02/component-work/P0217-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e2158076c143598f0868240804b8ea55820b9fbd47e0cc784b86898a1836eee7"
+      },
+      "COMP|P0217-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0217-03/component-work/P0217-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e298acb062b45c1e8b4eb6fe940030ac7cd6402ee9f5091fd717b783b63f1ce0"
+      },
+      "COMP|P0231-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0231-01/component-work/P0231-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7ff048c7759a53b533d9af468d8c56572821a40c64a96cbce86baf14dc414028"
+      },
+      "COMP|P0231-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0231-02/component-work/P0231-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1202697dfa05eb8a5c9fa698eb986eceb127f7d7d691a74f3b834597ec04189c"
+      },
+      "COMP|P0261-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0261-01/component-work/P0261-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "abba6dbf5e6c98307123c98a35cecc81d3824b616cf8d9ed5a43111095c8f062"
+      },
+      "COMP|P0261-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0261-02/component-work/P0261-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "5c2f9b6ae348fc1e45c3a6eda3f5cf056f36ea063e8daecaabb3844ceda80e6f"
+      },
+      "COMP|P0261-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0261-03/component-work/P0261-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "ccbef88ae447220e2c126d6cacae301340129b325fbb6288b2184f4ba85c02a9"
+      },
+      "COMP|P0262-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0262-01/component-work/P0262-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "0c75aff401f56ccf8a3b697f0a491544568e57dfbcf90ddda21fcaa1248ec25e"
+      },
+      "COMP|P0262-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0262-02/component-work/P0262-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "bf86844d666ca3e0bdb13def0136a10c6520bc3842750426af7660f8ae2c165d"
+      },
+      "COMP|P0262-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0262-03/component-work/P0262-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "202b49f2d295078d575387808182a3e4ff6c4429e9cc4c37cea2c95af818e830"
+      },
+      "COMP|P0262-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0262-04/component-work/P0262-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "63649e6053deb75df85dd0ff358e689405e98240d1b8641f61adc9c52cf5e7df"
+      },
+      "COMP|P0262-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0262-05/component-work/P0262-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "74a8d0a65b72bcee5feef95c43c2f717ada751881ac8593afe0e649b8c67cc88"
+      },
+      "COMP|P0293-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0293-01/component-work/P0293-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "2686e36667da9e63868fa1c9c956f5409e1958ba00a90c806097861613f8c814"
+      },
+      "COMP|P0293-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0293-02/component-work/P0293-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "e5cc26d3a5d9b9047568fb2aad2e8a92519ab7039626f35042390818cd92882e"
+      },
+      "COMP|P0293-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0293-03/component-work/P0293-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4b40f7f1aa52e605e77b77dc83508268d158730b65cdd6b9ea8cea1235a7defe"
+      },
+      "COMP|P0385-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0385-01/component-work/P0385-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "cb3dd7ff2f8185a87a0d3f4336d19086a7806b3678647d7190cfe099813d2216"
+      },
+      "COMP|P0385-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0385-02/component-work/P0385-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f7ebd6d603363b02cfb6489fad632bf5966332d5e772ca6aeb18b4429d5659a9"
+      },
+      "COMP|P0385-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0385-03/component-work/P0385-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "61c27023af2047a5005684fa058cb86fb51b11876c8df214fced51e50b88930d"
+      },
+      "COMP|P0385-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0385-04/component-work/P0385-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "ccee643e9e3961b225dd8c29ba144b3f1425145898d89467ff4edea6220fbb44"
+      },
+      "COMP|P0442-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0442-01/component-work/P0442-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7420a25ee3bf5048af7701337a76d5954f7b292be2b807f09d82487d78873ad4"
+      },
+      "COMP|P0442-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0442-02/component-work/P0442-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "9e530836f42a2d96133fac80630954a5799a3decdc873cf4d2d8b34007f4ca97"
+      },
+      "COMP|P0442-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0442-03/component-work/P0442-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1e8d5d9b24396c7cce2f3f3330e70e1a8f4a54b0212199c6ca275b7f9576265a"
+      },
+      "COMP|P0442-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0442-04/component-work/P0442-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "121f1d61a72a0ab490b3e76edca0cf969b2792544c6f75106d1487fec5f5e7f0"
+      },
+      "COMP|P0468-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0468-01/component-work/P0468-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6d486791ecfca46dae19ddd1dbd0c91ccdabd9a8b9c7fa58da08a0d4dd359a30"
+      },
+      "COMP|P0468-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0468-02/component-work/P0468-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "c25bed8dad3c1ec1fd42a1e65f5988050377ff2d58f7d2910c60e6348befe169"
+      },
+      "COMP|P0514-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0514-01/component-work/P0514-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "a24bdcf3860c027a531c7cea530cd8078e131fe4b1aee398f79edc5ba0970eb2"
+      },
+      "COMP|P0518-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0518-01/component-work/P0518-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6743b7b2f0b648e379195824970aa5fdd74a6afd012ad727050b8a9e1a183bce"
+      },
+      "COMP|P0518-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0518-02/component-work/P0518-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "77d182678ed0ce2f574cde5f4abbc04b21b2fbf10b076c33aa125e465d5c3b3d"
+      },
+      "COMP|P0518-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0518-03/component-work/P0518-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4be867b4f61f300878831dadf36f5b38b6574c1a3d39e40783794216c9cf7936"
+      },
+      "COMP|P0518-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0518-04/component-work/P0518-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d3d08245dde8c85f3be7a2334da731f68e6a2cb482dca089621095cc8fba091b"
+      },
+      "COMP|P0521-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0521-01/component-work/P0521-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1d74ed45e2f1ba6e2afdf292ce0b0b9197b9bd4104ca5af396dfc574cf067abd"
+      },
+      "COMP|P0521-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0521-02/component-work/P0521-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7bb37c0a73c03eed8ded62ea3f9f8af5681b27453553b4f39ae131a20e5e0baf"
+      },
+      "COMP|P0521-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0521-03/component-work/P0521-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6a2d53a1713cfc61762709bc68bf08bc88c2d027f0803f01bc1bd6a35d7fea8e"
+      },
+      "COMP|P0521-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0521-04/component-work/P0521-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d18670a6750c26c17fd61fe932f4529b5eff5455746143b2fa82bcf810ddf5ff"
+      },
+      "COMP|P0544-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0544-01/component-work/P0544-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "dfcb1f48f6ed74cfa4261030c0efeb0086762a993732874fcc8bb815be3127b5"
+      },
+      "COMP|P0544-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0544-02/component-work/P0544-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "322341b871a2933b9a1f250df0b00911f613793ced40eaed5fcdaf3a6c693a03"
+      },
+      "COMP|P0544-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0544-03/component-work/P0544-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "dabcc74ac2db00848371dfb7ea7ba0f3116806931f39f76d33fefae3c1efe16a"
+      },
+      "COMP|P0544-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0544-04/component-work/P0544-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "8400e377897ae2ce22ce7ec8a7096473a3bddde1b21d3c249fafa7b853059568"
+      },
+      "COMP|P0547-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0547-01/component-work/P0547-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "b4280364682e5af59f08b6dfce43a4cae861a0f053d64fd319ec6fac0eda67f3"
+      },
+      "COMP|P0547-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0547-02/component-work/P0547-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "634398d2d2ca0d6899e522a4d2e4ad228b7fc70a4df7dbfdc173c4ecde3bd0c8"
+      },
+      "COMP|P0547-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0547-03/component-work/P0547-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f3b9248b781cbbe86e668df334080a6a608c0852ce8fa4d45f42321c85cdc338"
+      },
+      "COMP|P0547-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0547-04/component-work/P0547-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "c8b76df9d5bbf9ccbd3b8c9317285485a9003ebeb3a88bf34b3aca9d38ac181d"
+      },
+      "COMP|P0549-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-01/component-work/P0549-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4a0721975345529af9e8b007fd8283ebf50c602f7ebbf5d5ae19f85b70764f7e"
+      },
+      "COMP|P0549-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-02/component-work/P0549-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "ceb0b10e718a83e8823d2d134a4725e9f15e6a27ede266cbb07b90ee61db0253"
+      },
+      "COMP|P0549-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-03/component-work/P0549-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "f8aa6c621afddbfbe5f0bca23aa89ac2159056949d1d1ec7f318d85be053652e"
+      },
+      "COMP|P0549-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-04/component-work/P0549-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6a50c88663835aab4b1b0ba334598a3750a3b234757f1fe81f6e3b140d891e02"
+      },
+      "COMP|P0549-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-05/component-work/P0549-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1764cd2bba248a4956cfd11207be29428ddf7d9c01812a1cf12c682433bd1a6b"
+      },
+      "COMP|P0549-06": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0549-06/component-work/P0549-06/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6eda1fda2d692a692cc9aca32149cb7ba01a95f713cba8f620f6224d40618744"
+      },
+      "COMP|P0566-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0566-01/component-work/P0566-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "0cf0a392a6565b3732bed5d6c4d9c4958c7764f047f3b08e3383caa5012ba69e"
+      },
+      "COMP|P0566-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0566-02/component-work/P0566-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6fcf7afc8c4ef668e70513f757d74faa4f707c6b74ad9cf7dc8eb9a7d7ff0d23"
+      },
+      "COMP|P0566-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0566-03/component-work/P0566-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "d0e6cab8ea09a929a6f156e220b2a1bb4afa84392afce27d8f5ff79095ef8887"
+      },
+      "COMP|P0574-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0574-01/component-work/P0574-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "2cad817493f94189c0777118096ae94b2e2bf9a844bd39d51cd655005eec9846"
+      },
+      "COMP|P0574-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0574-02/component-work/P0574-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "4e282f9e96822a29c5c1a9d2d9af244164dcc1b57fdbf7f04b9c6cb4ad4cd812"
+      },
+      "COMP|P0574-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0574-03/component-work/P0574-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "3ed1abaa217e723526f65a21829b984ae4034bcbafa84c87a839bacf4cd81684"
+      },
+      "COMP|P0574-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0574-04/component-work/P0574-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "7c1fdd2da44ef8ac72ff8e9ce0949d62e48df40ed3a356acac92b6d37df2a8eb"
+      },
+      "COMP|P0585-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-01/component-work/P0585-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "8650c4dbec7d99e327173a7dbea0315855b50342746c9bef3d025cf832e7e5c4"
+      },
+      "COMP|P0585-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-02/component-work/P0585-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "29f11c7c8f75761ee75956424b97956fd227d1392409cf64cc4d3427368f4fb9"
+      },
+      "COMP|P0585-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-03/component-work/P0585-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "1dd1c8062a81f4e0a0fa85bbab86d51c51aaf5021111870c8b78a3556cab09bc"
+      },
+      "COMP|P0585-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-04/component-work/P0585-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "c43342739765927a832bbe11f620a5396c801a8d9e99c1db2df05b87d669ef5b"
+      },
+      "COMP|P0585-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-05/component-work/P0585-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "3797eb7e4df1c58c3328b8407307b819c018893a7bf7660a9b6cf21ff71c63aa"
+      },
+      "COMP|P0585-06": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0585-06/component-work/P0585-06/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "6e5b38dc48da1e020ccbd55e88651c9272e596fd24902affd54ebf54509e4715"
+      },
+      "COMP|P0605-01": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0605-01/component-work/P0605-01/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "495c4cf174e08d3ad080c7b8988727b48a836871c0ab43a4b3014f105d4fba37"
+      },
+      "COMP|P0605-02": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0605-02/component-work/P0605-02/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "933102e378e11842c9d6cfd9c53d0b367908fd6448593c0cc8c552fcf6a172a2"
+      },
+      "COMP|P0605-03": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0605-03/component-work/P0605-03/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "9236cab79247b279ac274f347bb0bbe42dd85d8d46f36bfc0b6eef5051cd8552"
+      },
+      "COMP|P0605-04": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0605-04/component-work/P0605-04/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "79d540eb9bf5eb162796dcbe2b91c90a5cb01db7052a7373da1c9fafb4ab4bb0"
+      },
+      "COMP|P0605-05": {
+        "status": "partial",
+        "role": "core",
+        "ledger": "pairs.jsonl",
+        "status_path": "pairs/COMP/P0605-05/component-work/P0605-05/STATUS.json",
+        "schema_valid": true,
+        "output_hashes_verified": 20,
+        "input_hashes_verified": 9,
+        "status_sha256": "0a43f1bb49cc9ad837b745f4ecd3fabd73b079d64c39e75bcc66bf25ad08eb93"
+      }
+    }
+  },
+  "checkpoint_history": [
+    {
+      "recorded": "2026-10-30T12:25:06-07:00",
+      "last_pair_id": null,
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 137
+      },
+      "preflight_sha256": "ee1b6bef89b45704af3071bace19a1c5da03a76fe0807a5513613a6bc1af6438",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "a64aef224de767396aed64a5b2594094990025cf0dd81eac7380e5291460073e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T122506837-7f0a2b50d0144be2bff4945e745dd0c9.json"
+    },
+    {
+      "recorded": "2026-10-30T12:25:49-07:00",
+      "last_pair_id": "C0026-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 136,
+        "partial": 1
+      },
+      "preflight_sha256": "ee1b6bef89b45704af3071bace19a1c5da03a76fe0807a5513613a6bc1af6438",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "09ddf4e444728c871cf2f54d6ed33fc437ca8b800715fd7435ea07c0414cc7e4",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T122550231-003d3fc72f2c45689556335aac03680f.json"
+    },
+    {
+      "recorded": "2026-10-30T12:26:04-07:00",
+      "last_pair_id": "C0026-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 135,
+        "partial": 2
+      },
+      "preflight_sha256": "ee1b6bef89b45704af3071bace19a1c5da03a76fe0807a5513613a6bc1af6438",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "8595733adfdf5156e540ec71bf5288855e1ef66e9a52de4ac2f58725d8f918ce",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T122607285-dc0e8e65b50f48a58b492f0236eec076.json"
+    },
+    {
+      "recorded": "2026-10-30T12:26:20-07:00",
+      "last_pair_id": "C0026-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 134,
+        "partial": 3
+      },
+      "preflight_sha256": "ee1b6bef89b45704af3071bace19a1c5da03a76fe0807a5513613a6bc1af6438",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "7cf6ac2b9c22016f105a8362dea8b692c76a100141504e9a58a907db92f32ef6",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T122624233-b77cd433fb124796b932a13b9c300ea6.json"
+    },
+    {
+      "recorded": "2026-10-30T12:26:40-07:00",
+      "last_pair_id": "C0026-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 133,
+        "partial": 4
+      },
+      "preflight_sha256": "ee1b6bef89b45704af3071bace19a1c5da03a76fe0807a5513613a6bc1af6438",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "dfc08f6ecc130828b246b00eb65cd48bf948b7a34280e5b97970405f00efae3f",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T122643634-70853dbc3d434854aed01351e119930f.json"
+    },
+    {
+      "recorded": "2026-10-30T12:33:56-07:00",
+      "last_pair_id": "C0026-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 133,
+        "partial": 4
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "0408d1f87ae6d9bad099aa141eca14cd605514a3260f61fe1aa3474a73678526",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T123401272-d86b217b45f244a1a0041e80d96dd8c3.json"
+    },
+    {
+      "recorded": "2026-10-30T12:40:31-07:00",
+      "last_pair_id": "C0094-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 132,
+        "partial": 5
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "676541d8894446adbb59917882342c8236e4da5f232606a801a069bb9d567b92",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124034711-b3f2d305cac54401b72ed6b8aae78fee.json"
+    },
+    {
+      "recorded": "2026-10-30T12:40:39-07:00",
+      "last_pair_id": "C0094-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 131,
+        "partial": 6
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9f8acdf8bb75debd0ae5dc6cb99820740adae32610064a0a02a25ccd6c5c8447",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124047691-ce07eaf1f11e4fbbb43fbf4cd466821b.json"
+    },
+    {
+      "recorded": "2026-10-30T12:40:52-07:00",
+      "last_pair_id": "C0094-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 130,
+        "partial": 7
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "62f0f2702cdf6081f7ed75959c83762c7713cda1cf26451053e7f931d7d84927",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124100799-589c7efbe27242bba3d2c755764be9ff.json"
+    },
+    {
+      "recorded": "2026-10-30T12:41:06-07:00",
+      "last_pair_id": "C0094-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 129,
+        "partial": 8
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "8d9ca7d676d13e9e0f78acd9bec949c0d6ecb433272698d26f3f5a95c0149093",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124118162-f02b210007754151a5c398fc0023d004.json"
+    },
+    {
+      "recorded": "2026-10-30T12:41:25-07:00",
+      "last_pair_id": "C0094-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 128,
+        "partial": 9
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "d404784de5d94c0d9bc95c22f0c37e6f008408dc53fffa647a82a6347b9be157",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124136771-89f712785e894a4fa507ed32fe67974d.json"
+    },
+    {
+      "recorded": "2026-10-30T12:47:26-07:00",
+      "last_pair_id": "C0107-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 127,
+        "partial": 10
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "1e3c0bd44ca7e4cb9b91ac55f4a411ccab3848bcce15651b83a16bd9f5e83034",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124741423-1e0a9d59bbb34a9ea8baec138e7b2b1b.json"
+    },
+    {
+      "recorded": "2026-10-30T12:47:48-07:00",
+      "last_pair_id": "C0107-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 126,
+        "partial": 11
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "cf3f1f355a96ea1d5a9146b3694e261d7fc5d8eee6fd7f4a2f5899bfc01f0c89",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124807270-d6283054d648461dbaecb0c96a75a49d.json"
+    },
+    {
+      "recorded": "2026-10-30T12:48:11-07:00",
+      "last_pair_id": "C0107-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 125,
+        "partial": 12
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "72ff76415cd67fe6e38490c779416c97ea783aa42802e1eb93a9f00e1032dbd0",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124827246-be8b799e1caa446c9f847b2ec7537b30.json"
+    },
+    {
+      "recorded": "2026-10-30T12:48:33-07:00",
+      "last_pair_id": "C0107-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 124,
+        "partial": 13
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "2519b8393a61e8036cfcd476feb7d86f4cb47f183387f03ad06844805c1de6a2",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T124853403-1ec218258921438d8fdc1e246e72c5c0.json"
+    },
+    {
+      "recorded": "2026-10-30T12:50:08-07:00",
+      "last_pair_id": "C0107-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 124,
+        "partial": 13
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "46e02de96fac2e78dc36db9fc38507c22a581191992572d7986ea4673c9f2993",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T125026751-f1895d6dd8f94a28a7acf439afaf77ec.json"
+    },
+    {
+      "recorded": "2026-10-30T12:53:06-07:00",
+      "last_pair_id": "C0175-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 123,
+        "partial": 14
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "95c92d1efe896276dbbc1cb67575e2d589d1a235c43e0b69ea2277bf97941e7d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T125359666-aa4223d08c27454dba275ceecee03b69.json"
+    },
+    {
+      "recorded": "2026-10-30T12:54:31-07:00",
+      "last_pair_id": "C0175-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 122,
+        "partial": 15
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e650e6c649223115d0f79e46754c3244d067a09b95822a1abca41783162092cc",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T125544255-c84d908b66e846b9a73394aa75cec692.json"
+    },
+    {
+      "recorded": "2026-10-30T12:56:29-07:00",
+      "last_pair_id": "C0175-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 121,
+        "partial": 16
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "68528726341ead91cf77f539c03f7eb4b25613e09a9590803d591f80114fd137",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T125733723-95122e26120a4af286daca9cbd447000.json"
+    },
+    {
+      "recorded": "2026-10-30T13:00:37-07:00",
+      "last_pair_id": "C0295-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 120,
+        "partial": 17
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "0bcd78af88c59401d58860be429093d74181adf48cd110f95be24dd205cbd191",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T130200286-371404ae597a415db3c522c48b28442a.json"
+    },
+    {
+      "recorded": "2026-10-30T13:02:31-07:00",
+      "last_pair_id": "C0295-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 119,
+        "partial": 18
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "964c7c7624eaeddaf7d3fbe4511ec994eeec5162a9b4540f259dc91a7b49a305",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T130424584-76ce6d812a974b1a94c202eb520664c3.json"
+    },
+    {
+      "recorded": "2026-10-30T13:05:03-07:00",
+      "last_pair_id": "C0295-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 118,
+        "partial": 19
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "dc6543591c7badd1a8d782c5b457b468b1e43a06e2b8ea086e0a8ae86bab6603",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T130606156-e730d7c9b4024973a250173c7b14ebf0.json"
+    },
+    {
+      "recorded": "2026-10-30T13:06:46-07:00",
+      "last_pair_id": "C0295-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 117,
+        "partial": 20
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "904aea2fcc8ddb10bb00a0fd95a1571865c7e6d1c2d06812faa275f5894cf1ba",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T130724547-df27c8c320be495d99f30cdf8a4deeb3.json"
+    },
+    {
+      "recorded": "2026-10-30T13:09:49-07:00",
+      "last_pair_id": "C0323-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 116,
+        "partial": 21
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "63380f243ebf73ce03f10db412ee8f47dd1f80bc3489fa81866d632ef8907a45",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T131007713-f0632b97d5c24c3cb04741b327fe1db8.json"
+    },
+    {
+      "recorded": "2026-10-30T13:10:12-07:00",
+      "last_pair_id": "C0323-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 115,
+        "partial": 22
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "b8997c30e90e897fff9248b7741bd157c1c3a4ce9933d2f0f35694ed7cb73d3f",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T131031291-e860812b79804afa9bd5817761148522.json"
+    },
+    {
+      "recorded": "2026-10-30T13:10:36-07:00",
+      "last_pair_id": "C0336-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 114,
+        "partial": 23
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "7609a69a6c961d9984735c6a55b604df91065d2546d94acc6d976b7ebcc3da9a",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T131057697-39896a12382746169382fdc00b648996.json"
+    },
+    {
+      "recorded": "2026-10-30T13:11:03-07:00",
+      "last_pair_id": "C0336-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 113,
+        "partial": 24
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "51c53771509e26027e6b8cbe142053dce9ee352160d4b3e5a8fb72b0e4940f1c",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T131127145-99786618599a4553bae445492c6e1a6b.json"
+    },
+    {
+      "recorded": "2026-10-30T13:21:33-07:00",
+      "last_pair_id": "P0037-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 112,
+        "partial": 25
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "01c05692c64a6deacf0d852774530b07511b7503af21fad1fa6a30b8c1ea31d5",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T132155409-a0837a903d3343309d0cb206a93f49be.json"
+    },
+    {
+      "recorded": "2026-10-30T13:25:37-07:00",
+      "last_pair_id": "P0037-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 111,
+        "partial": 26
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e6277b9e26bfd3937423dfb050c24d49d084461659c5123b11f8d8af8caaa991",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T132559656-08c41b4a166b472e9c3c6ed5b36a9048.json"
+    },
+    {
+      "recorded": "2026-10-30T13:26:05-07:00",
+      "last_pair_id": "P0037-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 110,
+        "partial": 27
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "628ce55897f79a1bca4532f87a1f24f3c9ecc02f3223e73cbaaf7a3cfe2cf8a5",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T132628944-85da4628c53940b3878b7a4b12e46304.json"
+    },
+    {
+      "recorded": "2026-10-30T13:26:35-07:00",
+      "last_pair_id": "P0037-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 109,
+        "partial": 28
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "d473380609e8dea7f325700561a6ff9c85b66fb8acbef3298f7bf68feea9bdb4",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T132658767-3afe47a624964d9c9b817da8f6838086.json"
+    },
+    {
+      "recorded": "2026-10-30T13:42:09-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "seed",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T134209647-810cc1099e2b438e9f5480978b41e980.verification.json",
+      "fully_verified_pairs_this_step": 0,
+      "carried_pairs": 28,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:44:49-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "incremental",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T134449549-9a4b94d1fab04ccf9e8c0e8eec0037a0.verification.json",
+      "fully_verified_pairs_this_step": 1,
+      "carried_pairs": 28,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:47:19-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "incremental",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T134719724-31c5ad618bf34339894f3954000c7cc8.verification.json",
+      "fully_verified_pairs_this_step": 1,
+      "carried_pairs": 29,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:49:54-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "incremental",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T134954130-3536c5c964cc4090b03ebf412f17b4a1.verification.json",
+      "fully_verified_pairs_this_step": 1,
+      "carried_pairs": 30,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:52:42-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "incremental",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T135242682-d42ed5ab46134027bb08afcfaf82e511.verification.json",
+      "fully_verified_pairs_this_step": 1,
+      "carried_pairs": 31,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:55:53-07:00",
+      "tool": "status-progress/1.0.0",
+      "mode": "incremental",
+      "verification_record": "progress/D0005-P0040-20261030T134004226/20261030T135553377-6bf39e1b741649f993d28277fa98de52.verification.json",
+      "fully_verified_pairs_this_step": 1,
+      "carried_pairs": 32,
+      "full_anchor_status_sha256": "25a3a417ae2147a60139ef4cecbbf7a0ef1b171727b5496e2d16dab33e4b402b"
+    },
+    {
+      "recorded": "2026-10-30T13:56:46-07:00",
+      "last_pair_id": "P0040-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 104,
+        "partial": 33
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "8a930aefcab841bc5af639a893574e787f04305164cddd26cd7378dae272ded1",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T135714703-272562987f194bdb90c1067925b97b82.json"
+    },
+    {
+      "recorded": "2026-10-30T13:58:56-07:00",
+      "last_pair_id": "P0059-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 103,
+        "partial": 34
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "d696ac5fe702072fe54eaa50647599294d9c72298404cdd9027e063db28d6d0d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T135925379-6f19824198134dd0901572d019513e7d.json"
+    },
+    {
+      "recorded": "2026-10-30T13:59:32-07:00",
+      "last_pair_id": "P0059-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 102,
+        "partial": 35
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "87dd901d587ae55dfd8df18e6d8269212c87fb85214689f310a88236378714ff",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140001062-6d85553c70904b9c987753941c2358c7.json"
+    },
+    {
+      "recorded": "2026-10-30T14:00:08-07:00",
+      "last_pair_id": "P0059-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 101,
+        "partial": 36
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "3064c7e1cc3e4091ad242d0ccdbf5fc78578551b5aa03cd9c2e6938cbf306cf5",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140038774-f629c06590654e72a7c1e4dc93c844fc.json"
+    },
+    {
+      "recorded": "2026-10-30T14:00:44-07:00",
+      "last_pair_id": "P0059-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 101,
+        "partial": 36
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "f6e15b8edd793d773be83a4987b3cfd1cfbd40c5e64ec72d86e793662254bb29",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140114661-b27a8612c5404a9d9e6290474b76069f.json"
+    },
+    {
+      "recorded": "2026-10-30T14:01:21-07:00",
+      "last_pair_id": "P0073-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 100,
+        "partial": 37
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "ac982b4db8203e52adbac7aad3a68245f8099403234292ba349b7b11a5cb54a2",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140152625-58e849b7f167488ab0a9981b2309f406.json"
+    },
+    {
+      "recorded": "2026-10-30T14:01:59-07:00",
+      "last_pair_id": "P0073-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 99,
+        "partial": 38
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9ca0f6736e9c5ea7b8e47be27d55131d348082bae6718863a9a6b78f197339c2",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140233197-f51df388dabd4322b958fd66ab67edd4.json"
+    },
+    {
+      "recorded": "2026-10-30T14:02:40-07:00",
+      "last_pair_id": "P0073-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 98,
+        "partial": 39
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "b4cc57cd79624d18803583d45bfe59ab98eac838f0d40a6c80d7509f20a09016",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140312717-19a63a0d68c14b9d92f165719ad126ff.json"
+    },
+    {
+      "recorded": "2026-10-30T14:03:18-07:00",
+      "last_pair_id": "P0073-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 98,
+        "partial": 39
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "971f84be1caebbd527ae9b9ffa6d98b8a6ac03ab94d38cf95da5dfcef1269333",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140350648-093f20466ff54eb4b8b379a766e0b404.json"
+    },
+    {
+      "recorded": "2026-10-30T14:03:57-07:00",
+      "last_pair_id": "P0087-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 97,
+        "partial": 40
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9dcdfb2d481a17717931a1464da12b85a6d6e7fd38fce3b4eb198da779509b61",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140430294-4baa55f5e3ac4474ac3868598e381289.json"
+    },
+    {
+      "recorded": "2026-10-30T14:04:37-07:00",
+      "last_pair_id": "P0087-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 96,
+        "partial": 41
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "064bd18184c6b7c3be221576cf7430324ad413d30cce8bedfc4e8e0bf3b0a54d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140511123-9f0d88d698d8451c97ec9aec219529e1.json"
+    },
+    {
+      "recorded": "2026-10-30T14:05:18-07:00",
+      "last_pair_id": "P0087-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 95,
+        "partial": 42
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "8ce90c210c7361900bc81c67022ec65cfb61c397b2a4e00a44cad4c5f8f4ca19",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140552745-b5b723f52ac942f286a757c3381d0d95.json"
+    },
+    {
+      "recorded": "2026-10-30T14:06:01-07:00",
+      "last_pair_id": "P0087-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 94,
+        "partial": 43
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e20c812f358ca58ad0cccdde1f3c554b70754bab0cfed716890e8df363e22a83",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140636327-0000643e5d1d436b87f59254a325f4df.json"
+    },
+    {
+      "recorded": "2026-10-30T14:06:43-07:00",
+      "last_pair_id": "P0087-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 93,
+        "partial": 44
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "1d20a035602fadc5c330ec77b11d78d31e0c1a679f28dde628fcd80b47857af8",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140719269-a83b9a4ed4b6479ab3d9bede7c9592b4.json"
+    },
+    {
+      "recorded": "2026-10-30T14:07:28-07:00",
+      "last_pair_id": "P0087-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 93,
+        "partial": 44
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9109b1c2446894c22098e49e247f90503395c82fab7c3e51b9e1970d63c69d39",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140804077-e91546dc40f2462f8972e1974de806b4.json"
+    },
+    {
+      "recorded": "2026-10-30T14:08:11-07:00",
+      "last_pair_id": "P0115-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 92,
+        "partial": 45
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "2a783b8af70f6a62b5ac14d6469fda233a4a79565af30745cd3998c273f73186",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T140848152-70e043e0151842bda78238ca854570ca.json"
+    },
+    {
+      "recorded": "2026-10-30T14:09:11-07:00",
+      "last_pair_id": "P0115-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 91,
+        "partial": 46
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "6dca7d1748f67c33b330ded3f802114ff7f0ff6764b9d1f22051f7a93de10679",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141002880-10583e18d4014e65bb7c7f094b905c17.json"
+    },
+    {
+      "recorded": "2026-10-30T14:10:11-07:00",
+      "last_pair_id": "P0115-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 90,
+        "partial": 47
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "dcaea0e2f7975028963e924c1c94217e41e035d2bf50bf3453e764a2ada20309",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141049715-d3b38157c3a845918bd12a5718b707e2.json"
+    },
+    {
+      "recorded": "2026-10-30T14:10:57-07:00",
+      "last_pair_id": "P0115-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 90,
+        "partial": 47
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9834c7a823b75016a1d226118a62f877b019707e8be6fe8635ced73e4a9f23a5",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141135100-e2a60ecc3ebf4d03ab9b689a61e945e8.json"
+    },
+    {
+      "recorded": "2026-10-30T14:11:42-07:00",
+      "last_pair_id": "P0154-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 89,
+        "partial": 48
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "be1e6deb702ca8b34ecf75ad194cb489cef81acd87c1dd8b930ceba6dd23e898",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141222306-287fb7dc0dc04ca58979846ab17c42b8.json"
+    },
+    {
+      "recorded": "2026-10-30T14:12:41-07:00",
+      "last_pair_id": "P0154-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 88,
+        "partial": 49
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "668f9f31dd31c3275e6af1e4bba66845758ff700492c69c647fa7792f4bb7027",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141321314-3e0ee2d00e374dbc9a8a5597dfe551b8.json"
+    },
+    {
+      "recorded": "2026-10-30T14:14:04-07:00",
+      "last_pair_id": "P0154-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 87,
+        "partial": 50
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5bf8647fb0f38e35edf2a46361d255d7c4f2b40b72861a55db19f2fbb4c4838a",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141445136-864df1b97230449cacba27267e2b6ebf.json"
+    },
+    {
+      "recorded": "2026-10-30T14:14:56-07:00",
+      "last_pair_id": "P0154-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 86,
+        "partial": 51
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "4be4b3917ea2fb5590796e04d7da5cd67532eee5135798752189dc01aacf9c8f",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141539182-f6a220a024af4549854585ee36157b11.json"
+    },
+    {
+      "recorded": "2026-10-30T14:15:55-07:00",
+      "last_pair_id": "P0154-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 86,
+        "partial": 51
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5ba392a52a48a2d0028895da572afc4df6f56ddaf7f8f1b7147a99b9601120f5",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141652150-2a6932e5623143da9d1bfea13f86b991.json"
+    },
+    {
+      "recorded": "2026-10-30T14:17:11-07:00",
+      "last_pair_id": "P0159-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 85,
+        "partial": 52
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "afd670d30c56642605332c4e618d96fe287941f647d8eded8c2947cc29efe684",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141754684-b73a546c3d714fd7a0102fd8f83ef231.json"
+    },
+    {
+      "recorded": "2026-10-30T14:18:13-07:00",
+      "last_pair_id": "P0159-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 84,
+        "partial": 53
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "96ff78c5a11d47752deac55aa853ae0f185cb5e55d8c661baece897fb11097ca",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141857004-f5c8db19319744048be5eba57e0a7278.json"
+    },
+    {
+      "recorded": "2026-10-30T14:19:09-07:00",
+      "last_pair_id": "P0159-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 83,
+        "partial": 54
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5c4f202fcaa8a5025fc5f742faa55ec13b28b74185046d4e545607216045ffff",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T141953111-cbb34295c92249ba9ead53e1500c1ddf.json"
+    },
+    {
+      "recorded": "2026-10-30T14:20:00-07:00",
+      "last_pair_id": "P0159-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 82,
+        "partial": 55
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "0317ff74e614c78be9f35afe58ff2608abec93451a6d30b905f426706429b36e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T142044749-2355370da8b0469e814c6069e496c204.json"
+    },
+    {
+      "recorded": "2026-10-30T14:20:54-07:00",
+      "last_pair_id": "P0159-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 82,
+        "partial": 55
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "697cae6f7c0be7d77354c3cfe0ce16d457d90fdc68ff70832f6ee63e14986825",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T142210633-a5369fe25b74417fb72ba2f93559b1c2.json"
+    },
+    {
+      "recorded": "2026-10-30T14:22:24-07:00",
+      "last_pair_id": "P0166-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 81,
+        "partial": 56
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "be0846277bd585d933982a414bd6f31c2576bef7a70de5cf5b359932ffe9a62e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T142420880-a1e19068f7a349cbb7fdf00d4fccf1c8.json"
+    },
+    {
+      "recorded": "2026-10-30T14:24:39-07:00",
+      "last_pair_id": "P0166-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 80,
+        "partial": 57
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e5f888028b1b6b9f89e561543726790bed91fdd520cd7b38bda05a892798b0f4",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T142717395-f77baa7f13174c8e98ecb494881e0403.json"
+    },
+    {
+      "recorded": "2026-10-30T14:27:38-07:00",
+      "last_pair_id": "P0166-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 79,
+        "partial": 58
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "6e367e4c88309c9266f0b9b1b164ac430510bd4c2c3c7b9ee65d0accf1b76fc9",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T142929806-8270c23f87e645a18edd4efdee9c85d0.json"
+    },
+    {
+      "recorded": "2026-10-30T14:29:42-07:00",
+      "last_pair_id": "P0166-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 78,
+        "partial": 59
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "121a82445990f05f5bc6793f4513fa43a1b4064d0a97a7e5d615adba0559a053",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143037863-0b83c9dba939431c80bf7f77b5e9cef5.json"
+    },
+    {
+      "recorded": "2026-10-30T14:30:48-07:00",
+      "last_pair_id": "P0166-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 78,
+        "partial": 59
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5afaa6020d401b381c269ac00358d222ff2a51be77cb1b27643ac1249cb2ef1d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143139620-197e44695356475c97cf13369ff211fe.json"
+    },
+    {
+      "recorded": "2026-10-30T14:31:47-07:00",
+      "last_pair_id": "P0180-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 77,
+        "partial": 60
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "6126c7a8d9806ed8c955dc390ea380a4f8becdc915c79040cf095fe74bc41556",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143235506-1a41190a82c244cc85bf7f3988113431.json"
+    },
+    {
+      "recorded": "2026-10-30T14:32:44-07:00",
+      "last_pair_id": "P0180-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 76,
+        "partial": 61
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "7dccd02869f438bd078dc199c3548e41074d4ad2add634a8284d15f788bb962d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143332814-f0aaa08f1a99453a936b66810ffcf63a.json"
+    },
+    {
+      "recorded": "2026-10-30T14:33:40-07:00",
+      "last_pair_id": "P0180-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 75,
+        "partial": 62
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "4ca61480dbd98bbd3f1271ad129fdb66add199232c14152932f55b18d775e70d",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143436587-9e6360980357472fa8d9fe914d6586b1.json"
+    },
+    {
+      "recorded": "2026-10-30T14:34:53-07:00",
+      "last_pair_id": "P0180-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 74,
+        "partial": 63
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "7883673e64b48194d6c88bcfaf0650b1a75b16560f739cd581bdfadc57e0ab8a",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143610121-20b8a3b54bf642fc97658b3fe3d0b7e7.json"
+    },
+    {
+      "recorded": "2026-10-30T14:36:19-07:00",
+      "last_pair_id": "P0180-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 73,
+        "partial": 64
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "39d14cdc3120ee9fc5a9c2f3203270229fe8bdce81e4ac58ef4018c305749a0c",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T143731182-f6a34a6eb46a4f98bc3f4e0818018277.json"
+    },
+    {
+      "recorded": "2026-10-30T14:37:48-07:00",
+      "last_pair_id": "P0180-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 73,
+        "partial": 64
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "87460e5400b2d5b5a3bd898067a0e21325bb50bdc6071290f55ce1b0b2fdbfb1",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T144008436-70bad9cff3a9496b9a4327a2f78a8e98.json"
+    },
+    {
+      "recorded": "2026-10-30T14:40:21-07:00",
+      "last_pair_id": "P0196-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 72,
+        "partial": 65
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "a4305395574c7b7751c993cca9f146442c3b0df6e537c6ef2848cf4f4f3ceb93",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T144152845-5374aeeff7be45a289f85edf01ddf526.json"
+    },
+    {
+      "recorded": "2026-10-30T14:46:20-07:00",
+      "last_pair_id": "P0196-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 72,
+        "partial": 65
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "de56448f1c4d6a076de32d7b5bac31b0389969c2c7a7c8fdf188c7e90060bba0",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T144705814-759ed85e4b044888abd6059c5b7b2753.json"
+    },
+    {
+      "recorded": "2026-10-30T14:49:39-07:00",
+      "last_pair_id": "P0196-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 71,
+        "partial": 66
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "0b475a1a69916b18cfc92976c961c312cd979f46515843c329885c67779c3451",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T145014011-eb21e64173d94d5a8dcc4f5fce699ef8.json"
+    },
+    {
+      "recorded": "2026-10-30T14:52:21-07:00",
+      "last_pair_id": "P0204-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 67,
+        "partial": 70
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "b76a9bd3301f1465ae8468c2be0cf49f42ca158ee0f585017d71b6fd942272fe",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T145331541-f65fc7b6ccd94443a7c887cf9b7511b1.json"
+    },
+    {
+      "recorded": "2026-10-30T14:54:31-07:00",
+      "last_pair_id": "P0217-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 64,
+        "partial": 73
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "a219508e0595c8dd577bad7ce140024f547a04dde1dc5955965831ca322e2384",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T145458193-098f2081adcf41dfbd831ad6be4fc820.json"
+    },
+    {
+      "recorded": "2026-10-30T14:55:51-07:00",
+      "last_pair_id": "P0231-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 62,
+        "partial": 75
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "7fdf43c634a37f0fabc901d8f6c4e9e78d7e5af8f11b96ea7c3c65bbf1748485",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T145625779-f6c46383a41a41d58a01009f2ea5b643.json"
+    },
+    {
+      "recorded": "2026-10-30T14:58:11-07:00",
+      "last_pair_id": "P0261-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 59,
+        "partial": 78
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5f6b52942d13629f280a890086ab3f1f6f9a4b4a85ec9311e564d8ca76d1545c",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T145848462-4c0bf0332d7c4792b5a4f755bae9f26f.json"
+    },
+    {
+      "recorded": "2026-10-30T15:00:01-07:00",
+      "last_pair_id": "P0262-05",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 54,
+        "partial": 83
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "854a831e939f806e9bb71918c42d33873409a63c7809097336f50bf4bec3d326",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150043637-686aaae5d87946808fd6b53449aff29d.json"
+    },
+    {
+      "recorded": "2026-10-30T15:01:33-07:00",
+      "last_pair_id": "P0293-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 51,
+        "partial": 86
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "fdacc9e491a8863776e8a5395fc4f05d82a4fc68548c9c35a69b913befd7a4b0",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150210756-bc884bed89de4e6995f803c40562c8fb.json"
+    },
+    {
+      "recorded": "2026-10-30T15:03:12-07:00",
+      "last_pair_id": "P0385-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 47,
+        "partial": 90
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "0e97ec668e4ff573f313bed353cd13b9ee289516a13db62fc7a4b2a9181a2bdc",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150347569-9b595f624dca4f148ce2cc4dd16efbd3.json"
+    },
+    {
+      "recorded": "2026-10-30T15:05:09-07:00",
+      "last_pair_id": "P0442-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 43,
+        "partial": 94
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e1239cc91e6de5404c3366d1b416f50989e235b6cb6e7ab459537d8d255368f4",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150549835-1c0defac84d946d1881a0afd5731bef1.json"
+    },
+    {
+      "recorded": "2026-10-30T15:06:29-07:00",
+      "last_pair_id": "P0468-02",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 41,
+        "partial": 96
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "265efc1b5c0ece90820d00ac8929efc58071253b79f9cdd0c4cdd060bb775201",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150705519-292f57ab4382463e8cedf82e1ca3f717.json"
+    },
+    {
+      "recorded": "2026-10-30T15:07:24-07:00",
+      "last_pair_id": "P0514-01",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 40,
+        "partial": 97
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "e437fd4ca49c431ec527ee6cc661079c0f7725f410a0aa7c9cf753af15854b5e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150803059-683131e6f0ef418d99d16ba4334f6c80.json"
+    },
+    {
+      "recorded": "2026-10-30T15:09:08-07:00",
+      "last_pair_id": "P0518-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 36,
+        "partial": 101
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "59955346fbd363b0102ab2027707e970521ac2a92c3bc4b65020fcdf11b33583",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T150949093-ae8f896959c84253971c1690b5513352.json"
+    },
+    {
+      "recorded": "2026-10-30T15:11:07-07:00",
+      "last_pair_id": "P0521-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 32,
+        "partial": 105
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "5b00c47fd231d5230fea060540eeb7f12ae3bc811e3d822bb3eb74a81aac04e8",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T151154331-4918de7a96424bb48d2338f155e5fbe0.json"
+    },
+    {
+      "recorded": "2026-10-30T15:13:04-07:00",
+      "last_pair_id": "P0544-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 28,
+        "partial": 109
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "31f855a6255ab3e951c3f2ebc0597c46a31bc21804380a013d36af28bd90d0a9",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T151408383-17f3b0d3b5814582b26edfa8e162249d.json"
+    },
+    {
+      "recorded": "2026-10-30T15:15:08-07:00",
+      "last_pair_id": "P0547-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 24,
+        "partial": 113
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "92082de3bb9eaaeff26d0622d36b92dce2757b1b4a46e1f3d1e595517e992f76",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T151551114-7553c2d6183c4450bc8fa7843b5e9061.json"
+    },
+    {
+      "recorded": "2026-10-30T15:18:03-07:00",
+      "last_pair_id": "P0549-06",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 18,
+        "partial": 119
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "faba8b0580590a27b70ba117ca4a9ac150c4f511c502d3b47994a3c2def0cbf1",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T151843610-c19e290b62974a54b5437864d91e7644.json"
+    },
+    {
+      "recorded": "2026-10-30T15:19:57-07:00",
+      "last_pair_id": "P0566-03",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 15,
+        "partial": 122
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "9a379a36e7bb9be07efc599b26995fb1cb9f7ef53a1562fa97aa7e69f8588a74",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T152041930-368cfa6a4bde474a8dd4a946074160dc.json"
+    },
+    {
+      "recorded": "2026-10-30T15:22:06-07:00",
+      "last_pair_id": "P0574-04",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 11,
+        "partial": 126
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "874e3f4be05785f6f35a5d26f6b837e354e5747e6b4277ab2823e995bac8cd88",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T152247719-b794d681678646e085e5c3faadf1349f.json"
+    },
+    {
+      "recorded": "2026-10-30T15:25:17-07:00",
+      "last_pair_id": "P0585-06",
+      "status": "in_progress",
+      "core_counts": {
+        "missing": 5,
+        "partial": 132
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "4b1f6a6411b553bf95e993c18f7cc11ab18b9d0c276737fee986c0692ca22b1a",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T152606443-b3fe6ebbc76d4b3381edfb33fa7a6c6b.json"
+    },
+    {
+      "recorded": "2026-10-30T15:27:31-07:00",
+      "last_pair_id": "P0605-05",
+      "status": "partial",
+      "core_counts": {
+        "partial": 137
+      },
+      "preflight_sha256": "0d19039f11a62b66bc18195381a756a7da3d73e6d8bd201bdc1837321539614b",
+      "manifest_sha256": "4de4fdc13a61f3bc372ab5bb596ef4f093d1b20ef21568debd324b04676f9a65",
+      "previous_status_sha256": "8952614e921ecc91876f2c46d47583b9b489e4452e883084434e8992d246233e",
+      "backup": "backups/STATUS.pre-checkpoint.20261030T152819353-8086bbb186b74a3fa7d854efb13b3c50.json"
+    }
+  ],
+  "notes": [
+    "Constituent COMP outcomes include per-pair diagnostics and may include metadata-only intake. Each native pair STATUS, stage, results and intake records define the work actually performed and its limits; no blanket scientific implementation or fixture execution is claimed. Product integration (Stage 6/G5) was not attempted.",
+    "AC3/AC5/AC6 unverified: Stages 5-7 not run because G2 failed (pair-level rerun stability is evidenced separately by pair_rerun_verification).",
+    "Close recorded 2026-10-30T15:36:01-07:00 by ProductCloseReporting product-close-reporting/1.1.0; previous STATUS backed up at backups/STATUS.pre-close.20261030T153605.json.",
+    "Rerun verification PASS: 137 executed core pairs rechecked identical, 0 mismatched, 0 not rechecked (not reopened; build-time evidence cited in logs/rerun-verification.json), 0 operator-skipped (never run, nothing to recheck)."
+  ],
+  "operator_decision": {
+    "decision": "standing policy OP-2026-10-27-1553: record as partial and continue",
+    "decided_by": "Russell Smithson (operator)",
+    "decided_at": "2026-10-27T15:53:00-07:00",
+    "scope": "D0005 under the standing policy (no new operator decision)",
+    "effect": "D0005 remains partial: not complete, not counted as built, no .cmd delivered",
+    "gate": {
+      "G2": "fail",
+      "evidence": "gates/G2.json"
+    },
+    "downstream_not_run": [
+      "Stage 5 readiness",
+      "Stage 6 integration (G5)",
+      "Stage 7 release",
+      "cmd delivery"
+    ]
+  },
+  "close_reporting": {
+    "version": "product-close-reporting/1.1.0",
+    "executable_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\ProductCloseReporting.exe",
+    "executable_sha256": "1cd7b1d2e4cd96ea98a06104f13d4a002b1d1864fec5dc022b9f8af341f2a6cf",
+    "harness_assembly_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "harness_version": "harness-cs/0.2.0",
+    "source_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\src\\ProductCloseReporting.cs",
+    "source_sha256": "5212c733d84eba42f5eca3eda8c17364ef925ff0a7cd0ada4b1555a9953be31d",
+    "source_state": "observed",
+    "fingerprint_scope": "observed running executable/helper and adjacent version source; source-to-binary correspondence requires retained build evidence"
+  }
+}

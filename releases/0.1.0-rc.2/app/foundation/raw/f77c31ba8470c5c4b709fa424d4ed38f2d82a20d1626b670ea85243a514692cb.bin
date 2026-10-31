@@ -1,0 +1,158 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0403-02",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Stage 1 Verify meaning and scope incomplete; metadata intake only"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "intake_bindings_and_native_contracts",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "primary_source_verification",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "source_specific_input_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_required_work",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_diagnostic_cases",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_integration_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0403/P0403-02-nlp-representations.md (F07899)",
+      "state": "present",
+      "version": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+      "sha256": "5b3ee8caf513d5ef2cde7044170e573a094553ac4318923249e2edb6bda82e09"
+    },
+    {
+      "name": "pairs/COMP/P0403-02/component-work/P0403-02/intake/READINESS-AUDIT.json (scoped readiness metadata; not primary material)",
+      "state": "present",
+      "version": "comp-source-intake-readiness/2",
+      "sha256": "b951e28d5cb5d763b9ce8b91621c3bb76d29106418a4e16e64cb431cbc6832c6"
+    },
+    {
+      "name": "preflight/PREFLIGHT-codex-ps5-20261030T163355040-a.json",
+      "state": "present",
+      "version": "passed preflight/cs-1; exact immutable pin",
+      "sha256": "7b8efa804399ec4fe7a5c39604e0aafbf074fb78f66d76ddf8bb4f09f56dd275"
+    },
+    {
+      "name": "Primary material unverified/not provided for this scoped intake: https://iclr.cc/virtual/2025/poster/31323 (displayed abstract)",
+      "state": "missing",
+      "version": "Not positively verified in bounded audit scopes; no global absence claim."
+    },
+    {
+      "name": "Source-specific runtime/configuration or review prerequisites for P0403-02 (Representation, embedding, latent state, or transformed feature.)",
+      "state": "missing",
+      "version": "Not established by source verification; generic tools are not the named method's runnable inputs."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Objects or signals being encoded.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: shape and indexing.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: coordinate conventions.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: required retained information.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: encoder or transformation specification.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: consumer interface.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Permitted timestamped narratives, macroeconomic vintages/release dates, NLP state and temporal/as-of evaluation partitions.",
+      "state": "missing",
+      "version": "For P0403-02 (NLP representations), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "Deterministic metadata packaging only; no random sampling or scientific fixture."
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "kit": "source-intake-pairkit/2.0.0",
+    "retrieved": {
+      "sources": "See immutable readiness audit; no primary source retrieval or scientific execution is claimed."
+    }
+  },
+  "blocked_reason": "Native Stage1 unfinished for P0403-02 (NLP representations). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol.",
+  "updated": "2026-10-30T17:49:28-07:00"
+}

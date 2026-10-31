@@ -1,0 +1,145 @@
+{
+ "schema": "d0003-sources/1",
+ "retrieved": "2026-10-27",
+ "cost_usd": 0,
+ "note": "openreview.net PDFs blocked (challenge page); proceedings.iclr.cc / arXiv used. PDFs hashed; text extracts (pdftotext) and poster pages stored here; PDFs not copied to the laptop (size) - re-fetch from url and compare pdf_sha256.",
+ "sources": [
+  {
+   "paper": "Compact Coding Agents article (catalog source, p.6 rendered image read; no OCR available)",
+   "unit": "C0156",
+   "url": "catalog COMP sources/article.pdf",
+   "file": "article.pdf",
+   "pdf_sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57",
+   "page6_render": "art-06.png",
+   "sha256": "a1d26f318808ae0951dc0bef8030ec7bd929a6f453ef8d150b04f25f98272861"
+  },
+  {
+   "paper": "MACRO-LLM",
+   "unit": "C0496",
+   "url": "https://arxiv.org/abs/2601.09295v1 (catalog: https://arxiv.org/html/2601.09295v1)",
+   "file": "macro-2601.09295v1.pdf",
+   "pdf_sha256": "2487c2de00af04bf4a1cae1604a4460c638a35e10e44a8dbe98ffb56627ddffd",
+   "text_extract_sha256": "bc883f40a8f0729400ab5d148a90ca72d01db171eda51d98afca3ba3a95fa26e"
+  },
+  {
+   "paper": "MotionDreamer",
+   "unit": "P0020",
+   "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/c17f3035898a7044194fe45c5df6c6e8-Paper-Conference.pdf",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/29015",
+   "file": "P0020.pdf",
+   "pdf_sha256": "1d24561995e510f705797b4b7c3720ab84d238b88c4799ce3878cbb911c01cf8",
+   "text_extract": "P0020.txt",
+   "text_extract_sha256": "6da0618d2561507b3f12ef112d941734c8ffbc217cac760a64f94c4e4f0bc90b",
+   "html": "poster_29015.html",
+   "html_sha256": "52f98f82084241854440cb0ddf401eba4730c337f350a18b346dad8d95b83ef7"
+  },
+  {
+   "paper": "MMR (multi-target multi-granularity reasoning segmentation)",
+   "unit": "P0026",
+   "url": "https://arxiv.org/abs/2503.13881v1",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/28436",
+   "file": "P0026.pdf",
+   "pdf_sha256": "5fa58fed436d6ae23f7d417890b71f50db57d0d2894aae9ca21f54e36aeb99b9",
+   "text_extract": "P0026.txt",
+   "text_extract_sha256": "0f7fa1a41ab0da55e485044c84bfeb1935d055cc8b8648533cefa577f2d26082",
+   "html": "poster_28436.html",
+   "html_sha256": "20cbb6a01d1b43586a16fdc9815198b20ff1a65bfee6f44b883e357aa48229a2"
+  },
+  {
+   "paper": "MMWorld",
+   "unit": "P0030",
+   "url": "https://arxiv.org/abs/2406.08407v3",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/28053",
+   "file": "P0030.pdf",
+   "pdf_sha256": "5e94e8b906dbbfe9e08165ccf7598bbb13735bedebcc1b59f1e30cb2e25dc93d",
+   "text_extract": "P0030.txt",
+   "text_extract_sha256": "81359eba203f7d72d699700d17d52054a0ed132d7660ccc61afd4da85cc21741",
+   "html": "poster_28053.html",
+   "html_sha256": "4444176765ea5f9e73642022b4414f6521a491e47fd2e7b87c3b9ca0778ef47d"
+  },
+  {
+   "paper": "Data Selection via Optimal Control (PDS)",
+   "unit": "P0200",
+   "url": "https://arxiv.org/abs/2410.07064v2",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/28972",
+   "file": "P0200.pdf",
+   "pdf_sha256": "1e1034af812293a4a410e2016d360d60e2b6cb4a2f9322e959711b51904f7a4d",
+   "text_extract": "P0200.txt",
+   "text_extract_sha256": "f57a6bc6999529edb8467497dc8c99eb91b99d50f660bd5a8fd62020267801a8",
+   "html": "poster_28972.html",
+   "html_sha256": "94209b3130fad56451dead220b5944a8947b0e820c4bfceba8d3c806781cb959"
+  },
+  {
+   "paper": "Uncovering Overfitting in LLM Editing",
+   "unit": "P0225",
+   "url": "https://arxiv.org/abs/2410.07819v2",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/28074",
+   "file": "P0225.pdf",
+   "pdf_sha256": "78e5043696e0ffef8f85bc8d7e599f3a920c4774c4d4cae957785fd7015de818",
+   "text_extract": "P0225.txt",
+   "text_extract_sha256": "f5a8b6855fa919a2eb899c264b9e18a002ff7dba0219a955e14dc330ad2738e1",
+   "html": "poster_28074.html",
+   "html_sha256": "2630c0cb64282d2e52b2349336ba502c137d409d22ad7cb638a9669cad02b25a"
+  },
+  {
+   "paper": "Unified Human Motion-Language Understanding via Sparse Interpretable Characterization",
+   "unit": "P0249",
+   "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/283dd122db4484cec1c2c8fa351d078a-Paper-Conference.pdf",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/29810",
+   "file": "P0249.pdf",
+   "pdf_sha256": "be6d83dfad5e1bcb05bdd6a3309562a4e10ba1b401ace90270124b71f92444a4",
+   "text_extract": "P0249.txt",
+   "text_extract_sha256": "7a06911ab0a98290ab501c61495b47dff2c4186f2f3b4cb394c23b0fddd5a135",
+   "html": "poster_29810.html",
+   "html_sha256": "30feaf1be5c47c80e74d0371c66241eb2fdaeb3eeecfd9750b01795bc21b9ded"
+  },
+  {
+   "paper": "Exploratory Inverse Constraint Inference with Generative Diffusion Verifiers",
+   "unit": "P0328",
+   "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/008a16ead32f932b711788c276890456-Paper-Conference.pdf",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/31251",
+   "file": "P0328.pdf",
+   "pdf_sha256": "7ac46fa59f41360fd1bd9b902b8c5f3ae3afeadc98619dba0973a442182ca151",
+   "text_extract": "P0328.txt",
+   "text_extract_sha256": "5d6c2a700a4b98268fd25b034d75d34adc579c07d0d8610c1f9f87303958b218",
+   "html": "poster_31251.html",
+   "html_sha256": "44c67cddf6debd31ba1e91bbc866edbd59483b0bdbf3d5a5defea949216f0027"
+  },
+  {
+   "paper": "Federated Q-Learning",
+   "unit": "P0331",
+   "url": "https://arxiv.org/abs/2405.18795v2",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/30326",
+   "file": "P0331.pdf",
+   "pdf_sha256": "57975db2aaa2f3c489f95b84474a805d90bae8c3c5a4deb1c90c5534ccaae8a2",
+   "text_extract": "P0331.txt",
+   "text_extract_sha256": "a598118b7160ab74c5f249eff381cd800d7cf4268c7a1e9650c4dbe47b21ac73",
+   "html": "poster_30326.html",
+   "html_sha256": "453489a92026459d59d2adff36b8d4a0cfecbae76f8e779b25ff37edf3405ae4"
+  },
+  {
+   "paper": "Zero-shot Imputation (ODE)",
+   "unit": "P0350",
+   "url": "https://arxiv.org/abs/2402.07594v4",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/29879",
+   "file": "P0350.pdf",
+   "pdf_sha256": "be3e09d255e9941498a98fe8570c31cf996542652b86f146c167c39241394ec1",
+   "text_extract": "P0350.txt",
+   "text_extract_sha256": "1d039dc509ac9f9a31870d499ab5ee46c8b560539b3186b4fee44632759491e0",
+   "html": "poster_29879.html",
+   "html_sha256": "854f4362aa72627d9a570e25acc88b1915ae571ded26109eb39b4b8804035b50"
+  },
+  {
+   "paper": "Conditional Diffusion with Ordinal Regression",
+   "unit": "P0559",
+   "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/524ef58c2bd075775861234266e5e020-Paper-Conference.pdf",
+   "poster_url": "https://iclr.cc/virtual/2025/poster/30688",
+   "file": "P0559.pdf",
+   "pdf_sha256": "67069cf4a3285e0a290af3f4e1ed98496970cb1bb1827a4811fd91eaabc2bcc2",
+   "text_extract": "P0559.txt",
+   "text_extract_sha256": "96ab8ae1a0fac2ba604a23af67338ea075ff432fd852908cd933504e2cdefadf",
+   "html": "poster_30688.html",
+   "html_sha256": "303e66fa91819b3e54d3e6ac710777c586deb80835367ccde76c607f24519563"
+  }
+ ]
+}
