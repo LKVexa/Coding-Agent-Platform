@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_utc": "2026-10-31T04:24:39.228660+00:00",
+  "status": "pass",
+  "exit_code": 0,
+  "source_unchanged_during_tests": true,
+  "source_sha256": {
+    "src/coding_agent/platform.py": "55d42cb645727f6024813ae452a932478257beec3789ce22572e184939b13f70",
+    "src/coding_agent/repository.py": "e707bc58ac21c27cea01cc02c517aa390ce289fc18f7fd4f0e4f84abb9ed6400",
+    "src/coding_agent/storage.py": "fab868e22e054a1c92ed35ffcb2fcb75b5e520a3b288c6b8938fc465cafbf4d5",
+    "src/coding_agent/tasks.py": "7ce6bb33610b07e979bb95061e2305a10b735d48269f719e0708509fd8c8b7ab",
+    "src/coding_agent/patches.py": "17e0818d2540491612aca082fc34e2d0e89111f5369f987b732cb1c8c5277678",
+    "evaluator/safe_python.py": "2cbbc7b6b9ca56999f7eaf13c7cbc34bdd7790a8fc7cb13d5ed6232d44d396bc",
+    "evaluator/PROTOCOL-MANIFEST.json": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+    "independent-review/test_platform_boundaries.py": "d411157c01d6f21c36d8083f7f9dd2b672d399fa40cdf37311e167dade103a57"
+  },
+  "source_sha256_after": {
+    "src/coding_agent/platform.py": "55d42cb645727f6024813ae452a932478257beec3789ce22572e184939b13f70",
+    "src/coding_agent/repository.py": "e707bc58ac21c27cea01cc02c517aa390ce289fc18f7fd4f0e4f84abb9ed6400",
+    "src/coding_agent/storage.py": "fab868e22e054a1c92ed35ffcb2fcb75b5e520a3b288c6b8938fc465cafbf4d5",
+    "src/coding_agent/tasks.py": "7ce6bb33610b07e979bb95061e2305a10b735d48269f719e0708509fd8c8b7ab",
+    "src/coding_agent/patches.py": "17e0818d2540491612aca082fc34e2d0e89111f5369f987b732cb1c8c5277678",
+    "evaluator/safe_python.py": "2cbbc7b6b9ca56999f7eaf13c7cbc34bdd7790a8fc7cb13d5ed6232d44d396bc",
+    "evaluator/PROTOCOL-MANIFEST.json": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+    "independent-review/test_platform_boundaries.py": "d411157c01d6f21c36d8083f7f9dd2b672d399fa40cdf37311e167dade103a57"
+  },
+  "test_scope": "Independent behavior tests of workflow, parsing, repository, patch, state and evaluator boundaries. Fake provider only.",
+  "limitation": "The isolated Platform fixture bypasses the package constructor; the release must separately validate package/foundation manifests and actual provider behavior.",
+  "findings": [
+    {
+      "id": "review-001",
+      "severity": "medium",
+      "status": "remediated",
+      "finding": "Cancellation could append a file after evidence sealing, invalidating the completed receipt.",
+      "remediation": "Cancellation and finalization share a bounded-wait control lock; lock files are excluded from immutable evidence and cancellation is checked during sealing."
+    },
+    {
+      "id": "review-002",
+      "severity": "medium",
+      "status": "remediated",
+      "finding": "First control-lock revision used a nonblocking lock, so concurrent cancellation caused both finish and its failure handling to fail.",
+      "remediation": "Short control critical sections use bounded retry while the main worker lock remains nonblocking."
+    },
+    {
+      "id": "review-003",
+      "severity": "medium",
+      "status": "remediated",
+      "finding": "A partial terminal result could be resealed on resume without independently reconstructing its patch and acceptance evidence.",
+      "remediation": "Recovery recomputes selected output and checks semantic equality before sealing; unrecoverable terminal runs remain preserved and refused."
+    },
+    {
+      "id": "review-004",
+      "severity": "medium",
+      "status": "remediated",
+      "finding": "A .git/commondir regular file could redirect object and ref reads to a separate repository despite normal-repository-only policy.",
+      "remediation": "Repository reads now reject commondir, gitdir, alternate stores, HTTP alternates and graft metadata before invoking Git."
+    }
+  ],
+  "evidence": "review-test-output.txt"
+}

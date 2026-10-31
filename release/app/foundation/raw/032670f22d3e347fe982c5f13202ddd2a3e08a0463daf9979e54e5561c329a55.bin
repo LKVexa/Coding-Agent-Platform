@@ -1,0 +1,215 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "D0002",
+ "prompt_version": "3.0.0",
+ "spec_version": "1.1.0",
+ "status": "partial",
+ "stage": {
+  "last_completed": 1,
+  "total": 7,
+  "label": "Stage 2 COMP executed (7/11 core pairs complete); G2 fail - downstream stopped"
+ },
+ "integration_status": "fixture_tested",
+ "checks": [
+  {
+   "name": "stage0_preflight",
+   "result": "pass",
+   "evidence": "preflight/PREFLIGHT.json",
+   "iterations": 1
+  },
+  {
+   "name": "phase_TOPIC_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "phase_PORT_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "phase_SHEP_applicability",
+   "result": "not_applicable",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "G2_COMP_gate",
+   "result": "fail",
+   "evidence": "gates/G2.json",
+   "iterations": 1
+  },
+  {
+   "name": "unit_crosswalk_built",
+   "result": "pass",
+   "evidence": "integration/UNIT-CROSSWALK.json",
+   "iterations": 1
+  },
+  {
+   "name": "pair_rerun_verification",
+   "result": "pass",
+   "evidence": "logs/rerun-verification.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC1_core_pairs_complete_100pct",
+   "result": "fail",
+   "evidence": "pairs.jsonl",
+   "iterations": 1
+  },
+  {
+   "name": "AC2_applicable_gates_G2_G5",
+   "result": "fail",
+   "evidence": "gates/G2.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC3_interfaces_and_e2e",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "AC4_product_status_schema",
+   "result": "pass",
+   "evidence": "STATUS.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC5_rerun_stability",
+   "result": "unverified",
+   "evidence": "logs/rerun-verification.json",
+   "iterations": 1
+  },
+  {
+   "name": "AC6_release_manifest_checksums",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/phases",
+   "iterations": 1
+  },
+  {
+   "name": "exe_delivery",
+   "result": "unverified",
+   "evidence": "integration/phase-ledger.json#/delivery",
+   "iterations": 1
+  }
+ ],
+ "inputs": [
+  {
+   "name": "D0002/AUDIT.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "76bd40b053b0815c4aaaaa4b55157a69cfca2b423f23476ecf2a26c36f1495b9"
+  },
+  {
+   "name": "D0002/CHANGELOG.txt",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "31f9c5e85e3844bf842e885698d753f961ac3cbaddccddb644e54ff55fc34b2a"
+  },
+  {
+   "name": "D0002/DELIVERABLE.md",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "3a802a46160f66a586d77fab21b37b87f38199b9a2958ffe383cba95af8b5ed5"
+  },
+  {
+   "name": "D0002/ORCHESTRATION.md",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "acf48254aba1ae2d4777c9c6bea64e9ef3a1bf2a0ba7f22f430ea3924fce4e66"
+  },
+  {
+   "name": "D0002/UNIT-CROSSWALK.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "10efcaab1fb0d44d8f3117f77f3e8832df13a31dfc77ee6dc987a158a9c80e9b"
+  },
+  {
+   "name": "D0002/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "2140a5c2a536ffb52ec64767e1626cb93ffc703157a6fe3de41e297fbdceb4d4"
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "per pair: literal numpy default_rng seeds in artifact sources (see each pair STATUS.json)"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "evidence/sources/SOURCES.json": "2026-10-27"
+  }
+ },
+ "blocked_reason": "G2 fail: P0009-02 partial (requires LLaMA-3 generations for all classes, CLIP ViT-B/16 weights, Kinetics-400/HMDB-51 video and GPU fine-tuning - none available locally under the USD 0 / existing-resources budget); P0113-01 failed (None); P0113-02 failed (None); P0113-04 failed (None)",
+ "notes": [
+  "Specification-audit status is not a built product; this STATUS reflects executed fixture-scale COMP work only.",
+  "AC3/AC5/AC6 unverified: Stages 5-7 not run because G2 failed (AC5 pair-level rerun stability is evidenced separately by pair_rerun_verification).",
+  "Operator standing policy recorded 2026-10-27 15:53 PDT: D0002 left partial (G2 fail: 7/11 complete, 1 partial, 3 failed); not complete and not counted as built."
+ ],
+ "updated": "2026-10-27T15:54:50-07:00",
+ "operator_decision": {
+  "decision": "standing policy OP-2026-10-27-1553: record as partial and continue",
+  "decided_by": "Russell Smithson (operator)",
+  "decided_at": "2026-10-27T15:53:00-07:00",
+  "channel": "chat, relayed by the parent agent",
+  "scope": "D0002 under the standing policy",
+  "effect": "D0002 remains partial: not complete, not counted as a built product, no executable delivered; queue released to D0003",
+  "blockers": [
+   {
+    "pair": "P0009-02",
+    "check": "contribution_to_parent_task",
+    "result": "unverified",
+    "class": "missing data/compute",
+    "reason": "requires LLaMA-3 generations, CLIP ViT-B/16 weights, Kinetics-400/HMDB-51 video and GPU fine-tuning; not available under USD 0"
+   },
+   {
+    "pair": "P0113-01",
+    "check": "structure_contribution_vs_data_shapley",
+    "result": "fail",
+    "class": "failed claim",
+    "observed": {
+     "pc_winter": 0.8076,
+     "data_shapley": 0.7524,
+     "random": 0.8697
+    }
+   },
+   {
+    "pair": "P0113-02",
+    "check": "constraint_contribution_ablation",
+    "result": "fail",
+    "class": "failed claim",
+    "observed": {
+     "pc_winter": 0.8076,
+     "pc_winter_L": 0.7319,
+     "pc_winter_P": 0.7121
+    }
+   },
+   {
+    "pair": "P0113-04",
+    "check": "convergence_criterion",
+    "result": "fail",
+    "class": "failed claim",
+    "observed": "not converged within 1000 permutations"
+   }
+  ],
+  "gate": {
+   "G2": "fail",
+   "evidence": "gates/G2.json"
+  },
+  "downstream_not_run": [
+   "Stage 5 readiness",
+   "Stage 6 integration (G5)",
+   "Stage 7 release",
+   "exe delivery"
+  ]
+ }
+}

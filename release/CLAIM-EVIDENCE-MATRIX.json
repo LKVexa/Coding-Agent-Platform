@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "claim": "Three real-model authored diagnostic repairs passed independent Git replay",
+      "status": "verified",
+      "evidence": "validation/release/FINAL-INDEPENDENT-REPLAY.json"
+    },
+    {
+      "claim": "81 automated checks passed on the relevant frozen code/package",
+      "status": "verified",
+      "evidence": "validation/README.md"
+    },
+    {
+      "claim": "All 9364 originals and sibling product files preserved",
+      "status": "verified",
+      "evidence": "validation/preservation/PRESERVATION-REPORT.json"
+    },
+    {
+      "claim": "General coding benchmark performance, training or source scientific completion",
+      "status": "unverified",
+      "evidence": "KNOWN-LIMITATIONS.md"
+    }
+  ]
+}

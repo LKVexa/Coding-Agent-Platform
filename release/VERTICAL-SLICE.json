@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "real_provider": true,
+  "run_id": "verified-clamp",
+  "app_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "patch_replayed_with_git": true,
+  "known_regression_controls_rejected": true,
+  "evidence": "evidence/verified-state/runs/verified-clamp"
+}

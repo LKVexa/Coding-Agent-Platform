@@ -1,0 +1,1 @@
+{"cases":[{"actual":2,"expected":2,"id":"public-1","status":"pass","steps":11},{"actual":0,"expected":0,"id":"public-2","status":"pass","steps":11}],"evaluator_version":"1.0.0","fail":0,"pass":2,"source_sha256":"10f0e0b4bea09a046a270a080520bffdfb4f67b3cdd8373c90dce3473f0e21f0","status":"pass","syntax_allowed":true}

@@ -1,0 +1,2 @@
+# Preserve exact bytes of the verified release on every checkout.
+* -text

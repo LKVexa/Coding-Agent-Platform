@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "C03",
+  "result": "pass",
+  "product": "coding-agent-platform",
+  "version": "0.1.0-rc.1",
+  "scope": "Independent boundary checks, frozen diagnostic evaluation, and actual Git replay",
+  "app_manifest_file_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "app_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "evidence": [
+    "SECURITY-FINDINGS.json",
+    "BENCHMARK-RESULTS.json",
+    "validation/release/FINAL-INDEPENDENT-REPLAY.json"
+  ],
+  "original_scientific_validation": "unverified",
+  "publication": "local package only"
+}

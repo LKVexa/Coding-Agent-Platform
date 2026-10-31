@@ -1,0 +1,11 @@
+test_cancel_before_independent_evaluation (__main__.Workflow.test_cancel_before_independent_evaluation) ... ok
+test_complete_patch_replay_export_and_idempotent_resume (__main__.Workflow.test_complete_patch_replay_export_and_idempotent_resume) ... ok
+test_custom_task_runs_separate_private_cases (__main__.Workflow.test_custom_task_runs_separate_private_cases) ... ok
+test_provider_error_preserved_without_retry (__main__.Workflow.test_provider_error_preserved_without_retry) ... ok
+test_regression_rejected_even_if_public_passes (__main__.Workflow.test_regression_rejected_even_if_public_passes) ... ok
+test_two_attempts_only_public_feedback (__main__.Workflow.test_two_attempts_only_public_feedback) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 31.410s
+
+OK

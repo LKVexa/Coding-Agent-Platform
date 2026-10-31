@@ -1,0 +1,319 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "D0004",
+  "prompt_version": "3.0.0",
+  "spec_version": "1.1.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used (per pair; see preflight prompt_sources rows and ../_catalog-map/r2/PROMPT-MAP.json)",
+  "status": "partial",
+  "stage": {
+    "last_completed": 1,
+    "total": 7,
+    "label": "Stage 2 COMP executed (0/21 core pairs complete); G2 fail - downstream stopped"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "stage0_preflight",
+      "result": "pass",
+      "evidence": "preflight/PREFLIGHT-r3.json",
+      "iterations": 1
+    },
+    {
+      "name": "phase_TOPIC_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_PORT_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "phase_SHEP_applicability",
+      "result": "not_applicable",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "G2_COMP_gate",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "unit_crosswalk_built",
+      "result": "pass",
+      "evidence": "integration/UNIT-CROSSWALK.json",
+      "iterations": 1
+    },
+    {
+      "name": "pair_rerun_verification",
+      "result": "unverified",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC1_core_pairs_complete_100pct",
+      "result": "fail",
+      "evidence": "pairs.jsonl",
+      "iterations": 1
+    },
+    {
+      "name": "AC2_applicable_gates_G2_G5",
+      "result": "fail",
+      "evidence": "gates/G2.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC3_interfaces_and_e2e",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "AC4_product_status_schema",
+      "result": "pass",
+      "evidence": "STATUS.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC5_rerun_stability",
+      "result": "unverified",
+      "evidence": "logs/rerun-verification.json",
+      "iterations": 1
+    },
+    {
+      "name": "AC6_release_manifest_checksums",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/phases",
+      "iterations": 1
+    },
+    {
+      "name": "cmd_delivery",
+      "result": "unverified",
+      "evidence": "integration/phase-ledger.json#/delivery",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "D0004/AUDIT.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "c88d8d247ee6e0b207adae03abde7b6658ee64742c1c7be30ccdabb139a342c0"
+    },
+    {
+      "name": "D0004/CHANGELOG.txt",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "6a0c66f34ec8af2ade9dbf3f6513ec77cd3e87bfca47d375a11a4a2c2f405124"
+    },
+    {
+      "name": "D0004/DELIVERABLE.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "751bc6814078edee34305d2aa7bf86a96f147f981369a837dd332b4e63271b69"
+    },
+    {
+      "name": "D0004/ORCHESTRATION.md",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "43261ed2c5523f50924cbceca41e0f802ecf9c3567e25cf0aefab91a4853fdee"
+    },
+    {
+      "name": "D0004/UNIT-CROSSWALK.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "a4561986857ee1c7e0d87c2ac8e468c95a60e3dc73d333e4e1501016c5f17477"
+    },
+    {
+      "name": "D0004/manifest.json",
+      "state": "present",
+      "version": "1.1.0",
+      "sha256": "ef9f70b8f195dff35d039633de1dfa765ae00ef96b30f7d0e6edba2201275baa"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-recovered\\v3.0.0\\POLICY\\HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    },
+    {
+      "name": "D:\\Deliverables\\product-work\\_catalog-map\\r2\\PROMPT-MAP.json",
+      "state": "present",
+      "version": "r2",
+      "sha256": "b8543d2e4719fa069a8e77f763b2bc1fdd43b9505c4d3e0f88520f735b14e84d"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "per pair: literal seeds recorded in each pair STATUS.json (C# System.Random(seed) or deterministic enumeration)"
+    },
+    "tools": {
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "clr": "4.0.30319.42000",
+      "langversion": "5",
+      "harness": "harness-cs/0.1.0",
+      "python_numpy_java": "not used"
+    },
+    "retrieved": {}
+  },
+  "blocked_reason": "G2 fail: P0267-01 partial (evaluation_outcome=fail, paper_scale_tables=unverified); P0267-02 partial (paper_scale_tables=unverified); P0361-01 partial (paper_scale_tables=unverified); P0361-02 partial (paper_scale_tables=unverified); P0446-01 partial (paper_scale_tables=unverified); P0446-02 partial (paper_scale_tables=unverified); P0463-01 partial (paper_scale_tables=unverified); P0463-02 partial (ablation_contribution=fail, paper_scale_tables=unverified); P0463-03 partial (paper_scale_tables=unverified); P0581-01 partial (refinement_workflow=fail, paper_scale_tables=unverified); P0581-02 partial (alignment_quality=fail, paper_scale_tables=unverified); P0581-03 partial (reasoning_quality=fail, paper_scale_tables=unverified); P0590-01 partial (paper_scale_tables=unverified); P0590-02 partial (alignment_quality=fail, paper_scale_tables=unverified); P0597-01 partial (paper_scale_tables=unverified); P0597-02 partial (c2_denoiser_accuracy=fail, paper_scale_tables=unverified); P0597-03 blocked (operator skip D0004-OPSKIP-2026-10-28-1001, not opened, not run); P0597-04 blocked (operator skip D0004-OPSKIP-2026-10-28-1001, not opened, not run); P0597-05 blocked (operator skip D0004-OPSKIP-2026-10-28-1001, not opened, not run); P0598-01 partial (alignment_quality=fail, paper_scale_tables=unverified); P0598-02 partial (refinement_outcome=fail, paper_scale_tables=unverified)",
+  "updated": "2026-10-30T11:55:14-07:00",
+  "pair_states": {
+    "P0267-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0267-01/component-work/P0267-01/STATUS.json"
+    },
+    "P0267-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0267-02/component-work/P0267-02/STATUS.json"
+    },
+    "P0361-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0361-01/component-work/P0361-01/STATUS.json"
+    },
+    "P0361-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0361-02/component-work/P0361-02/STATUS.json"
+    },
+    "P0446-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0446-01/component-work/P0446-01/STATUS.json"
+    },
+    "P0446-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0446-02/component-work/P0446-02/STATUS.json"
+    },
+    "P0463-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0463-01/component-work/P0463-01/STATUS.json"
+    },
+    "P0463-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0463-02/component-work/P0463-02/STATUS.json"
+    },
+    "P0463-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0463-03/component-work/P0463-03/STATUS.json"
+    },
+    "P0581-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0581-01/component-work/P0581-01/STATUS.json"
+    },
+    "P0581-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0581-02/component-work/P0581-02/STATUS.json"
+    },
+    "P0581-03": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0581-03/component-work/P0581-03/STATUS.json"
+    },
+    "P0590-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0590-01/component-work/P0590-01/STATUS.json"
+    },
+    "P0590-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0590-02/component-work/P0590-02/STATUS.json"
+    },
+    "P0597-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0597-01/component-work/P0597-01/STATUS.json"
+    },
+    "P0597-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0597-02/component-work/P0597-02/STATUS.json"
+    },
+    "P0597-03": {
+      "status": "blocked",
+      "source": "operator skip D0004-OPSKIP-2026-10-28-1001",
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run"
+    },
+    "P0597-04": {
+      "status": "blocked",
+      "source": "operator skip D0004-OPSKIP-2026-10-28-1001",
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run"
+    },
+    "P0597-05": {
+      "status": "blocked",
+      "source": "operator skip D0004-OPSKIP-2026-10-28-1001",
+      "blocked_reason": "operator skip D0004-OPSKIP-2026-10-28-1001: not opened, not run"
+    },
+    "P0598-01": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0598-01/component-work/P0598-01/STATUS.json"
+    },
+    "P0598-02": {
+      "status": "partial",
+      "source": "pairs.jsonl",
+      "status_path": "pairs/COMP/P0598-02/component-work/P0598-02/STATUS.json"
+    }
+  },
+  "supporting_TOPIC_T37-C035": {
+    "complete": 9,
+    "partial": 7
+  },
+  "operator_skips": [
+    {
+      "id": "D0004-OPSKIP-2026-10-28-1001",
+      "pairs": [
+        "P0597-03",
+        "P0597-04",
+        "P0597-05"
+      ],
+      "effect": "recorded BLOCKED; not opened, not run"
+    }
+  ],
+  "notes": [
+    "Specification-audit status is not a built product; this STATUS reflects executed fixture-scale COMP work only (C# harness).",
+    "AC3/AC5/AC6 unverified: Stages 5-7 not run because G2 failed (pair-level rerun stability is evidenced separately by pair_rerun_verification).",
+    "Close recorded 2026-10-30T11:55:14-07:00 by ProductClose; previous STATUS backed up at backups/STATUS.pre-close.20261030T115515.json.",
+    "Operator skip D0004-OPSKIP-2026-10-28-1001: P0597-03,P0597-04,P0597-05 recorded BLOCKED (not opened, not run).",
+    "Rerun verification INCOMPLETE: 16 executed core pairs rechecked identical, 0 mismatched, 2 not rechecked (not reopened; build-time evidence cited in logs/rerun-verification.json), 3 operator-skipped (never run, nothing to recheck)."
+  ],
+  "operator_decision": {
+    "decision": "standing policy OP-2026-10-27-1553: record as partial and continue",
+    "decided_by": "Russell Smithson (operator)",
+    "decided_at": "2026-10-27T15:53:00-07:00",
+    "scope": "D0004 under the standing policy (no new operator decision)",
+    "effect": "D0004 remains partial: not complete, not counted as built, no .cmd delivered",
+    "gate": {
+      "G2": "fail",
+      "evidence": "gates/G2.json"
+    },
+    "downstream_not_run": [
+      "Stage 5 readiness",
+      "Stage 6 integration (G5)",
+      "Stage 7 release",
+      "cmd delivery"
+    ]
+  }
+}

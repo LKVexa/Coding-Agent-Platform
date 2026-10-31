@@ -1,0 +1,128 @@
+{
+ "schema": "d0001-sources/1",
+ "retrieved": "2026-10-27",
+ "sources": [
+  {
+   "unit": "P0517",
+   "paper": "FlowDec",
+   "url": "https://arxiv.org/abs/2503.01485v1",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "fedaaf496cc62cb3cf3fa0c0169919950aef322c204ddfdd8e0d5f95c00b3b09",
+   "pdf_bytes": 14040773,
+   "text_extract": "ax-27945.txt",
+   "text_extract_sha256": "bdeec261e78b7490804dcdb2f65d2e41376a950f6ac92d5b67b608c874d22556",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/27945",
+   "poster_html": "poster-27945.html",
+   "poster_html_sha256": "ce12408bcecd1a3f6c51edfe75627c0ed23df38ae60e2b4e1a8a7bda1e467eb1"
+  },
+  {
+   "unit": "P0370",
+   "paper": "FS-WLasso",
+   "url": "https://arxiv.org/abs/2406.00823v2",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "26a022f5c87386ea303eac2a1717e4d438d81371124769e1e5061ac6ca2b9c71",
+   "pdf_bytes": 1467471,
+   "text_extract": "ax-28898.txt",
+   "text_extract_sha256": "459332892d7de7d8714c8821523fe0850eb513a4fa951bc7dc689f4c2e339466",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/28898",
+   "poster_html": "poster-28898.html",
+   "poster_html_sha256": "83e6f9cc8f394bae3f42c53c9fe89c5ae5b8c1381f51eccdc8f4ba9102eb1180"
+  },
+  {
+   "unit": "P0299",
+   "paper": "GAFFA",
+   "url": "https://arxiv.org/abs/2406.01992v1",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "907d5769ad57a0d367e773bfd03d57e45f6bd78f83b434075663c3fd12763af0",
+   "pdf_bytes": 4600408,
+   "text_extract": "ax-29020.txt",
+   "text_extract_sha256": "9b77d95ac3e34542fca521dabf87e13bce0da42d807089ae8cd8f74995cbdbf7",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/29020",
+   "poster_html": "poster-29020.html",
+   "poster_html_sha256": "cb29cfa7c95510bcabcb7d3c4f40f51787c4ac5fcf334e7b1d560a790573297d"
+  },
+  {
+   "unit": "P0392",
+   "paper": "IES",
+   "url": "https://arxiv.org/abs/2502.07547v1",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "77c892b96ba85938e2af52b6055d6f9c12c41196ab7e7d7024c8257ba368ddd8",
+   "pdf_bytes": 3413370,
+   "text_extract": "ax-29782.txt",
+   "text_extract_sha256": "821480a1dba981e1bce1b0100f084ad405ee6ceeec92a02343142eba5dcee20a",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/29782",
+   "poster_html": "poster-29782.html",
+   "poster_html_sha256": "bb73e3b42fb32393db5fcce894b5b119737646ff5695233833ece22797742b3d"
+  },
+  {
+   "unit": "P0304",
+   "paper": "CBwK (Guo & Liu)",
+   "url": "https://openreview.net/forum?id=FCMpUOZkxi",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "37792beb01cf04366f7116066c5fe3cf5f15ba145ad8ec2333c610c37356c0e5",
+   "pdf_bytes": 1329778,
+   "text_extract": "ax-30356.txt",
+   "text_extract_sha256": "f0a32cddf0e57942e60c6dec1f9a469ac36927363c1735a69bd2b5983a3bc131",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/30356",
+   "poster_html": "poster-30356.html",
+   "poster_html_sha256": "7a489cf641d707d6f291d9243fe50480a42ce29f6ee61e81ed59b95f6436a229"
+  },
+  {
+   "unit": "P0062",
+   "paper": "T2V-Turbo-v2",
+   "url": "https://arxiv.org/abs/2410.05677v3",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "ff895167b12ab401e1905c852a0dee172ccfedb7127d136edac6f234757830ab",
+   "pdf_bytes": 21705133,
+   "text_extract": "ax-30564.txt",
+   "text_extract_sha256": "26cd6218de79cf654775587d97b28d40d73c41e40f123ae637540adcde818760",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/30564",
+   "poster_html": "poster-30564.html",
+   "poster_html_sha256": "6ccedf02de14eb1da5267c24cc05c859b1078b92afd4c0a0d15335fb11b7d5ca"
+  },
+  {
+   "unit": "P0592",
+   "paper": "TetSphere",
+   "url": "https://arxiv.org/abs/2405.20283v4",
+   "retrieved": "2026-10-27",
+   "pdf_sha256": "f9a1657b722bb2a208634977e7d34d77a16db3700f6ad9a2064a3f4cf368a9f9",
+   "pdf_bytes": 49732273,
+   "text_extract": "ax-30753.txt",
+   "text_extract_sha256": "829bb66e2309ae77a241bad5be9acc75b31fd192a15b67f31e163e88c38553e9",
+   "extractor": "pdftotext (poppler)",
+   "poster_page": "https://iclr.cc/virtual/2025/poster/30753",
+   "poster_html": "poster-30753.html",
+   "poster_html_sha256": "e58ba574899127fd4291a38335914898506537c4d9a15726ea8c77c9315e496e"
+  },
+  {
+   "unit": "C0015,C0064,C0079,C0081,C0085,C0086",
+   "paper": "FrogNano (primary method source cited by the uploaded article)",
+   "url": "https://arxiv.org/html/2609.07925v2",
+   "retrieved": "2026-10-27",
+   "html": "frognano-2609.07925v2.html",
+   "html_sha256": "6b4a629a61af45f208e7cd5e4fcba60f9d5961812bcfe66178b0e767b0eb090c",
+   "sections_used": [
+    "4.1 Group-Relative Optimization",
+    "4.2 Efficiency Reward",
+    "Appendix C Consolidation"
+   ]
+  },
+  {
+   "unit": "C-units",
+   "paper": "Uploaded article: Exhaustive Analysis of Technological Concepts and Modes in Compact Coding Agents (catalog sources/article.pdf)",
+   "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57",
+   "note": "image-only PDF; cited pages 2,3,5 read from rendered page images (pg2-02.png, pg3-03.png, pg5-05.png)",
+   "page_images_sha256": {
+    "pg2-02.png": "49295136886949ef75517c693798dd822a54a9f9c642dc7dd706a0946234761e",
+    "pg3-03.png": "47af4b7b4be402fe3e8a9d2327d524671321ca120974f443059eb7415c301278",
+    "pg5-05.png": "6ae236ff430207e2e269f046dd8769ceed16125f012c3541443335a89a3f8aa1"
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "C01",
+  "result": "pass",
+  "product": "coding-agent-platform",
+  "version": "0.1.0-rc.1",
+  "scope": "Actual provider-to-patch-to-independent-evaluation cycle with regression controls",
+  "app_manifest_file_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "app_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "evidence": [
+    "VERTICAL-SLICE.json",
+    "validation/evaluator/controls.json"
+  ],
+  "original_scientific_validation": "unverified",
+  "publication": "local package only"
+}

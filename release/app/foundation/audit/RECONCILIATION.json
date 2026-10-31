@@ -1,0 +1,182 @@
+{
+  "schema": "foundation-audit/1.0.0",
+  "created_utc": "2026-10-31T03:46:35.853337+00:00",
+  "source_root": "D:\\Deliverables\\product-work",
+  "read_only": true,
+  "source_execution_performed": false,
+  "original_deliveries_modified": false,
+  "deliveries": [
+    {
+      "delivery_id": "D0001",
+      "core_pairs": 51,
+      "actual_status_counts": {
+        "complete": 49,
+        "partial": 2
+      },
+      "note_expected": {
+        "complete": 49,
+        "partial": 2
+      },
+      "matches_notes": true,
+      "intake_only": 0,
+      "native_check_counts": {
+        "pass": 206,
+        "unverified": 2
+      },
+      "prompt_mismatch_count": 0
+    },
+    {
+      "delivery_id": "D0002",
+      "core_pairs": 11,
+      "actual_status_counts": {
+        "complete": 7,
+        "partial": 1,
+        "failed": 3
+      },
+      "note_expected": {
+        "complete": 7,
+        "partial": 1,
+        "failed": 3
+      },
+      "matches_notes": true,
+      "intake_only": 0,
+      "native_check_counts": {
+        "pass": 108,
+        "unverified": 1,
+        "fail": 3
+      },
+      "prompt_mismatch_count": 0
+    },
+    {
+      "delivery_id": "D0003",
+      "core_pairs": 39,
+      "actual_status_counts": {
+        "complete": 3,
+        "partial": 36
+      },
+      "note_expected": {
+        "complete": 3,
+        "partial": 36
+      },
+      "matches_notes": true,
+      "intake_only": 0,
+      "native_check_counts": {
+        "pass": 213,
+        "unverified": 38,
+        "fail": 7
+      },
+      "prompt_mismatch_count": 39
+    },
+    {
+      "delivery_id": "D0004",
+      "core_pairs": 21,
+      "actual_status_counts": {
+        "partial": 18,
+        "blocked": 3
+      },
+      "note_expected": {
+        "partial": 18,
+        "blocked": 3
+      },
+      "matches_notes": true,
+      "intake_only": 0,
+      "native_check_counts": {
+        "pass": 92,
+        "fail": 9,
+        "unverified": 18
+      },
+      "prompt_mismatch_count": 18
+    },
+    {
+      "delivery_id": "D0005",
+      "core_pairs": 137,
+      "actual_status_counts": {
+        "partial": 137
+      },
+      "note_expected": {
+        "partial": 137
+      },
+      "matches_notes": true,
+      "intake_only": 113,
+      "native_check_counts": {
+        "pass": 341,
+        "unverified": 603
+      },
+      "prompt_mismatch_count": 137
+    },
+    {
+      "delivery_id": "D0006",
+      "core_pairs": 26,
+      "actual_status_counts": {
+        "partial": 26
+      },
+      "note_expected": {
+        "partial": 26
+      },
+      "matches_notes": true,
+      "intake_only": 26,
+      "native_check_counts": {
+        "pass": 52,
+        "unverified": 130
+      },
+      "prompt_mismatch_count": 26
+    },
+    {
+      "delivery_id": "D0007",
+      "core_pairs": 72,
+      "actual_status_counts": {
+        "complete": 2,
+        "partial": 70
+      },
+      "note_expected": {
+        "complete": 2,
+        "partial": 70
+      },
+      "matches_notes": true,
+      "intake_only": 70,
+      "native_check_counts": {
+        "pass": 216,
+        "unverified": 350
+      },
+      "prompt_mismatch_count": 72
+    },
+    {
+      "delivery_id": "D0008",
+      "core_pairs": 20,
+      "actual_status_counts": {
+        "partial": 20
+      },
+      "note_expected": {
+        "partial": 20
+      },
+      "matches_notes": true,
+      "intake_only": 0,
+      "native_check_counts": {
+        "pass": 210,
+        "unverified": 40
+      },
+      "prompt_mismatch_count": 20
+    }
+  ],
+  "core_count": 377,
+  "core_status_counts": {
+    "complete": 61,
+    "partial": 310,
+    "failed": 3,
+    "blocked": 3
+  },
+  "supporting_count": 16,
+  "supporting_status_counts": {
+    "complete": 9,
+    "partial": 7
+  },
+  "intake_only_core_count": 209,
+  "findings": 130,
+  "finding_categories": {
+    "aggregate_discrepancy": 84,
+    "document_count_discrepancy": 26,
+    "missing_documents": 20
+  },
+  "current_executable_count": 0,
+  "interpretation": "Audit representation is not execution qualification; all executability remains false until qualified by a later phase."
+}

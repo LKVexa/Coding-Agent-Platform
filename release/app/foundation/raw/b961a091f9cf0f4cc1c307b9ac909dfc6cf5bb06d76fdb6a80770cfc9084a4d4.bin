@@ -1,0 +1,17 @@
+{
+ "schema": "d0004-sources/1",
+ "retrieved": "2026-10-28",
+ "cost_usd": 0,
+ "note": "PDF fetched directly on the laptop with curl (sha matches box copy). Text extract produced on the box with pdftotext and transferred via gzip+base64 (sha verified after decode).",
+ "sources": [
+  {
+   "paper": "P0267 (arXiv 2504.02328v1)",
+   "unit": "P0267",
+   "url": "https://arxiv.org/pdf/2504.02328v1",
+   "file": "P0267.pdf",
+   "pdf_sha256": "56113ff0e70e47a3d817c7c248db723cf59a15aebff823ce83af99854c9c6ae8",
+   "text_extract": "P0267.txt",
+   "text_extract_sha256": "eae095374f3ca21bfe996e1358187485a434e4acf57b25e8c79bdae2558329ee"
+  }
+ ]
+}

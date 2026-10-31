@@ -1,0 +1,710 @@
+{
+  "schema": "product-gate/1",
+  "product": "D0008",
+  "gate": "G2",
+  "phase": "COMP",
+  "result": "fail",
+  "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+  "core_pairs": 20,
+  "pairs_meeting_gate": 0,
+  "pair_status_counts": {
+    "partial": 20
+  },
+  "pairs_not_meeting_gate": {
+    "C0126-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0126-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0126-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0126-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0127-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0127-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0127-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0127-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0128-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0128-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0128-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0128-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0129-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0129-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0129-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0129-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0140-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0140-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0140-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    },
+    "C0140-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null
+    }
+  },
+  "all_schema_valid": true,
+  "all_A1_A6_pass": true,
+  "all_output_hashes_verify": true,
+  "rerun_verification": "PASS",
+  "rerun_counts": {
+    "identical": 20,
+    "mismatch": 0,
+    "not_rechecked": 0,
+    "operator_skipped": 0
+  },
+  "operator_skipped_pairs": [],
+  "aggregates_scope": "all_schema_valid / all_A1_A6_pass / all_output_hashes_verify cover executed core pairs only; operator-skipped pairs were never opened and are not evaluated",
+  "per_pair": {
+    "C0126-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 9,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0126-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 7,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0126-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 12,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0126-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 14,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0127-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 9,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0127-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 7,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0127-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 12,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0127-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 14,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0128-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 9,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0128-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 7,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0128-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 12,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0128-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 14,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0129-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 9,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0129-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 7,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0129-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 12,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0129-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 14,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0140-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 9,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0140-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 7,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0140-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 12,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0140-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "original_stage1_exact_method_specification=unverified",
+        "original_source_method_and_parent_validation=unverified"
+      ],
+      "blocked_reason": null,
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 14,
+        "fail": 0,
+        "unverified": 2,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    }
+  },
+  "evaluated": "2026-10-30T19:26:27-07:00",
+  "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and delivery are stopped per ORCHESTRATION.md Gate G2.",
+  "native_check_result_counts": {
+    "pass": 210,
+    "fail": 0,
+    "unverified": 40,
+    "not_applicable": 0,
+    "other": 0
+  },
+  "reporting_tool": {
+    "version": "product-close-reporting/1.1.0",
+    "executable_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\ProductCloseReporting.exe",
+    "executable_sha256": "1cd7b1d2e4cd96ea98a06104f13d4a002b1d1864fec5dc022b9f8af341f2a6cf",
+    "harness_assembly_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "harness_version": "harness-cs/0.2.0",
+    "source_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\src\\ProductCloseReporting.cs",
+    "source_sha256": "5212c733d84eba42f5eca3eda8c17364ef925ff0a7cd0ada4b1555a9953be31d",
+    "source_state": "observed",
+    "fingerprint_scope": "observed running executable/helper and adjacent version source; source-to-binary correspondence requires retained build evidence"
+  }
+}

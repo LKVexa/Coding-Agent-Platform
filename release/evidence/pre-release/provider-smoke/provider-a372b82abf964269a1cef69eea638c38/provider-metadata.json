@@ -1,0 +1,27 @@
+{
+  "name": "codex-chatgpt",
+  "model": "gpt-6.1-sol",
+  "cli_version": "codex-cli 0.166.0-alpha.5.1",
+  "cli_sha256": "3097c909fb6d5cd63510d44aceb1d42df9f6e85722a3e447e477def1ecf60e16",
+  "catalog_sha256": "8c88ee259973cae57cfd64953538d56c1d6b47ad22b8a7c4796bd1c69303dcda",
+  "duration_seconds": 4.906,
+  "usage": {
+    "reported_total_tokens": 4753,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cached_input_tokens": null
+  },
+  "cost": null,
+  "transport": "existing-chatgpt-login",
+  "tool_policy": "pinned-catalog-no-tools",
+  "trust_boundary": "trusted-local-cli; tool suppression is not OS file isolation",
+  "limits": {
+    "timeout_seconds": 120,
+    "prompt_bytes": 65536,
+    "response_bytes": 131072,
+    "diagnostic_bytes": 262144,
+    "schema_bytes": 32768
+  },
+  "status": "completed",
+  "response_sha256": "05f30e25a54447cf8681b516e41bfa608a978f768d7bbd88be95643eeddf7ceb"
+}

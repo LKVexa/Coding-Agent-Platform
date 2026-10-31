@@ -1,0 +1,11 @@
+{
+  "id": "custom-absolute",
+  "path": "src/absolute.py",
+  "function": "absolute_value",
+  "parameters": ["value"],
+  "description": "Return the absolute value of the finite numeric input. Preserve positive values and zero, and return the corresponding positive value for negative input. Keep the same function name and parameter.",
+  "public_examples": [
+    {"id": "public-positive", "args": [2], "expected": 2},
+    {"id": "public-negative", "args": [-3], "expected": 3}
+  ]
+}

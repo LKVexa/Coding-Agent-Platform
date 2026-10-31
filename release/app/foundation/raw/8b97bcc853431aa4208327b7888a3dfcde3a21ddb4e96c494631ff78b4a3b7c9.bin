@@ -1,0 +1,101 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0336-01",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "raw_case_schema_labels_and_split",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "versioned_requirement_test_alignment",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "actual_patch_churn_and_per_task_ratios",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "required_producers_complete",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "real_repository_and_policy_integration",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/core/C0336/C0336-01-requirements.md (F05842)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "e3955450c089ab1ae738674b739cd4dbd265d5bd5c1a441d9c9a500126f0a8f0"
+    },
+    {
+      "name": "../../../../../evidence/sources/frognano-2609.07925v2.html",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "6b4a629a61af45f208e7cd5e4fcba60f9d5961812bcfe66178b0e767b0eb090c"
+    },
+    {
+      "name": "../../../../../evidence/sources/SOURCES.ORACLES.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "50c7d6b4cb64cfaed8443ad8780cb829cf5dd6762aa8821e2eaf06f2211e91dd"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "see evidence/sources/SOURCES.json; preserved provenance"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-30T13:10:34-07:00"
+}

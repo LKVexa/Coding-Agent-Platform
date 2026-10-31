@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "task_set": "authored-numeric-utilities/1.0.0",
+  "scope": "Three authored local repository tasks, not a research benchmark",
+  "language_profile": "bounded-numeric-python/1.0.0",
+  "tasks": [
+    {
+      "id": "clamp-bounds",
+      "partition": "development",
+      "path": "src/clamp.py",
+      "function": "clamp",
+      "parameters": ["value", "lo", "hi"],
+      "description": "Fix clamp so its returned numeric value is limited to the inclusive interval [lo, hi]. Inputs satisfy lo <= hi. Preserve values within the interval, return lo below it and hi above it. Preserve the exact function and parameter names.",
+      "public_examples": [{"args": [4, 0, 8], "expected": 4}, {"args": [-1, 0, 8], "expected": 0}, {"args": [9, 0, 8], "expected": 8}]
+    },
+    {
+      "id": "interval-overlap",
+      "partition": "development",
+      "path": "src/overlap.py",
+      "function": "overlap_length",
+      "parameters": ["a_start", "a_end", "b_start", "b_end"],
+      "description": "Fix overlap_length to return the nonnegative length of intersection of two intervals. Each interval has start <= end. Disjoint or touching intervals have length zero. Preserve the exact function and parameter names.",
+      "public_examples": [{"args": [0, 4, 2, 6], "expected": 2}, {"args": [0, 1, 2, 3], "expected": 0}]
+    },
+    {
+      "id": "bucket-index",
+      "partition": "heldout",
+      "path": "src/buckets.py",
+      "function": "bucket_index",
+      "parameters": ["value", "width"],
+      "description": "Fix bucket_index to return an integer zero-based bucket index. Inputs satisfy value >= 0 and width > 0. Bucket k contains values from k*width inclusive to (k+1)*width exclusive. Use the supported numeric language profile; preserve the exact function and parameter names.",
+      "public_examples": [{"args": [0, 3], "expected": 0}, {"args": [3, 3], "expected": 1}]
+    }
+  ]
+}

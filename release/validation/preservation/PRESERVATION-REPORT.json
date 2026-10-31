@@ -1,0 +1,77 @@
+{
+  "acceptance_scope": "Preservation only; this report does not establish provider, platform or scientific acceptance",
+  "audit_output_boundary": "All audit outputs written only within the coding-agent audit directory; no original or sibling product code executed by these checks",
+  "evidence": {
+    "ORIGINALS-AFTER.json": {
+      "bytes": 453,
+      "sha256": "e04cc8671891e05e9cc2cd5191dc1c7ae71b81dae27a7072bd4cd6715acac073"
+    },
+    "ORIGINALS-BEFORE.json": {
+      "bytes": 453,
+      "sha256": "d0dc6aaa5b20f9b961bf681e102f79dfd318e016a61a4cd95132e101642fb880"
+    },
+    "PRODUCTS-AFTER.json": {
+      "bytes": 306062,
+      "sha256": "aa8a25d28358581db329ecc1050fccf60699d22108d41cd6ae0aa3d43bb22a33"
+    },
+    "PRODUCTS-BEFORE.json": {
+      "bytes": 305638,
+      "sha256": "926c976c48f70ffde967528520f0fac581da19fcd53f2acdd35c44f5cc9d1c56"
+    }
+  },
+  "foundation_pin": "e01d3f340239f4abe0daa27cb3e7c64190f95f4f3a0419f493bc14e7b07d571d",
+  "foundation_q6_verified_before_and_after": true,
+  "generated_at_utc": "2026-10-31T04:30:54.343724+00:00",
+  "historical_status_policy": "Original delivery files and frozen foundation registry bytes preserved; no status or scientific claim promoted by this audit",
+  "manifest_validation_after": {
+    "foundation_core_files": 514,
+    "foundation_distribution_files": 730,
+    "workbench_application_files": 9,
+    "workbench_distribution_files": 684,
+    "workbench_embedded_foundation_files": 514
+  },
+  "method": "Full-file SHA-256 verification against the original delivery baseline and before/after sibling-product snapshots",
+  "original_deliveries": {
+    "added": [],
+    "baseline_sha256": "0eaf5de58463dd566ecad43b766129517e0d06468eb9278fa4bf071aeef4e722",
+    "changed": [],
+    "files_checked_after": 9364,
+    "files_checked_before": 9364,
+    "removed": [],
+    "reparse_points": [],
+    "root": "D:/Deliverables/product-work",
+    "scope": "D0001-D0008 and their eight technical notes",
+    "verified_after_utc": "2026-10-31T04:30:47.388601+00:00",
+    "verified_before_utc": "2026-10-31T04:15:01.602514+00:00"
+  },
+  "product": "coding-agent-platform",
+  "protected_products": {
+    "research-toolkit-root": {
+      "added": [],
+      "changed": [],
+      "files_after": 1,
+      "files_before": 1,
+      "removed": [],
+      "root": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\research-toolkit"
+    },
+    "shared-foundation-release": {
+      "added": [],
+      "changed": [],
+      "files_after": 731,
+      "files_before": 731,
+      "removed": [],
+      "root": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Shared_Foundation_v0.1.0-rc.1"
+    },
+    "workbench-release": {
+      "added": [],
+      "changed": [],
+      "files_after": 685,
+      "files_before": 685,
+      "removed": [],
+      "root": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Local_Component_Workbench_v0.1.0-rc.1"
+    }
+  },
+  "result": "pass",
+  "schema_version": "1.0.0",
+  "workbench_pin": "4ad2d1d49ab7a7f6c71040b4e08013277dc1879aa6f16587d6305096004d3ff9"
+}

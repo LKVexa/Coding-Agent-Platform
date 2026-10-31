@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:component-foundation:check:1.0.0",
+  "title": "check contract version 1.0.0",
+  "description": "Standalone registry checks preserve the observed historical status and raw record. Runtime embedded check objects are specified in adapter-result and run-result.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "check_id",
+    "component_id",
+    "run_id",
+    "scope",
+    "status",
+    "evidence_origin",
+    "evidence_ref",
+    "source_status_ref",
+    "raw"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "check_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "component_id": {
+      "type": "string",
+      "pattern": "^D[0-9]{4}/[A-Za-z0-9_-]+$",
+      "maxLength": 96
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "native",
+        "acceptance",
+        "authored_fixture",
+        "operational",
+        "scientific",
+        "security"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "evidence_origin": {
+      "type": "string",
+      "enum": [
+        "historical",
+        "fresh",
+        "derived"
+      ]
+    },
+    "evidence_ref": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "available",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_status_ref": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "available",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "raw": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "expected": {},
+    "actual": {},
+    "requirement_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "expected_definition_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

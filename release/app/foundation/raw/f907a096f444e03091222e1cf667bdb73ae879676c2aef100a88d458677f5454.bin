@@ -1,0 +1,63 @@
+{
+ "schema": "d0002-sources/1",
+ "retrieved": "2026-10-27",
+ "cost_usd": 0,
+ "sources": [
+  {
+   "paper": "MACRO-LLM",
+   "unit": "C0491",
+   "url": "https://arxiv.org/abs/2601.09295v1 (catalog: https://arxiv.org/html/2601.09295v1)",
+   "file": "macro-2601.09295v1.pdf",
+   "pdf_sha256": "2487c2de00af04bf4a1cae1604a4460c638a35e10e44a8dbe98ffb56627ddffd",
+   "text_extract_sha256": "bc883f40a8f0729400ab5d148a90ca72d01db171eda51d98afca3ba3a95fa26e"
+  },
+  {
+   "paper": "CLAVER (Kronecker Mask and Interpretive Prompts are Language-Action Video Learners)",
+   "unit": "P0009",
+   "url": "https://arxiv.org/abs/2502.03549v3",
+   "file": "claver-2502.03549v3.pdf",
+   "pdf_sha256": "da9cc6c796c42efd1af2a22391f38485af184833b130b4922faf3812d1ff4be1",
+   "text_extract_sha256": "5101e5dcd691d134c9fd0b2b055345c2542cd89a8967046f9cb79c94693a2d89",
+   "html_sha256": "a41661637be66e1e7a5cfe1a2ee6af595088dc8ddfe5d5fb7df673cc5d9b6295"
+  },
+  {
+   "paper": "CLAVER source files (github)",
+   "unit": "P0009",
+   "url": "https://github.com/yjyddq/CLAVER (commit ceb61eb2290da76c96d33daf592f1b6fe084e178)",
+   "files": {
+    "vvt.py": "b515586019a68e795b820844422840a00bcc5098e8cb2cc968d21ceaa138e18e",
+    "action_descriptions.py": "bbd31ee05bac6d95b4612cbb077cfb3459850635087befb606a76d73f8285fc5",
+    "hmdb_51_labels.csv": "cbcc28b2d7769f46c085086f08d4afec43b4d242f95d40bbc2c40828db96fcf0",
+    "claver.py": "d204782aa77c43425f4e1fef69ce064c9d023defd97621644ea39e30fecc4efe",
+    "prompt.py": "d6feaca1a9afa2e479673cffac9f245c05b1f8184e9eebc71a66ed7bea92bed0"
+   },
+   "sha256": "bdd3cc6de49762f7611f58cce161babdd2666b5f3e9c37d23fdbd5d011630b3d"
+  },
+  {
+   "paper": "Precedence-Constrained Winter Value for Effective Graph Data Valuation (ICLR 2025)",
+   "unit": "P0113",
+   "url": "https://openreview.net/forum?id=tVRVE0OAyb",
+   "file": "pcwinter-iclr2025.pdf",
+   "pdf_sha256": "46357ca21a8116e7a05182d3e83ba5c19dee42bb6ecb096b809fa76baf9646f3",
+   "text_extract_sha256": "02c845d80167472c3f3233ff83eb615b5c07e30a2b1bdec5f422bed4073669ef",
+   "html_sha256": "bbc6e70ff1cb5072dc1685b3227cddd66ce0e24cd4a184c76f754b26c687cb35"
+  },
+  {
+   "paper": "PC-Winter arXiv 2402.01943v2 (secondary)",
+   "unit": "P0113",
+   "url": "https://arxiv.org/abs/2402.01943v2",
+   "file": "pcwinter-2402.01943v2.pdf",
+   "pdf_sha256": "98ee26c3a5975e95173dd8ca7b393da90090b7b83d9479950c76830c1475dc2a",
+   "text_extract_sha256": "ad6c83df60409d9f92aa8067acee2952b187fa94c364d353b144f2cb0ac85069"
+  },
+  {
+   "paper": "Learning Geometric Reasoning Networks for Robot Task and Motion Planning (ICLR 2025)",
+   "unit": "P0289",
+   "url": "https://openreview.net/forum?id=ajxAJ8GUX4",
+   "file": "grn-iclr2025.pdf",
+   "pdf_sha256": "19a1341b80ec77c338bd2ff58262b7210255b824cc9ce76bcdc4f12c41bb20c4",
+   "text_extract_sha256": "28b0fa874ee3afb590f3900164e4c3f7d8d48127e492707b4f6c7a7c8da75185",
+   "html_sha256": "dd8faeea6b530df857d700ce354c1924c5119c2ead467da582a3699025f7dcd1"
+  }
+ ]
+}

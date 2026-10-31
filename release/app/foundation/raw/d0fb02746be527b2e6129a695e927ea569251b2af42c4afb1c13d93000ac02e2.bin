@@ -1,0 +1,245 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "P0009-01",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Constraint",
+ "inputs": [
+  {
+   "name": "catalog prompt P0009-01-temporal-kronecker-mask-attention.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "129dfb2ba8fb71536539a57a16aca003d129b6a8b1310ad87c3df56f48c7719a"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0002/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "2140a5c2a536ffb52ec64767e1626cb93ffc703157a6fe3de41e297fbdceb4d4"
+  },
+  {
+   "name": "artifact/d0002/__init__.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "cea617576c3e3a351b4a146825706ec3e5fe7568c75fb903b00ba8b8a9f5a70f"
+  },
+  {
+   "name": "artifact/d0002/pairkit.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "c083a6b8613fb30cefe3b86dcf322b5d09907e56b3d0fe65535fea553c94e0a0"
+  },
+  {
+   "name": "artifact/d0002/pairs_p9.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "21345febc590be43f7e7adf5365e8da96217e924456576c1c3a59de0fecceba7"
+  },
+  {
+   "name": "artifact/d0002/kmask.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "24d5ebfed90d8574bda9dd3c72bcb94a355f0fc6dbc2d8b189b73f5af72c051b"
+  },
+  {
+   "name": "artifact/d0002/srcexec.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "db58c2bd7ba623451117c79c79f5d0d6f3a0448c5c1dbac1089c31bbbbf272e5"
+  },
+  {
+   "name": "artifact/d0002/claver_prompts.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "79e18187ae0177d19b818300c64ccb3324371f5db37c497545d1e97ba7899ae1"
+  },
+  {
+   "name": "artifact/sources/claver/vvt.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "b515586019a68e795b820844422840a00bcc5098e8cb2cc968d21ceaa138e18e"
+  },
+  {
+   "name": "artifact/sources/claver/action_descriptions.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "bbd31ee05bac6d95b4612cbb077cfb3459850635087befb606a76d73f8285fc5"
+  },
+  {
+   "name": "artifact/sources/claver/hmdb_51_labels.csv",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "cbcc28b2d7769f46c085086f08d4afec43b4d242f95d40bbc2c40828db96fcf0"
+  },
+  {
+   "name": "source CLAVER (Kronecker Mask and Interpretive Prompts are Language-Action Video Learners) (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2502.03549v3",
+   "sha256": "da9cc6c796c42efd1af2a22391f38485af184833b130b4922faf3812d1ff4be1"
+  },
+  {
+   "name": "source CLAVER (Kronecker Mask and Interpretive Prompts are Language-Action Video Learners) (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2502.03549v3",
+   "sha256": "5101e5dcd691d134c9fd0b2b055345c2542cd89a8967046f9cb79c94693a2d89"
+  },
+  {
+   "name": "source CLAVER (Kronecker Mask and Interpretive Prompts are Language-Action Video Learners) (html)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2502.03549v3",
+   "sha256": "a41661637be66e1e7a5cfe1a2ee6af595088dc8ddfe5d5fb7df673cc5d9b6295"
+  },
+  {
+   "name": "source CLAVER source files (github) (sha256)",
+   "state": "present",
+   "version": "https://github.com/yjyddq/CLAVER (commit ceb61eb2290da76c96d33daf592f1b6fe084e178)",
+   "sha256": "bdd3cc6de49762f7611f58cce161babdd2666b5f3e9c37d23fdbd5d011630b3d"
+  }
+ ],
+ "checks": [
+  {
+   "name": "equals_source_construction",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/equals_source_construction",
+   "iterations": 1
+  },
+  {
+   "name": "matches_prose_definition",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/matches_prose_definition",
+   "iterations": 1
+  },
+  {
+   "name": "blocked_weights_exactly_zero",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/blocked_weights_exactly_zero",
+   "iterations": 1
+  },
+  {
+   "name": "boundary_T1_identity",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/boundary_T1_identity",
+   "iterations": 1
+  },
+  {
+   "name": "invalid_T0",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/invalid_T0",
+   "iterations": 1
+  },
+  {
+   "name": "invalid_L_float",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/invalid_L_float",
+   "iterations": 1
+  },
+  {
+   "name": "invalid_mask_shape",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/invalid_mask_shape",
+   "iterations": 1
+  },
+  {
+   "name": "fully_masked_row",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/fully_masked_row",
+   "iterations": 1
+  },
+  {
+   "name": "kmcta_always_full_rank",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/kmcta_always_full_rank",
+   "iterations": 1
+  },
+  {
+   "name": "kmta_joint_not_guaranteed",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/kmta_joint_not_guaranteed",
+   "iterations": 1
+  },
+  {
+   "name": "receptive_field",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/receptive_field",
+   "iterations": 1
+  },
+  {
+   "name": "homogenisation",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/homogenisation",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://iclr.cc/virtual/2025/poster/29648": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T14:21:29-07:00"
+}

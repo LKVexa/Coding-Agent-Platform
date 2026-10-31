@@ -1,0 +1,158 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0279-05",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Stage 1 Verify meaning and scope incomplete; metadata intake only"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "intake_bindings_and_native_contracts",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "primary_source_verification",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "source_specific_input_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_required_work",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_diagnostic_cases",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_integration_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0279/P0279-05-repeated-refinement.md (F07281)",
+      "state": "present",
+      "version": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+      "sha256": "8b742eec1c68c8b21fb3495ae623e7def929c8e69b96a4b33af44b69a9214707"
+    },
+    {
+      "name": "pairs/COMP/P0279-05/component-work/P0279-05/intake/READINESS-AUDIT.json (scoped readiness metadata; not primary material)",
+      "state": "present",
+      "version": "comp-source-intake-readiness/2",
+      "sha256": "bd8fee6f5642b302c237646347eaa055457769f107ca7fdb7f3354038eb23e50"
+    },
+    {
+      "name": "preflight/PREFLIGHT-codex-ps5-20261030T163355040-a.json",
+      "state": "present",
+      "version": "passed preflight/cs-1; exact immutable pin",
+      "sha256": "7b8efa804399ec4fe7a5c39604e0aafbf074fb78f66d76ddf8bb4f09f56dd275"
+    },
+    {
+      "name": "Primary material unverified/not provided for this scoped intake: https://iclr.cc/virtual/2025/poster/29824 (displayed abstract)",
+      "state": "missing",
+      "version": "Not positively verified in bounded audit scopes; no global absence claim."
+    },
+    {
+      "name": "Source-specific runtime/configuration or review prerequisites for P0279-05 (Workflow stage, operation, information source, or analysis step.)",
+      "state": "missing",
+      "version": "Not established by source verification; generic tools are not the named method's runnable inputs."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Source-described purpose.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: preceding inputs.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: required operation or review.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: expected result.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: consuming stage.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: observable success and failure conditions.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Navigation environment/assets, versioned instruction/trajectory records, generator/navigator weights and independent scene/task split.",
+      "state": "missing",
+      "version": "For P0279-05 (Repeated refinement), exact source-specific definitions/runtime inputs are not established by the completed bounded audit. Primary method readiness remains unverified; global absence is not claimed."
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "Deterministic metadata packaging only; no random sampling or scientific fixture."
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "kit": "source-intake-pairkit/2.0.0",
+    "retrieved": {
+      "sources": "See immutable readiness audit; no primary source retrieval or scientific execution is claimed."
+    }
+  },
+  "blocked_reason": "Native Stage1 unfinished for P0279-05 (Repeated refinement). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+  "updated": "2026-10-30T17:29:42-07:00"
+}

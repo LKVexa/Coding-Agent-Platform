@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:component-foundation:run-result:1.0.0",
+  "title": "run-result contract version 1.0.0",
+  "description": "Append-only execution result. Artifact hash-map values and paths are verified by runtime integrity checks; this schema deliberately uses no unsupported additionalProperties subschema.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "component_id",
+    "case",
+    "request_sha256",
+    "foundation_manifest_sha256",
+    "started_at",
+    "finished_at",
+    "execution",
+    "verification",
+    "scientific_validation",
+    "scope",
+    "checks",
+    "argv",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{7,79}$"
+    },
+    "component_id": {
+      "type": "string",
+      "pattern": "^D[0-9]{4}/[A-Za-z0-9_-]+$",
+      "maxLength": 96
+    },
+    "case": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "foundation_manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "started_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "finished_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "execution": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "verification": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unverified",
+        "blocked",
+        "not_attempted"
+      ]
+    },
+    "scientific_validation": {
+      "type": "string",
+      "const": "unverified"
+    },
+    "scope": {
+      "type": "string",
+      "const": "authored_fixture"
+    },
+    "checks": {
+      "type": "array",
+      "maxItems": 4097,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "expected",
+          "actual"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "unverified",
+              "blocked",
+              "not_attempted"
+            ]
+          },
+          "expected": {},
+          "actual": {},
+          "description": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 16384
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "argv": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 32768
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "candidate_accepted": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "process": {
+      "type": "object",
+      "required": [
+        "outcome",
+        "exit_code",
+        "elapsed_seconds",
+        "limits",
+        "environment"
+      ],
+      "properties": {
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "completed",
+            "timeout",
+            "output_limit"
+          ]
+        },
+        "exit_code": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "elapsed_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "limits": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "environment": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "error": {
+      "type": "object",
+      "required": [
+        "type",
+        "message"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "message": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 65536
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

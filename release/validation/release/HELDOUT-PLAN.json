@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "task": "bucket-index",
+  "partition": "heldout",
+  "run_id": "verified-bucket",
+  "app_manifest_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "evaluator_manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+  "max_provider_calls": 2,
+  "timeout_seconds": 120,
+  "private_feedback_used_for_retry": false,
+  "code_and_prompts_frozen": true,
+  "scope": "Authored diagnostic, not a generalization benchmark",
+  "recorded_at_utc": "2026-10-31T04:32:03.7964945Z"
+}

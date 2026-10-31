@@ -1,0 +1,167 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "C0491-03",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Planning/reasoning stage",
+ "inputs": [
+  {
+   "name": "catalog prompt C0491-03-proposal-revision.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "494427781099d85a715bd040eaa66c067838111c8c4253789cc6db50edb04deb"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0002/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "2140a5c2a536ffb52ec64767e1626cb93ffc703157a6fe3de41e297fbdceb4d4"
+  },
+  {
+   "name": "artifact/d0002/__init__.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "cea617576c3e3a351b4a146825706ec3e5fe7568c75fb903b00ba8b8a9f5a70f"
+  },
+  {
+   "name": "artifact/d0002/pairkit.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "c083a6b8613fb30cefe3b86dcf322b5d09907e56b3d0fe65535fea553c94e0a0"
+  },
+  {
+   "name": "artifact/d0002/pairs_c.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "6294d0217128ec45062900f627c20f6602264441c7e5bcd587f9a1ede3909a26"
+  },
+  {
+   "name": "artifact/d0002/cacc.py",
+   "state": "present",
+   "version": "d0002-harness",
+   "sha256": "fc487633ab0f9fafb67a3d2842b66e1a2f7456f8cf73c97699e7d45e6cf01db7"
+  },
+  {
+   "name": "source MACRO-LLM (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2601.09295v1 (catalog: https://arxiv.org/html/2601.09295v1)",
+   "sha256": "2487c2de00af04bf4a1cae1604a4460c638a35e10e44a8dbe98ffb56627ddffd"
+  },
+  {
+   "name": "source MACRO-LLM (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2601.09295v1 (catalog: https://arxiv.org/html/2601.09295v1)",
+   "sha256": "bc883f40a8f0729400ab5d148a90ca72d01db171eda51d98afca3ba3a95fa26e"
+  }
+ ],
+ "checks": [
+  {
+   "name": "weighted_combination_known_answer",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/weighted_combination_known_answer",
+   "iterations": 1
+  },
+  {
+   "name": "reverified",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/reverified",
+   "iterations": 1
+  },
+  {
+   "name": "missing_neighbour_proposal",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/missing_neighbour_proposal",
+   "iterations": 1
+  },
+  {
+   "name": "contribution_to_parent_task",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/contribution_to_parent_task",
+   "iterations": 1
+  },
+  {
+   "name": "revision_preserves_safety",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/revision_preserves_safety",
+   "iterations": 1
+  },
+  {
+   "name": "simpler_stage_comparison_recorded",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/simpler_stage_comparison_recorded",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://arxiv.org/html/2601.09295v1": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T14:25:27-07:00"
+}

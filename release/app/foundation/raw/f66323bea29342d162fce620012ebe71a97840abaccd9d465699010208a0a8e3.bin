@@ -1,0 +1,155 @@
+{
+ "schema": "catalog-status/3.0",
+ "collection": "COMP",
+ "id": "P0299-03",
+ "prompt_version": "3.0.0",
+ "status": "complete",
+ "stage": {
+  "last_completed": 8,
+  "total": 8,
+  "label": "Stage 8 package and hand off"
+ },
+ "integration_status": "fixture_tested",
+ "work_type": "Loss",
+ "inputs": [
+  {
+   "name": "catalog prompt P0299-03-equivalent-single-level-objective.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "583b0de87a5ba5bfbd4d9e619a00c2eea78ed0c98a62dc2d2b5f3c83b4c1aa9b"
+  },
+  {
+   "name": "POLICY/status.schema.json",
+   "state": "present",
+   "version": "catalog-status/3.0",
+   "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+  },
+  {
+   "name": "POLICY/HARDENING-POLICY.md",
+   "state": "present",
+   "version": "3.0.0",
+   "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+  },
+  {
+   "name": "D0001/manifest.json",
+   "state": "present",
+   "version": "1.1.0",
+   "sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6"
+  },
+  {
+   "name": "artifact/d0001/__init__.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1"
+  },
+  {
+   "name": "artifact/d0001/pairkit.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21"
+  },
+  {
+   "name": "artifact/d0001/pairs_p1.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "67cf028ae080f95262fc6724456fc1bc5161b5f7c762dcead61b0516b89c2633"
+  },
+  {
+   "name": "artifact/d0001/t2v.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "40fa81e23e1051bc161ba571f4e2f8b5e2ed42862ec295b10c7aa8f2db2586a5"
+  },
+  {
+   "name": "artifact/d0001/bilevel.py",
+   "state": "present",
+   "version": "d0001-harness",
+   "sha256": "b79c34a40c5d033d9f2b9a6a500691d38d76aea82ab0769166fa4f97ed967b0c"
+  },
+  {
+   "name": "source GAFFA (pdf)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2406.01992v1",
+   "sha256": "907d5769ad57a0d367e773bfd03d57e45f6bd78f83b434075663c3fd12763af0"
+  },
+  {
+   "name": "source GAFFA (text_extract)",
+   "state": "present",
+   "version": "https://arxiv.org/abs/2406.01992v1",
+   "sha256": "9b77d95ac3e34542fca521dabf87e13bce0da42d807089ae8cd8f74995cbdbf7"
+  }
+ ],
+ "checks": [
+  {
+   "name": "independent_value",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/independent_value",
+   "iterations": 1
+  },
+  {
+   "name": "equals_F_on_feasible_set",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/equals_F_on_feasible_set",
+   "iterations": 1
+  },
+  {
+   "name": "contribution",
+   "result": "pass",
+   "evidence": "evidence/records.json#/checks/contribution",
+   "iterations": 1
+  },
+  {
+   "name": "A1",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A1",
+   "iterations": 1
+  },
+  {
+   "name": "A2",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A2",
+   "iterations": 1
+  },
+  {
+   "name": "A3",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A3",
+   "iterations": 1
+  },
+  {
+   "name": "A4",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A4",
+   "iterations": 1
+  },
+  {
+   "name": "A5",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A5",
+   "iterations": 1
+  },
+  {
+   "name": "A6",
+   "result": "pass",
+   "evidence": "evidence/acceptance.json#/A6",
+   "iterations": 1
+  }
+ ],
+ "determinism": {
+  "seeds": {
+   "policy": "all randomness uses numpy.random.default_rng(<literal seed>) inside artifact/ sources; no global RNG state",
+   "rerun": "deterministic given identical tool versions"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "retrieved": {
+   "https://arxiv.org/abs/2406.01992v1": "2026-10-27"
+  }
+ },
+ "blocked_reason": null,
+ "updated": "2026-10-27T13:32:31-07:00"
+}

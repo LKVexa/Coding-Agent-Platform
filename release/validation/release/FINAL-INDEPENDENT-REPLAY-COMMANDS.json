@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0.0",
+  "sanitized": true,
+  "model_calls": 0,
+  "commands": [
+    {
+      "run_id": "verified-clamp",
+      "operation": "verify copied commit",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "02f44dc4dd631662a5dd9e0ff620875c8d8475d62217cef170fea99b4740ca50",
+      "stdout_bytes": 41
+    },
+    {
+      "run_id": "verified-clamp",
+      "operation": "verify pristine copied tree",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-clamp",
+      "operation": "independent real Git patch check",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--check",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-clamp",
+      "operation": "independent real Git patch application",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-clamp",
+      "operation": "verify one-file patch confinement",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--cached",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "97cad0adb71310d1a8b54bb788bf82e7fad214c7eda61cc3c0e51b70a284247d",
+      "stdout_bytes": 13
+    },
+    {
+      "run_id": "verified-overlap",
+      "operation": "verify copied commit",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "02f44dc4dd631662a5dd9e0ff620875c8d8475d62217cef170fea99b4740ca50",
+      "stdout_bytes": 41
+    },
+    {
+      "run_id": "verified-overlap",
+      "operation": "verify pristine copied tree",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-overlap",
+      "operation": "independent real Git patch check",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--check",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-overlap",
+      "operation": "independent real Git patch application",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-overlap",
+      "operation": "verify one-file patch confinement",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--cached",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "8c10f39d41ccae2eeb8f65c38ef6407a96550362a126f8e72689cf4b4ca07ac3",
+      "stdout_bytes": 15
+    },
+    {
+      "run_id": "verified-bucket",
+      "operation": "verify copied commit",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "02f44dc4dd631662a5dd9e0ff620875c8d8475d62217cef170fea99b4740ca50",
+      "stdout_bytes": 41
+    },
+    {
+      "run_id": "verified-bucket",
+      "operation": "verify pristine copied tree",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-bucket",
+      "operation": "independent real Git patch check",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--check",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-bucket",
+      "operation": "independent real Git patch application",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "apply",
+        "--index",
+        "--",
+        "<IMMUTABLE_FINAL_RUN>\\change.patch"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "run_id": "verified-bucket",
+      "operation": "verify one-file patch confinement",
+      "executable": "<VERIFIED_GIT>",
+      "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+      "cwd": "<NEW_REPOSITORY_COPY>",
+      "args": [
+        "diff",
+        "--cached",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "370920536c57bcfa97553fb3d1265b5fc810104b29e64f6a4c32489fc72f708c",
+      "stdout_bytes": 15
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "case_id": "DEV-T01",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      -2,
+      0,
+      5
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T02",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      3,
+      0,
+      5
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T03",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      9,
+      0,
+      5
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T04",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      0,
+      3,
+      2
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T05",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      4,
+      4,
+      4
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T06",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      -2147483648,
+      -10,
+      10
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T07",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      2147483647,
+      -10,
+      10
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "DEV-T08",
+    "task_id": "DEV-CLAMP",
+    "task_version": "clamp-v1",
+    "group": "DEV-CLAMP",
+    "split": "development",
+    "arguments": [
+      5,
+      0,
+      5
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T01",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      -2147483648
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T02",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      -5
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T03",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      -1
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T04",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      0
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T05",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      1
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  },
+  {
+    "case_id": "FINAL-T06",
+    "task_id": "FINAL-MAGNITUDE",
+    "task_version": "magnitude-v1",
+    "group": "FINAL-MAGNITUDE",
+    "split": "final-evaluation",
+    "arguments": [
+      2147483647
+    ],
+    "origin": "fresh-authored-bounded-fixture"
+  }
+]

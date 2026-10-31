@@ -1,0 +1,8 @@
+{
+  "provider_sha256": "6c0d3cb5022523526df7235c285d2ce69ac9910ebfb3fd77e845d6b07f9e39e0",
+  "catalog_sha256": "8c88ee259973cae57cfd64953538d56c1d6b47ad22b8a7c4796bd1c69303dcda",
+  "unit_tests_passed": 9,
+  "real_inference_calls": 1,
+  "pure_prompt_isolation": false,
+  "no_tools_capture_passed": true
+}

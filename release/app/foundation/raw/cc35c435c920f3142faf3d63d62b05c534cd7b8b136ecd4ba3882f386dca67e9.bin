@@ -1,0 +1,23 @@
+# Source-intake result
+
+D0006/P0294-02 is PARTIAL. Native stage1 is unfinished (last_completed0 of8); integration was not attempted.
+
+Native stage1 remains unfinished for P0294-02 (Sparse regularization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.
+
+No scientific implementation, original diagnostic, model, dataset substitute, proof reconstruction, consumer execution or upstream acceptance occurred. The retained readiness audit and original contracts support continuing actual work when prerequisites are established, not a claim of implementation completeness.
+
+## Intake metadata outcomes
+
+- Checks: 1 pass, 0 fail, 5 unverified. Metadata replay identical: yes.
+- No source-method implementation, scientific diagnostics or integration was executed.
+- Records: [evidence/records.json](evidence/records.json)
+
+## Limitations
+
+- Original authored prompt integrity and scoped source readiness are assessed; they do not supply or validate the cited primary content.
+- Absence from enumerated bounded scopes is not proof of global unavailability. Search limits, positive generic assets and exclusions are retained.
+- The exact native work type, runtime/input/configuration contracts, required work, diagnostics and integration contract remain unfulfilled.
+- No scientific algorithm, dataset substitute, model inference, training, original diagnostic or integration was executed.
+- No partial upstream output is accepted as a usable producer. Source-intake does not require running method consumers.
+- Native stage1 source verification remains unfinished (last_completed0 of8); metadata schema/replay checks do not advance implementation stages.
+- This audit applies only to its explicit product and COMP pair scope; no automatic absence decision applies to another product.

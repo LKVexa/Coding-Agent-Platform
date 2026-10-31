@@ -1,0 +1,483 @@
+[
+  {
+    "name": "doctor",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "doctor"
+    ],
+    "exit_code": 0,
+    "seconds": 3.734,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\doctor.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\doctor.stderr.txt"
+  },
+  {
+    "name": "tasks",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 0,
+    "seconds": 3.11,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\tasks.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\tasks.stderr.txt"
+  },
+  {
+    "name": "relocated_tasks",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\relocated app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 0,
+    "seconds": 4.625,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\relocated_tasks.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\relocated_tasks.stderr.txt"
+  },
+  {
+    "name": "powershell_default_doctor",
+    "argv": [
+      "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\Start-Platform.ps1"
+    ],
+    "exit_code": 0,
+    "seconds": 4.953,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_default_doctor.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_default_doctor.stderr.txt"
+  },
+  {
+    "name": "powershell_tasks",
+    "argv": [
+      "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\Start-Platform.ps1",
+      "tasks"
+    ],
+    "exit_code": 0,
+    "seconds": 3.859,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_tasks.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_tasks.stderr.txt"
+  },
+  {
+    "name": "powershell_demo_spaces",
+    "argv": [
+      "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\Start-Platform.ps1",
+      "demo",
+      "--destination",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces"
+    ],
+    "exit_code": 0,
+    "seconds": 13.953,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_demo_spaces.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\powershell_demo_spaces.stderr.txt"
+  },
+  {
+    "name": "duplicate_demo_destination",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "demo",
+      "--destination",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces"
+    ],
+    "exit_code": 2,
+    "seconds": 3.406,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\duplicate_demo_destination.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\duplicate_demo_destination.stderr.txt"
+  },
+  {
+    "name": "demo_protected_destination",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "demo",
+      "--destination",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\new forbidden demo"
+    ],
+    "exit_code": 2,
+    "seconds": 3.859,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\demo_protected_destination.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\demo_protected_destination.stderr.txt"
+  },
+  {
+    "name": "cmd_tasks",
+    "argv": [
+      "C:\\WINDOWS\\System32\\cmd.exe",
+      "/d",
+      "/s",
+      "/c",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\Coding-Agent.cmd tasks"
+    ],
+    "exit_code": 0,
+    "seconds": 3.688,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\cmd_tasks.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\cmd_tasks.stderr.txt"
+  },
+  {
+    "name": "cmd_demo_spaces",
+    "argv": [
+      "C:\\WINDOWS\\System32\\cmd.exe",
+      "/d",
+      "/s",
+      "/c",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\Coding-Agent.cmd demo --destination \"C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\cmd demo repository spaces\""
+    ],
+    "exit_code": 0,
+    "seconds": 5.312,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\cmd_demo_spaces.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\cmd_demo_spaces.stderr.txt"
+  },
+  {
+    "name": "refuses_nonisolated_python",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 0.156,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\refuses_nonisolated_python.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\refuses_nonisolated_python.stderr.txt"
+  },
+  {
+    "name": "refuses_wrong_runtime",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "-c",
+      "import sys,runpy;sys.version_info=(3,12,13);runpy.run_path(sys.argv[1],run_name='__main__')",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py"
+    ],
+    "exit_code": 2,
+    "seconds": 0.157,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\refuses_wrong_runtime.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\refuses_wrong_runtime.stderr.txt"
+  },
+  {
+    "name": "invalid_command",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "unknown-command"
+    ],
+    "exit_code": 2,
+    "seconds": 0.328,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_command.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_command.stderr.txt"
+  },
+  {
+    "name": "missing_required_arguments",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "run"
+    ],
+    "exit_code": 2,
+    "seconds": 0.312,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_required_arguments.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_required_arguments.stderr.txt"
+  },
+  {
+    "name": "state_inside_package",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "runs",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\forbidden state"
+    ],
+    "exit_code": 2,
+    "seconds": 3.344,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\state_inside_package.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\state_inside_package.stderr.txt"
+  },
+  {
+    "name": "unrelated_state_rejected",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "runs",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\unrelated state"
+    ],
+    "exit_code": 2,
+    "seconds": 3.734,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unrelated_state_rejected.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unrelated_state_rejected.stderr.txt"
+  },
+  {
+    "name": "incompatible_state_rejected",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "runs",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\incompatible state"
+    ],
+    "exit_code": 2,
+    "seconds": 3.359,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\incompatible_state_rejected.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\incompatible_state_rejected.stderr.txt"
+  },
+  {
+    "name": "empty_state_listing",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "runs",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\preserved state"
+    ],
+    "exit_code": 0,
+    "seconds": 4.032,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\empty_state_listing.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\empty_state_listing.stderr.txt"
+  },
+  {
+    "name": "invalid_run_id",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "inspect",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\preserved state",
+      "--run-id",
+      "../escape"
+    ],
+    "exit_code": 2,
+    "seconds": 3.656,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_run_id.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_run_id.stderr.txt"
+  },
+  {
+    "name": "unknown_run",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "inspect",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\preserved state",
+      "--run-id",
+      "missing-run"
+    ],
+    "exit_code": 2,
+    "seconds": 3.125,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unknown_run.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unknown_run.stderr.txt"
+  },
+  {
+    "name": "state_overlaps_repository",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "run",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces\\state",
+      "--repo",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces",
+      "--task",
+      "clamp-bounds"
+    ],
+    "exit_code": 2,
+    "seconds": 3.156,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\state_overlaps_repository.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\state_overlaps_repository.stderr.txt"
+  },
+  {
+    "name": "invalid_call_budget",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "run",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\preserved state",
+      "--repo",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces",
+      "--task",
+      "clamp-bounds",
+      "--max-calls",
+      "0"
+    ],
+    "exit_code": 2,
+    "seconds": 3.188,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_call_budget.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_call_budget.stderr.txt"
+  },
+  {
+    "name": "invalid_task",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\outputs\\Coding_Agent_Platform_v0.1.0-rc.1\\app\\agent.py",
+      "run",
+      "--state",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\preserved state",
+      "--repo",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\demo repository with spaces",
+      "--task",
+      "not-a-real-task"
+    ],
+    "exit_code": 2,
+    "seconds": 3.093,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_task.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\invalid_task.stderr.txt"
+  },
+  {
+    "name": "changed_package_document",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 0.484,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_package_document.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_package_document.stderr.txt"
+  },
+  {
+    "name": "missing_package_document",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 0.313,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_package_document.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_package_document.stderr.txt"
+  },
+  {
+    "name": "changed_foundation_file",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 3.625,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_foundation_file.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_foundation_file.stderr.txt"
+  },
+  {
+    "name": "missing_foundation_file",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 1.75,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_foundation_file.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_foundation_file.stderr.txt"
+  },
+  {
+    "name": "changed_evaluator_protocol",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 0.515,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_evaluator_protocol.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\changed_evaluator_protocol.stderr.txt"
+  },
+  {
+    "name": "missing_evaluator_protocol",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 0.5,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_evaluator_protocol.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\missing_evaluator_protocol.stderr.txt"
+  },
+  {
+    "name": "unexpected_package_file",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\tamper app\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 2,
+    "seconds": 2.61,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unexpected_package_file.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\unexpected_package_file.stderr.txt"
+  },
+  {
+    "name": "rollback_after_rename",
+    "argv": [
+      "C:\\Users\\russe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\retired install retained for rollback\\agent.py",
+      "tasks"
+    ],
+    "exit_code": 0,
+    "seconds": 5.797,
+    "stdout_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\rollback_after_rename.stdout.txt",
+    "stderr_file": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6\\command-logs\\rollback_after_rename.stderr.txt"
+  }
+]

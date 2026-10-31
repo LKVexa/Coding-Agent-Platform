@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "required": [
+    {
+      "capability": "repository/source/task boundaries",
+      "result": "pass",
+      "evidence": "validation/behavior/REPORT.json"
+    },
+    {
+      "capability": "actual no-tools model proposal",
+      "result": "pass",
+      "evidence": "validation/provider/module-transport-probe.json"
+    },
+    {
+      "capability": "public-only correction loop",
+      "result": "pass",
+      "evidence": "validation/integration/test-output.txt"
+    },
+    {
+      "capability": "independent final evaluation and regression rejection",
+      "result": "pass",
+      "evidence": "validation/evaluator/controls.json"
+    },
+    {
+      "capability": "cancellation, interruption and non-repeating recovery",
+      "result": "pass",
+      "evidence": "validation/behavior/REPORT.json"
+    },
+    {
+      "capability": "exported patch replay",
+      "result": "pass",
+      "evidence": "validation/release/FINAL-INDEPENDENT-REPLAY.json"
+    },
+    {
+      "capability": "foundation correct/regression adapter",
+      "result": "pass",
+      "evidence": "validation/foundation/selftest.json"
+    },
+    {
+      "capability": "exact package and runtime launchers",
+      "result": "pass",
+      "evidence": "validation/release/PACKAGE-ACCEPTANCE.json"
+    }
+  ],
+  "disabled": [
+    "arbitrary repository programs",
+    "dependency installation",
+    "training",
+    "deployment",
+    "automatic source application"
+  ]
+}

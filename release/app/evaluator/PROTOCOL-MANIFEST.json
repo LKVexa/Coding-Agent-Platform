@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "frozen_utc": "2026-10-31T04:15:41.889523+00:00",
+  "purpose": "Freeze evaluator and private cases before live provider execution",
+  "files": {
+    "__init__.py": "dc2615db6e1b10b1da6bc64a9ccec3d0e4baf6566a764720499ff8334b39c54b",
+    "controls/bucket-index/correct.py": "9d563ea2adf1167cf9b77edbcd33af4f5d7eb57a533f3603b15b74a7e95e8272",
+    "controls/bucket-index/regression.py": "d0a9a2a4ae0dfb98d154a08ac40c8debbfd33e0542576d554e2a9c131badd4df",
+    "controls/clamp-bounds/correct.py": "6e343b222862e31b8b417abde130dd70c128636d3088907af3b658508f682e79",
+    "controls/clamp-bounds/regression.py": "11c22b0946cf36401abf41af0950261ca300929b057b7d3301db37d6b5a3c14d",
+    "controls/interval-overlap/correct.py": "7cb027384d5821193b38c33fcf5d404231bc4d27da539e806b303028a3c9daea",
+    "controls/interval-overlap/regression.py": "446a6da6f8a8b6743c1aa4649d4d43fd8a7b1e83eb7e916fea6691cfc49a7493",
+    "evaluator-only/protocol.json": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+    "public/tasks.json": "d455b90d1705aa61278df0683a9ed52ff450116d8a3dff5958d325f3a5fe4377",
+    "repository-template/README.md": "ed12a895ae6a1ea536c22201c43d85e5c6e824aa80d8db6d530ae77f51733dcb",
+    "repository-template/src/buckets.py": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+    "repository-template/src/clamp.py": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+    "repository-template/src/overlap.py": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+    "safe_python.py": "2cbbc7b6b9ca56999f7eaf13c7cbc34bdd7790a8fc7cb13d5ed6232d44d396bc",
+    "tasks.py": "45575a2b38ef7295b41402cc3c6ec9943af9bb376a45f3dc7940fc6faa71a268"
+  }
+}

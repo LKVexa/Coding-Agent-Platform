@@ -1,0 +1,23 @@
+{
+  "returncode": 1,
+  "expected_local_400": true,
+  "captures": [
+    {
+      "model": "gpt-6.1-sol",
+      "tools": null,
+      "authorization_present": false,
+      "has_json_schema": true,
+      "project_instructions_canary_present": false,
+      "user_config_canary_present": false,
+      "user_instructions_canary_present": true,
+      "host_skills_catalog_present": true,
+      "skills_instructions_block_present": false,
+      "actual_skill_resource_entries": 0,
+      "private_evaluator_path_present": false,
+      "input_char_count": 24763
+    }
+  ],
+  "passed": true,
+  "contract": "No tool capability; project/config instructions excluded; global guidance inherited.",
+  "pure_prompt_isolation": false
+}

@@ -1,0 +1,602 @@
+{
+ "schema": "d0001-gate/1",
+ "gate": "G2",
+ "phase": "COMP",
+ "result": "fail",
+ "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+ "core_pairs": 51,
+ "pair_status_counts": {
+  "complete": 49,
+  "partial": 2
+ },
+ "pairs_not_meeting_gate": {
+  "P0062-01": {
+   "status": "partial",
+   "unresolved_checks": [
+    "real_dataset_slice"
+   ],
+   "blocked_reason": "required external asset not present on the laptop and not obtainable under the USD 0 / existing-local-resources budget (WebVid-10M distribution withdrawn; VidGen-1M multi-TB)"
+  },
+  "P0517-01": {
+   "status": "partial",
+   "unresolved_checks": [
+    "perceptual_real_audio"
+   ],
+   "blocked_reason": "no trained audio codec, no audio corpus and no GPU available locally; not obtainable under USD 0"
+  }
+ },
+ "all_schema_valid": true,
+ "all_A1_A6_pass": true,
+ "all_output_hashes_verify": true,
+ "kernel_integrity": "PASS",
+ "rerun_verification": "PASS",
+ "per_pair": {
+  "C0015-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0015-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0015-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0064-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0064-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0064-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0064-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0079-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0079-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0079-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0079-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0081-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0081-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0081-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0081-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0085-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0085-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0085-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0086-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0086-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "C0086-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0062-01": {
+   "status": "partial",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "real_dataset_slice"
+   ],
+   "blocked_reason": "required external asset not present on the laptop and not obtainable under the USD 0 / existing-local-resources budget (WebVid-10M distribution withdrawn; VidGen-1M multi-TB)",
+   "meets_G2": false
+  },
+  "P0062-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0062-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0062-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0062-05": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0299-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0299-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0299-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0299-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0299-05": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-05": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0304-06": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0370-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0370-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0370-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0370-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0392-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0392-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0392-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0392-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0517-01": {
+   "status": "partial",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [
+    "perceptual_real_audio"
+   ],
+   "blocked_reason": "no trained audio codec, no audio corpus and no GPU available locally; not obtainable under USD 0",
+   "meets_G2": false
+  },
+  "P0517-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0592-01": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0592-02": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0592-03": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  },
+  "P0592-04": {
+   "status": "complete",
+   "schema_valid": true,
+   "in_pairs_jsonl": true,
+   "A1_A6_all_pass": true,
+   "evidence_resolves": true,
+   "output_hashes_verify": true,
+   "unresolved_checks": [],
+   "blocked_reason": null,
+   "meets_G2": true
+  }
+ },
+ "evaluated": "2026-10-27T13:36:43-07:00",
+ "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and executable delivery are stopped per ORCHESTRATION.md Gate G2."
+}

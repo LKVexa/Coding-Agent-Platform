@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "path",
+    "base_sha256",
+    "replacement",
+    "summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "path": {
+      "type": "string"
+    },
+    "base_sha256": {
+      "type": "string"
+    },
+    "replacement": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    }
+  }
+}

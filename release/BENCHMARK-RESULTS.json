@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "three authored repository diagnostics; no research benchmark or superiority claim",
+  "app_manifest_file_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "app_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "private_feedback_used_for_retry": false,
+  "cost": null,
+  "resource_memory_measurement": null,
+  "provider_calls_unit": "CLI invocations; native transport retries may occur within each timeout",
+  "development": [
+    {
+      "run_id": "verified-clamp",
+      "task": "clamp-bounds",
+      "accepted": true,
+      "f2p": {
+        "case_ids": [
+          "clamp-07",
+          "clamp-08"
+        ],
+        "passed": 2,
+        "total": 2
+      },
+      "p2p": {
+        "case_ids": [
+          "clamp-01",
+          "clamp-02",
+          "clamp-03",
+          "clamp-04",
+          "clamp-05",
+          "clamp-06",
+          "clamp-09",
+          "clamp-10"
+        ],
+        "passed": 8,
+        "total": 8
+      },
+      "provider_calls": 2,
+      "provider_seconds": 8.172,
+      "model": "gpt-6.1-sol",
+      "model_identity_source": "CLI header",
+      "reported_usage": {
+        "cached_input_tokens": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reported_total_tokens": 5422
+      },
+      "cost": null,
+      "evidence": "evidence/verified-state/runs/verified-clamp"
+    },
+    {
+      "run_id": "verified-overlap",
+      "task": "interval-overlap",
+      "accepted": true,
+      "f2p": {
+        "case_ids": [
+          "overlap-05",
+          "overlap-06"
+        ],
+        "passed": 2,
+        "total": 2
+      },
+      "p2p": {
+        "case_ids": [
+          "overlap-01",
+          "overlap-02",
+          "overlap-03",
+          "overlap-04",
+          "overlap-07",
+          "overlap-08"
+        ],
+        "passed": 6,
+        "total": 6
+      },
+      "provider_calls": 1,
+      "provider_seconds": 4.969,
+      "model": "gpt-6.1-sol",
+      "model_identity_source": "CLI header",
+      "reported_usage": {
+        "cached_input_tokens": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reported_total_tokens": 5408
+      },
+      "cost": null,
+      "evidence": "evidence/verified-state/runs/verified-overlap"
+    }
+  ],
+  "heldout": [
+    {
+      "run_id": "verified-bucket",
+      "task": "bucket-index",
+      "accepted": true,
+      "f2p": {
+        "case_ids": [
+          "bucket-02",
+          "bucket-04",
+          "bucket-07"
+        ],
+        "passed": 3,
+        "total": 3
+      },
+      "p2p": {
+        "case_ids": [
+          "bucket-01",
+          "bucket-03",
+          "bucket-05",
+          "bucket-06",
+          "bucket-08",
+          "bucket-09",
+          "bucket-10"
+        ],
+        "passed": 7,
+        "total": 7
+      },
+      "provider_calls": 1,
+      "provider_seconds": 9.36,
+      "model": "gpt-6.1-sol",
+      "model_identity_source": "CLI header",
+      "reported_usage": {
+        "cached_input_tokens": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reported_total_tokens": 5456
+      },
+      "cost": null,
+      "evidence": "evidence/verified-state/runs/verified-bucket"
+    }
+  ]
+}

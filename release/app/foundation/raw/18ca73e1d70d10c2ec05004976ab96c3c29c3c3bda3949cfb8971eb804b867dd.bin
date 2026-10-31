@@ -1,0 +1,2825 @@
+{
+  "schema": "product-gate/1",
+  "product": "D0007",
+  "gate": "G2",
+  "phase": "COMP",
+  "result": "fail",
+  "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+  "core_pairs": 72,
+  "pairs_meeting_gate": 2,
+  "pair_status_counts": {
+    "complete": 2,
+    "partial": 70
+  },
+  "pairs_not_meeting_gate": {
+    "P0027-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-01 (Long-sequence processing). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0027-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-02 (Grounding dataset). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0027-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-03 (Grounded question-answer tuning). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0027-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-04 (Token shuffling). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0027-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-05 (TAPE). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0027-06": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-06 (TimePro). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods."
+    },
+    "P0034-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-01 (TPG linking phrases to tubelets). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods."
+    },
+    "P0034-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-02 (CRG refining identification using context). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods."
+    },
+    "P0034-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-03 (SPS increasing scene-understanding difficulty). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods."
+    },
+    "P0082-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0082-01 (High-resolution reference-face images). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover high-resolution reference-face preparation, multi-identity alignment and multimodal diffusion conditioning/inference settings."
+    },
+    "P0082-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0082-02 (Multiple identities). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover high-resolution reference-face preparation, multi-identity alignment and multimodal diffusion conditioning/inference settings."
+    },
+    "P0117-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0117-01 (Text divided into blocks). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover neural codec, block-boundary/token alignment and exact equal compressed-bit-length construction."
+    },
+    "P0117-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0117-02 (Equal compressed bit length per block). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover neural codec, block-boundary/token alignment and exact equal compressed-bit-length construction."
+    },
+    "P0120-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0120-01 (Traditional search data structure). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exact conventional search structure, learned-advice interface, correctness conditions and access-cost model."
+    },
+    "P0120-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0120-02 (Machine-learned advice). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exact conventional search structure, learned-advice interface, correctness conditions and access-cost model."
+    },
+    "P0193-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-01 (Reflection diversification). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy."
+    },
+    "P0193-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-02 (Task-independent memory). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy."
+    },
+    "P0193-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-03 (Retrieval from previously solved tasks). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy."
+    },
+    "P0254-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-01 (Local data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings."
+    },
+    "P0254-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-02 (Communication topology). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings."
+    },
+    "P0254-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-03 (Loss-landscape curvature). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings."
+    },
+    "P0254-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-04 (Neighbor-hop propagation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings."
+    },
+    "P0265-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-01 (Normal examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective."
+    },
+    "P0265-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-02 (Derived pseudo-anomalies). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective."
+    },
+    "P0265-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-03 (Spurious negative pairs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective."
+    },
+    "P0265-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-04 (Opposite pairs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective."
+    },
+    "P0265-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-05 (Inter-group adversarial separation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective."
+    },
+    "P0269-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-01 (Entropy minimization). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule."
+    },
+    "P0269-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-02 (Data-dependent entropy lower bound). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule."
+    },
+    "P0269-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-03 (Test-time updates). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule."
+    },
+    "P0270-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-01 (Multiple data views). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol."
+    },
+    "P0270-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-02 (Fused representations). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol."
+    },
+    "P0270-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-03 (Permutation-based canonical correlation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol."
+    },
+    "P0270-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-04 (Pseudo-label analysis). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol."
+    },
+    "P0279-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-01 (Instruction generator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol."
+    },
+    "P0279-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-02 (Navigator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol."
+    },
+    "P0279-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-03 (Initial instruction/trajectory pool). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol."
+    },
+    "P0279-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-04 (Navigator-based filtering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol."
+    },
+    "P0279-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-05 (Repeated refinement). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol."
+    },
+    "P0288-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-01 (Adversarial mixup generator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol."
+    },
+    "P0288-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-02 (Unlearner). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol."
+    },
+    "P0288-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-03 (Contrastive generator objective). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol."
+    },
+    "P0288-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-04 (Synthesized difficult examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol."
+    },
+    "P0368-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-01 (Added exploration phase). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations."
+    },
+    "P0368-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-02 (Graph-based clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations."
+    },
+    "P0368-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-03 (Set-based clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations."
+    },
+    "P0368-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-04 (Smoothed-adversarial contexts). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations."
+    },
+    "P0403-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-01 (Viral social-media narratives). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol."
+    },
+    "P0403-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-02 (NLP representations). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol."
+    },
+    "P0403-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-03 (Macroeconomic indicators). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol."
+    },
+    "P0486-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-01 (Hand/object interaction benchmark). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering."
+    },
+    "P0486-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-02 (Asymmetric contrastive loss). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering."
+    },
+    "P0486-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-03 (Object-centered feature space). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering."
+    },
+    "P0486-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-04 (Noun-based video clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering."
+    },
+    "P0498-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-01 (Event data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol."
+    },
+    "P0498-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-02 (Generated ProactiveBench examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol."
+    },
+    "P0498-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-03 (Model fine-tuning). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol."
+    },
+    "P0498-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-04 (Active assistance). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol."
+    },
+    "P0575-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-01 (Small-molecule–protein complexes). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule."
+    },
+    "P0575-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-02 (Structural interaction data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule."
+    },
+    "P0575-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-03 (Three docking programs, named collectively). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule."
+    },
+    "P0575-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-04 (Majority-vote selection). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule."
+    },
+    "P0589-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-01 (Gaussian splatting). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0589-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-02 (Differentiable omnidirectional camera). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0589-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-03 (Distortion correction). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0589-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-04 (360-degree images). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0589-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-05 (Noisy-pose inputs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0589-06": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-06 (Inputs without pose priors). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes."
+    },
+    "P0591-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0591-01 (Video clips). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover video-to-spatial-audio architecture, synchronization, FOA channel/coordinate convention and training/evaluation objective."
+    },
+    "P0591-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0591-02 (First-order ambisonic audio). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover video-to-spatial-audio architecture, synchronization, FOA channel/coordinate convention and training/evaluation objective."
+    }
+  },
+  "all_schema_valid": true,
+  "all_A1_A6_pass": true,
+  "all_output_hashes_verify": true,
+  "rerun_verification": "PASS",
+  "rerun_counts": {
+    "identical": 72,
+    "mismatch": 0,
+    "not_rechecked": 0,
+    "operator_skipped": 0
+  },
+  "operator_skipped_pairs": [],
+  "aggregates_scope": "all_schema_valid / all_A1_A6_pass / all_output_hashes_verify cover executed core pairs only; operator-skipped pairs were never opened and are not evaluated",
+  "per_pair": {
+    "C0322-01": {
+      "in_pairs_jsonl": true,
+      "status": "complete",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [],
+      "blocked_reason": null,
+      "meets_G2": true,
+      "native_check_result_counts": {
+        "pass": 38,
+        "fail": 0,
+        "unverified": 0,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "C0322-02": {
+      "in_pairs_jsonl": true,
+      "status": "complete",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [],
+      "blocked_reason": null,
+      "meets_G2": true,
+      "native_check_result_counts": {
+        "pass": 38,
+        "fail": 0,
+        "unverified": 0,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-01 (Long-sequence processing). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-02 (Grounding dataset). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-03 (Grounded question-answer tuning). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-04 (Token shuffling). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-05 (TAPE). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0027-06": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0027-06 (TimePro). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover long-sequence architecture, token-shuffle rule, TAPE/TimePro definitions, tuning objective and evaluation settings from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0034-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-01 (TPG linking phrases to tubelets). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0034-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-02 (CRG refining identification using context). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0034-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0034-03 (SPS increasing scene-understanding difficulty). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover phrase-to-tubelet TPG relation, CRG refinement and SPS difficulty schedule, objective and thresholds from primary methods.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0082-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0082-01 (High-resolution reference-face images). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover high-resolution reference-face preparation, multi-identity alignment and multimodal diffusion conditioning/inference settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0082-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0082-02 (Multiple identities). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover high-resolution reference-face preparation, multi-identity alignment and multimodal diffusion conditioning/inference settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0117-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0117-01 (Text divided into blocks). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover neural codec, block-boundary/token alignment and exact equal compressed-bit-length construction.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0117-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0117-02 (Equal compressed bit length per block). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover neural codec, block-boundary/token alignment and exact equal compressed-bit-length construction.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0120-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0120-01 (Traditional search data structure). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exact conventional search structure, learned-advice interface, correctness conditions and access-cost model.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0120-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0120-02 (Machine-learned advice). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exact conventional search structure, learned-advice interface, correctness conditions and access-cost model.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0193-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-01 (Reflection diversification). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0193-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-02 (Task-independent memory). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0193-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0193-03 (Retrieval from previously solved tasks). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover reflection diversification, task-independent memory representation and previous-task retrieval/selection policy.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0254-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-01 (Local data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0254-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-02 (Communication topology). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0254-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-03 (Loss-landscape curvature). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0254-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0254-04 (Neighbor-hop propagation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover influence-cascade equations, curvature approximation, communication graph and neighbor-hop horizon/settings.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0265-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-01 (Normal examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0265-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-02 (Derived pseudo-anomalies). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0265-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-03 (Spurious negative pairs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0265-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-04 (Opposite pairs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0265-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0265-05 (Inter-group adversarial separation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover normal/pseudo-anomaly construction, spurious-negative/opposite-pair rules and inter-group adversarial objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0269-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-01 (Entropy minimization). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0269-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-02 (Data-dependent entropy lower bound). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0269-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0269-03 (Test-time updates). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover entropy objective, data-dependent lower-bound estimation and conservative test-time update rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0270-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-01 (Multiple data views). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0270-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-02 (Fused representations). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0270-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-03 (Permutation-based canonical correlation). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0270-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0270-04 (Pseudo-label analysis). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover view alignment, fused representation, permutation-based canonical-correlation math and pseudo-label protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0279-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-01 (Instruction generator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0279-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-02 (Navigator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0279-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-03 (Initial instruction/trajectory pool). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0279-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-04 (Navigator-based filtering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0279-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0279-05 (Repeated refinement). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover generator/navigator interfaces, initial trajectory pool, filter criterion and refinement stopping/budget protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0288-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-01 (Adversarial mixup generator). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0288-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-02 (Unlearner). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0288-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-03 (Contrastive generator objective). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0288-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0288-04 (Synthesized difficult examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover adversarial mixup generator, unlearner update, contrastive objective and difficult-example selection protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0368-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-01 (Added exploration phase). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0368-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-02 (Graph-based clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0368-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-03 (Set-based clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0368-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0368-04 (Smoothed-adversarial contexts). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover exploration, graph/set clustering, stochastic/smoothed-adversarial assumptions and decision/update equations.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0403-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-01 (Viral social-media narratives). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0403-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-02 (NLP representations). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0403-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0403-03 (Macroeconomic indicators). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover narrative sampling/representation, macro-indicator availability lags, forecast horizon and independent baseline protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0486-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-01 (Hand/object interaction benchmark). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0486-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-02 (Asymmetric contrastive loss). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0486-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-03 (Object-centered feature space). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0486-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0486-04 (Noun-based video clustering). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover hand/object benchmark protocol, asymmetric contrastive loss, object-centered features and noun-based clustering.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0498-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-01 (Event data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0498-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-02 (Generated ProactiveBench examples). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0498-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-03 (Model fine-tuning). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0498-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0498-04 (Active assistance). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover event schema, ProactiveBench generation/annotation, fine-tuning and active-assistance decision/evaluation protocol.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0575-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-01 (Small-molecule–protein complexes). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0575-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-02 (Structural interaction data). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0575-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-03 (Three docking programs, named collectively). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0575-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0575-04 (Majority-vote selection). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover structural/bioactivity specification and identities/configurations of the three collectively named docking programs; invent neither names nor vote rule.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-01 (Gaussian splatting). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-02 (Differentiable omnidirectional camera). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-03 (Distortion correction). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-04 (360-degree images). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-05 (Noisy-pose inputs). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0589-06": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0589-06 (Inputs without pose priors). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover Gaussian-splatting/omnidirectional camera equations, distortion/self-calibration and noisy-pose/no-prior operating regimes.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0591-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0591-01 (Video clips). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover video-to-spatial-audio architecture, synchronization, FOA channel/coordinate convention and training/evaluation objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0591-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native Stage1 unfinished for P0591-02 (First-order ambisonic audio). No positive primary abstract/method/data identification in completed bounded files; nativeStage1 unresolved. Recover video-to-spatial-audio architecture, synchronization, FOA channel/coordinate convention and training/evaluation objective.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    }
+  },
+  "evaluated": "2026-10-30T18:43:34-07:00",
+  "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and delivery are stopped per ORCHESTRATION.md Gate G2.",
+  "native_check_result_counts": {
+    "pass": 216,
+    "fail": 0,
+    "unverified": 350,
+    "not_applicable": 0,
+    "other": 0
+  },
+  "reporting_tool": {
+    "version": "product-close-reporting/1.1.0",
+    "executable_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\ProductCloseReporting.exe",
+    "executable_sha256": "1cd7b1d2e4cd96ea98a06104f13d4a002b1d1864fec5dc022b9f8af341f2a6cf",
+    "harness_assembly_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "harness_version": "harness-cs/0.2.0",
+    "source_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\src\\ProductCloseReporting.cs",
+    "source_sha256": "5212c733d84eba42f5eca3eda8c17364ef925ff0a7cd0ada4b1555a9953be31d",
+    "source_state": "observed",
+    "fingerprint_scope": "observed running executable/helper and adjacent version source; source-to-binary correspondence requires retained build evidence"
+  }
+}

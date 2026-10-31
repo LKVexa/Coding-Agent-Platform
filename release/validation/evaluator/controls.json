@@ -1,0 +1,1724 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "authored fixtures; no benchmark validity claim",
+  "private_evaluator_output": true,
+  "integrity": {
+    "verified": true,
+    "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+    "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+    "file_count": 15
+  },
+  "all_controls_as_expected": true,
+  "results": [
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "clamp-bounds",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+      "candidate_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-06",
+            "status": "pass",
+            "actual": -5,
+            "expected": -5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-07",
+            "status": "fail",
+            "actual": 11,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-08",
+            "status": "fail",
+            "actual": 0,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 7
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 7
+          }
+        ],
+        "pass": 8,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-06",
+            "status": "pass",
+            "actual": -5,
+            "expected": -5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-07",
+            "status": "fail",
+            "actual": 11,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-08",
+            "status": "fail",
+            "actual": 0,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 7
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 7
+          }
+        ],
+        "pass": 8,
+        "fail": 2
+      },
+      "f2p": {
+        "passed": 0,
+        "total": 2,
+        "case_ids": [
+          "clamp-07",
+          "clamp-08"
+        ]
+      },
+      "p2p": {
+        "passed": 8,
+        "total": 8,
+        "case_ids": [
+          "clamp-01",
+          "clamp-02",
+          "clamp-03",
+          "clamp-04",
+          "clamp-05",
+          "clamp-06",
+          "clamp-09",
+          "clamp-10"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "noop"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "clamp-bounds",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+      "candidate_sha256": "6e343b222862e31b8b417abde130dd70c128636d3088907af3b658508f682e79",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-06",
+            "status": "pass",
+            "actual": -5,
+            "expected": -5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-07",
+            "status": "fail",
+            "actual": 11,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-08",
+            "status": "fail",
+            "actual": 0,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 7
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 7
+          }
+        ],
+        "pass": 8,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "6e343b222862e31b8b417abde130dd70c128636d3088907af3b658508f682e79",
+        "syntax_allowed": true,
+        "status": "pass",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 6
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 6
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 6
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 6
+          },
+          {
+            "id": "clamp-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 6
+          },
+          {
+            "id": "clamp-06",
+            "status": "pass",
+            "actual": -5,
+            "expected": -5,
+            "steps": 6
+          },
+          {
+            "id": "clamp-07",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 6
+          },
+          {
+            "id": "clamp-08",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 6
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 6
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 6
+          }
+        ],
+        "pass": 10,
+        "fail": 0
+      },
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "clamp-07",
+          "clamp-08"
+        ]
+      },
+      "p2p": {
+        "passed": 8,
+        "total": 8,
+        "case_ids": [
+          "clamp-01",
+          "clamp-02",
+          "clamp-03",
+          "clamp-04",
+          "clamp-05",
+          "clamp-06",
+          "clamp-09",
+          "clamp-10"
+        ]
+      },
+      "accepted": true,
+      "private_evaluator_output": true,
+      "control": "correct"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "clamp-bounds",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+      "candidate_sha256": "11c22b0946cf36401abf41af0950261ca300929b057b7d3301db37d6b5a3c14d",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "clamp-06",
+            "status": "pass",
+            "actual": -5,
+            "expected": -5,
+            "steps": 7
+          },
+          {
+            "id": "clamp-07",
+            "status": "fail",
+            "actual": 11,
+            "expected": 10,
+            "steps": 7
+          },
+          {
+            "id": "clamp-08",
+            "status": "fail",
+            "actual": 0,
+            "expected": -1,
+            "steps": 7
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 7
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 7
+          }
+        ],
+        "pass": 8,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "11c22b0946cf36401abf41af0950261ca300929b057b7d3301db37d6b5a3c14d",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "clamp-01",
+            "status": "pass",
+            "actual": 5,
+            "expected": 5,
+            "steps": 4
+          },
+          {
+            "id": "clamp-02",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 4
+          },
+          {
+            "id": "clamp-03",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 4
+          },
+          {
+            "id": "clamp-04",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 4
+          },
+          {
+            "id": "clamp-05",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 4
+          },
+          {
+            "id": "clamp-06",
+            "status": "fail",
+            "actual": -9,
+            "expected": -5,
+            "steps": 4
+          },
+          {
+            "id": "clamp-07",
+            "status": "pass",
+            "actual": 10,
+            "expected": 10,
+            "steps": 4
+          },
+          {
+            "id": "clamp-08",
+            "status": "pass",
+            "actual": -1,
+            "expected": -1,
+            "steps": 4
+          },
+          {
+            "id": "clamp-09",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 4
+          },
+          {
+            "id": "clamp-10",
+            "status": "pass",
+            "actual": 1.5,
+            "expected": 1.5,
+            "steps": 4
+          }
+        ],
+        "pass": 8,
+        "fail": 2
+      },
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "clamp-07",
+          "clamp-08"
+        ]
+      },
+      "p2p": {
+        "passed": 6,
+        "total": 8,
+        "case_ids": [
+          "clamp-01",
+          "clamp-02",
+          "clamp-03",
+          "clamp-04",
+          "clamp-05",
+          "clamp-06",
+          "clamp-09",
+          "clamp-10"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "regression"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "interval-overlap",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+      "candidate_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-02",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 9
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-05",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-06",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          }
+        ],
+        "pass": 6,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-02",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 9
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-05",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-06",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          }
+        ],
+        "pass": 6,
+        "fail": 2
+      },
+      "f2p": {
+        "passed": 0,
+        "total": 2,
+        "case_ids": [
+          "overlap-05",
+          "overlap-06"
+        ]
+      },
+      "p2p": {
+        "passed": 6,
+        "total": 6,
+        "case_ids": [
+          "overlap-01",
+          "overlap-02",
+          "overlap-03",
+          "overlap-04",
+          "overlap-07",
+          "overlap-08"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "noop"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "interval-overlap",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+      "candidate_sha256": "7cb027384d5821193b38c33fcf5d404231bc4d27da539e806b303028a3c9daea",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-02",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 9
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-05",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-06",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          }
+        ],
+        "pass": 6,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "7cb027384d5821193b38c33fcf5d404231bc4d27da539e806b303028a3c9daea",
+        "syntax_allowed": true,
+        "status": "pass",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 10
+          },
+          {
+            "id": "overlap-02",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 10
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 10
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 10
+          },
+          {
+            "id": "overlap-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 10
+          },
+          {
+            "id": "overlap-06",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 10
+          },
+          {
+            "id": "overlap-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 10
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 10
+          }
+        ],
+        "pass": 8,
+        "fail": 0
+      },
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "overlap-05",
+          "overlap-06"
+        ]
+      },
+      "p2p": {
+        "passed": 6,
+        "total": 6,
+        "case_ids": [
+          "overlap-01",
+          "overlap-02",
+          "overlap-03",
+          "overlap-04",
+          "overlap-07",
+          "overlap-08"
+        ]
+      },
+      "accepted": true,
+      "private_evaluator_output": true,
+      "control": "correct"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "interval-overlap",
+      "partition": "development",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+      "candidate_sha256": "446a6da6f8a8b6743c1aa4649d4d43fd8a7b1e83eb7e916fea6691cfc49a7493",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-02",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 9
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-05",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-06",
+            "status": "fail",
+            "actual": -2,
+            "expected": 0,
+            "steps": 9
+          },
+          {
+            "id": "overlap-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 9
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 9
+          }
+        ],
+        "pass": 6,
+        "fail": 2
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "446a6da6f8a8b6743c1aa4649d4d43fd8a7b1e83eb7e916fea6691cfc49a7493",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "overlap-01",
+            "status": "fail",
+            "actual": 5,
+            "expected": 2,
+            "steps": 12
+          },
+          {
+            "id": "overlap-02",
+            "status": "fail",
+            "actual": 10,
+            "expected": 2,
+            "steps": 12
+          },
+          {
+            "id": "overlap-03",
+            "status": "pass",
+            "actual": 6,
+            "expected": 6,
+            "steps": 12
+          },
+          {
+            "id": "overlap-04",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "overlap-05",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 7
+          },
+          {
+            "id": "overlap-06",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 10
+          },
+          {
+            "id": "overlap-07",
+            "status": "fail",
+            "actual": 4,
+            "expected": 2,
+            "steps": 12
+          },
+          {
+            "id": "overlap-08",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 12
+          }
+        ],
+        "pass": 5,
+        "fail": 3
+      },
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "overlap-05",
+          "overlap-06"
+        ]
+      },
+      "p2p": {
+        "passed": 3,
+        "total": 6,
+        "case_ids": [
+          "overlap-01",
+          "overlap-02",
+          "overlap-03",
+          "overlap-04",
+          "overlap-07",
+          "overlap-08"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "regression"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "bucket-index",
+      "partition": "heldout",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+      "candidate_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-02",
+            "status": "fail",
+            "actual": 1,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-03",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-04",
+            "status": "fail",
+            "actual": 2,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-05",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-06",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-07",
+            "status": "fail",
+            "actual": 3,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-08",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-09",
+            "status": "pass",
+            "actual": 3,
+            "expected": 3,
+            "steps": 8
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          }
+        ],
+        "pass": 7,
+        "fail": 3
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-02",
+            "status": "fail",
+            "actual": 1,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-03",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-04",
+            "status": "fail",
+            "actual": 2,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-05",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-06",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-07",
+            "status": "fail",
+            "actual": 3,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-08",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-09",
+            "status": "pass",
+            "actual": 3,
+            "expected": 3,
+            "steps": 8
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          }
+        ],
+        "pass": 7,
+        "fail": 3
+      },
+      "f2p": {
+        "passed": 0,
+        "total": 3,
+        "case_ids": [
+          "bucket-02",
+          "bucket-04",
+          "bucket-07"
+        ]
+      },
+      "p2p": {
+        "passed": 7,
+        "total": 7,
+        "case_ids": [
+          "bucket-01",
+          "bucket-03",
+          "bucket-05",
+          "bucket-06",
+          "bucket-08",
+          "bucket-09",
+          "bucket-10"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "noop"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "bucket-index",
+      "partition": "heldout",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+      "candidate_sha256": "9d563ea2adf1167cf9b77edbcd33af4f5d7eb57a533f3603b15b74a7e95e8272",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-02",
+            "status": "fail",
+            "actual": 1,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-03",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-04",
+            "status": "fail",
+            "actual": 2,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-05",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-06",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-07",
+            "status": "fail",
+            "actual": 3,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-08",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-09",
+            "status": "pass",
+            "actual": 3,
+            "expected": 3,
+            "steps": 8
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          }
+        ],
+        "pass": 7,
+        "fail": 3
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "9d563ea2adf1167cf9b77edbcd33af4f5d7eb57a533f3603b15b74a7e95e8272",
+        "syntax_allowed": true,
+        "status": "pass",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 5
+          },
+          {
+            "id": "bucket-02",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 5
+          },
+          {
+            "id": "bucket-03",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 5
+          },
+          {
+            "id": "bucket-04",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 5
+          },
+          {
+            "id": "bucket-05",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 5
+          },
+          {
+            "id": "bucket-06",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 5
+          },
+          {
+            "id": "bucket-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 5
+          },
+          {
+            "id": "bucket-08",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 5
+          },
+          {
+            "id": "bucket-09",
+            "status": "pass",
+            "actual": 3,
+            "expected": 3,
+            "steps": 5
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 5
+          }
+        ],
+        "pass": 10,
+        "fail": 0
+      },
+      "f2p": {
+        "passed": 3,
+        "total": 3,
+        "case_ids": [
+          "bucket-02",
+          "bucket-04",
+          "bucket-07"
+        ]
+      },
+      "p2p": {
+        "passed": 7,
+        "total": 7,
+        "case_ids": [
+          "bucket-01",
+          "bucket-03",
+          "bucket-05",
+          "bucket-06",
+          "bucket-08",
+          "bucket-09",
+          "bucket-10"
+        ]
+      },
+      "accepted": true,
+      "private_evaluator_output": true,
+      "control": "correct"
+    },
+    {
+      "schema_version": "1.0.0",
+      "evaluator_version": "1.0.0",
+      "task_id": "bucket-index",
+      "partition": "heldout",
+      "scope": "authored_repository_task",
+      "scientific_validation": "unverified",
+      "protocol_version": "numeric-evaluation/1.0.0",
+      "verified": true,
+      "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+      "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+      "file_count": 15,
+      "original_file_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+      "candidate_sha256": "d0a9a2a4ae0dfb98d154a08ac40c8debbfd33e0542576d554e2a9c131badd4df",
+      "baseline": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-02",
+            "status": "fail",
+            "actual": 1,
+            "expected": 0,
+            "steps": 8
+          },
+          {
+            "id": "bucket-03",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-04",
+            "status": "fail",
+            "actual": 2,
+            "expected": 1,
+            "steps": 8
+          },
+          {
+            "id": "bucket-05",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-06",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-07",
+            "status": "fail",
+            "actual": 3,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-08",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          },
+          {
+            "id": "bucket-09",
+            "status": "pass",
+            "actual": 3,
+            "expected": 3,
+            "steps": 8
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 8
+          }
+        ],
+        "pass": 7,
+        "fail": 3
+      },
+      "candidate": {
+        "evaluator_version": "1.0.0",
+        "source_sha256": "d0a9a2a4ae0dfb98d154a08ac40c8debbfd33e0542576d554e2a9c131badd4df",
+        "syntax_allowed": true,
+        "status": "fail",
+        "cases": [
+          {
+            "id": "bucket-01",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 12
+          },
+          {
+            "id": "bucket-02",
+            "status": "pass",
+            "actual": 0,
+            "expected": 0,
+            "steps": 17
+          },
+          {
+            "id": "bucket-03",
+            "status": "fail",
+            "actual": 0,
+            "expected": 1,
+            "steps": 19
+          },
+          {
+            "id": "bucket-04",
+            "status": "pass",
+            "actual": 1,
+            "expected": 1,
+            "steps": 17
+          },
+          {
+            "id": "bucket-05",
+            "status": "fail",
+            "actual": 1,
+            "expected": 2,
+            "steps": 19
+          },
+          {
+            "id": "bucket-06",
+            "status": "fail",
+            "actual": 1,
+            "expected": 2,
+            "steps": 19
+          },
+          {
+            "id": "bucket-07",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 17
+          },
+          {
+            "id": "bucket-08",
+            "status": "fail",
+            "actual": 1,
+            "expected": 2,
+            "steps": 19
+          },
+          {
+            "id": "bucket-09",
+            "status": "fail",
+            "actual": 2,
+            "expected": 3,
+            "steps": 19
+          },
+          {
+            "id": "bucket-10",
+            "status": "pass",
+            "actual": 2,
+            "expected": 2,
+            "steps": 17
+          }
+        ],
+        "pass": 5,
+        "fail": 5
+      },
+      "f2p": {
+        "passed": 3,
+        "total": 3,
+        "case_ids": [
+          "bucket-02",
+          "bucket-04",
+          "bucket-07"
+        ]
+      },
+      "p2p": {
+        "passed": 2,
+        "total": 7,
+        "case_ids": [
+          "bucket-01",
+          "bucket-03",
+          "bucket-05",
+          "bucket-06",
+          "bucket-08",
+          "bucket-09",
+          "bucket-10"
+        ]
+      },
+      "accepted": false,
+      "private_evaluator_output": true,
+      "control": "regression"
+    }
+  ]
+}

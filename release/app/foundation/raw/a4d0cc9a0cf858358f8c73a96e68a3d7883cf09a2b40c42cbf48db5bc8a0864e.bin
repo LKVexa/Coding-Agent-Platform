@@ -1,0 +1,153 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0294-03",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Stage 1 Verify meaning and scope incomplete; metadata intake only"
+  },
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "intake_bindings_and_native_contracts",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "primary_source_verification",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "source_specific_input_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_required_work",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_diagnostic_cases",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_integration_contract",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0294/P0294-03-tailored-initialization.md (F07351)",
+      "state": "present",
+      "version": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+      "sha256": "003ab6841534f08989461db2c53015d423bfb57cd9e391b8bbb6ae901492fe95"
+    },
+    {
+      "name": "pairs/COMP/P0294-03/component-work/P0294-03/intake/READINESS-AUDIT.json (scoped readiness metadata; not primary material)",
+      "state": "present",
+      "version": "comp-source-intake-readiness/2",
+      "sha256": "dc512649c4f32a028f2529bedbfeaa55b0e5fcdf56754316030f934cf50c5d3b"
+    },
+    {
+      "name": "preflight/PREFLIGHT-codex-ps5-20261030T153654617-a.json",
+      "state": "present",
+      "version": "passed preflight/cs-1; exact immutable pin",
+      "sha256": "7e29a8f70e2fa138b8914eef931cbe6440a85880aa139d797efebb87cea6e174"
+    },
+    {
+      "name": "Primary material unverified/not provided for this scoped intake: https://iclr.cc/virtual/2025/poster/27917 (displayed abstract)",
+      "state": "missing",
+      "version": "Not positively verified in bounded audit scopes; no global absence claim."
+    },
+    {
+      "name": "Source-specific runtime/configuration or review prerequisites for P0294-03 (Learning, adaptation, distillation, or initialization stage.)",
+      "state": "missing",
+      "version": "Not established by source verification; generic tools are not the named method's runnable inputs."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: Training-stage purpose.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: initial model or state.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: supervision.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: data manifest.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: objective.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: trainable versus frozen parameters.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "Unverified/not provided in scoped intake: evaluation cases.",
+      "state": "missing",
+      "version": "For P0294-03 (Tailored initialization), this source-specific input/definition is not established from a positively verified primary resource in the enumerated bounded scopes. Global absence is not claimed."
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "Deterministic metadata packaging only; no random sampling or scientific fixture."
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "kit": "source-intake-pairkit/2.0.0",
+    "retrieved": {
+      "sources": "See immutable readiness audit; no primary source retrieval or scientific execution is claimed."
+    }
+  },
+  "blocked_reason": "Native stage1 remains unfinished for P0294-03 (Tailored initialization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+  "updated": "2026-10-30T15:43:40-07:00"
+}

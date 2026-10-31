@@ -1,0 +1,95 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0094-01",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "authored_task_identity_and_isolation",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "task_target_manifest_join",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "policy_adaptive_synthesis_and_parent_validation",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/core/C0094/C0094-01-software-task-statement.md (F04924)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "af8cc4dbb78440f6a2f66d97b11750a3032d592cfe772a550336bfe72d0828fd"
+    },
+    {
+      "name": "../../../../../evidence/sources/article.pdf",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57"
+    },
+    {
+      "name": "../../../../../evidence/sources/article-page04.png",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "f0d5f64131d294231c3d72108df2502ca4b4912a3f3091d8ab1b4c8208637ea4"
+    },
+    {
+      "name": "../../../../../evidence/sources/SOURCES.C0094.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "e0024c15698df6ae75cfbe4304d2cd183f4933d6aed62fc6265075eca349e11a"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "see evidence/sources/SOURCES.json; preserved provenance"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-30T12:40:04-07:00"
+}

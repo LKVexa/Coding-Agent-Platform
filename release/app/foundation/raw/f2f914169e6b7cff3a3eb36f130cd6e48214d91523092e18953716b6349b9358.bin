@@ -1,0 +1,1064 @@
+{
+  "schema": "product-gate/1",
+  "product": "D0006",
+  "gate": "G2",
+  "phase": "COMP",
+  "result": "fail",
+  "criterion": "every core COMP pair schema-valid and complete; A1-A6 pass with existing evidence; output hashes verify; no unresolved prerequisite/critical input",
+  "core_pairs": 26,
+  "pairs_meeting_gate": 0,
+  "pair_status_counts": {
+    "partial": 26
+  },
+  "pairs_not_meeting_gate": {
+    "P0028-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-01 (Source dataset): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0028-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-02 (Neural-field storage): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0028-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-03 (Synthetic training instances): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-01 (Long-term goals): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-02 (Predicted surface-coverage gains): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-03 (Obstacle maps): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-04 (Path planning): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-05 (Online data collection): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0257-06": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-06 (Curriculum training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0294-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-01 (More than two weight factors): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0294-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-02 (Sparse regularization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0294-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-03 (Tailored initialization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0294-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-04 (Learning-rate requirements): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0429-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0429-01 (Fixed module derived from safety data): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0429-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0429-02 (Task-specific initialization of trainable low-rank parameters): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0465-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-01 (Comparison of demonstrations with model alternatives): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0465-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-02 (Feedback-based replacement of demonstrations): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0465-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-03 (SFT retraining on the revised data): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0531-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-01 (Dynamic sparse training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0531-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-02 (Dense training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0531-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-03 (Sparsity level): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0531-04": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-04 (Corrupted images): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0531-05": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-05 (Corrupted videos): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0551-01": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-01 (Embedding dropout): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0551-02": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-02 (Gaussian-weighted learning): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    },
+    "P0551-03": {
+      "status": "partial",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-03 (Iterative data correction): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability."
+    }
+  },
+  "all_schema_valid": true,
+  "all_A1_A6_pass": true,
+  "all_output_hashes_verify": true,
+  "rerun_verification": "PASS",
+  "rerun_counts": {
+    "identical": 26,
+    "mismatch": 0,
+    "not_rechecked": 0,
+    "operator_skipped": 0
+  },
+  "operator_skipped_pairs": [],
+  "aggregates_scope": "all_schema_valid / all_A1_A6_pass / all_output_hashes_verify cover executed core pairs only; operator-skipped pairs were never opened and are not evaluated",
+  "per_pair": {
+    "P0028-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-01 (Source dataset): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0028-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-02 (Neural-field storage): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0028-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0028-03 (Synthetic training instances): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-01 (Long-term goals): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-02 (Predicted surface-coverage gains): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-03 (Obstacle maps): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-04 (Path planning): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-05 (Online data collection): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0257-06": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0257-06 (Curriculum training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0294-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-01 (More than two weight factors): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0294-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-02 (Sparse regularization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0294-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-03 (Tailored initialization): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0294-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0294-04 (Learning-rate requirements): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0429-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0429-01 (Fixed module derived from safety data): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0429-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0429-02 (Task-specific initialization of trainable low-rank parameters): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0465-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-01 (Comparison of demonstrations with model alternatives): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0465-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-02 (Feedback-based replacement of demonstrations): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0465-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0465-03 (SFT retraining on the revised data): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0531-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-01 (Dynamic sparse training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0531-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-02 (Dense training): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0531-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-03 (Sparsity level): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0531-04": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-04 (Corrupted images): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0531-05": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0531-05 (Corrupted videos): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0551-01": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-01 (Embedding dropout): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0551-02": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-02 (Gaussian-weighted learning): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    },
+    "P0551-03": {
+      "in_pairs_jsonl": true,
+      "status": "partial",
+      "schema_valid": true,
+      "A1_A6_all_pass": true,
+      "output_hashes_verify": true,
+      "hash_mismatch": [],
+      "rerun_identical": true,
+      "rerun_status": "identical",
+      "disposition": "executed",
+      "unresolved_checks": [
+        "primary_source_verification=unverified",
+        "source_specific_input_contract=unverified",
+        "original_required_work=unverified",
+        "original_diagnostic_cases=unverified",
+        "original_integration_contract=unverified"
+      ],
+      "blocked_reason": "Native stage1 remains unfinished for P0551-03 (Iterative data correction): the cited primary displayed-abstract content/version and required source-specific definitions have not been positively verified in the enumerated bounded scopes. The authored workflow and generic local tools do not establish primary method/data availability.",
+      "meets_G2": false,
+      "native_check_result_counts": {
+        "pass": 2,
+        "fail": 0,
+        "unverified": 5,
+        "not_applicable": 0,
+        "other": 0
+      },
+      "legacy_ledger_checks_note": "checks.fail can include unverified in frozen runners; actual native result enums are counted separately"
+    }
+  },
+  "evaluated": "2026-10-30T16:30:49-07:00",
+  "consequence": "G2 fail: downstream Stages 5-7 (readiness, integration, release) and delivery are stopped per ORCHESTRATION.md Gate G2.",
+  "native_check_result_counts": {
+    "pass": 52,
+    "fail": 0,
+    "unverified": 130,
+    "not_applicable": 0,
+    "other": 0
+  },
+  "reporting_tool": {
+    "version": "product-close-reporting/1.1.0",
+    "executable_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\ProductCloseReporting.exe",
+    "executable_sha256": "1cd7b1d2e4cd96ea98a06104f13d4a002b1d1864fec5dc022b9f8af341f2a6cf",
+    "harness_assembly_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\bin\\HarnessCommon.dll",
+    "harness_assembly_sha256": "4278f02021de63267c8906380918f2f66090b543a33dc280df1c9a23a38ebda0",
+    "harness_version": "harness-cs/0.2.0",
+    "source_path": "D:\\Deliverables\\Tools-harness-cs\\versions\\product-close-reporting-v1_1\\src\\ProductCloseReporting.cs",
+    "source_sha256": "5212c733d84eba42f5eca3eda8c17364ef925ff0a7cd0ada4b1555a9953be31d",
+    "source_state": "observed",
+    "fingerprint_scope": "observed running executable/helper and adjacent version source; source-to-binary correspondence requires retained build evidence"
+  }
+}

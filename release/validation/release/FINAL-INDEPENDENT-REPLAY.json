@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0.0",
+  "status": "pass",
+  "reviewed_utc": "2026-10-31T04:34:09.898660+00:00",
+  "scope": "Independent verification of three final local authored task runs using exact packaged code and evaluator; no benchmark-validity claim",
+  "scientific_validation": "unverified",
+  "model_calls_during_review": 0,
+  "package_manifest_file_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "package_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "package_constructor_integrity": "pass before and after review",
+  "packaged_imports": {
+    "coding_agent": "coding_agent\\__init__.py",
+    "evaluator": "evaluator\\__init__.py"
+  },
+  "package_unchanged": true,
+  "package_inventory_sha256_before": "e37c1899fc9f49efebfefac0aa745641db01df0a0dc52704cfbc02c4afa96da4",
+  "package_inventory_sha256_after": "e37c1899fc9f49efebfefac0aa745641db01df0a0dc52704cfbc02c4afa96da4",
+  "evaluator": {
+    "verified": true,
+    "manifest_sha256": "996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6",
+    "protocol_sha256": "c57f686085dd58611a45e7c599ce4bef8b6a2f63f53c2d015ccdf88a4e92d6d3",
+    "file_count": 15
+  },
+  "results": [
+    {
+      "run_id": "verified-clamp",
+      "task_id": "clamp-bounds",
+      "partition": "development",
+      "status": "pass",
+      "recorded_acceptance": true,
+      "frozen_evaluator_acceptance": true,
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "clamp-07",
+          "clamp-08"
+        ]
+      },
+      "p2p": {
+        "passed": 8,
+        "total": 8,
+        "case_ids": [
+          "clamp-01",
+          "clamp-02",
+          "clamp-03",
+          "clamp-04",
+          "clamp-05",
+          "clamp-06",
+          "clamp-09",
+          "clamp-10"
+        ]
+      },
+      "checks": {
+        "receipt_hashes_verified": true,
+        "exact_package_identity": true,
+        "real_git_patch_applied": true,
+        "one_file_allowlist": true,
+        "accepted_matches": true,
+        "f2p_matches": true,
+        "p2p_matches": true,
+        "candidate_hash_matches": true,
+        "patch_hash_matches": true,
+        "candidate_bytes_match": true,
+        "original_repository_unchanged": true
+      },
+      "receipt_sha256": "4b491078f928dd318e70119d426021a40704a354f4c95b4c8a12b035abda6249",
+      "result_sha256": "db89c550284ee6833c16aa3594caedd50bc0e44757ceece2b4190831d6b209fd",
+      "candidate_sha256": "929443e4d56c50bafb375278af7ecb63871687395cfff2beb0e1b9b34317bf6a",
+      "patch_sha256": "56a5775206a5bcc039013020bfe2e7e8687d6eca5086148377a31ce18a5250f5",
+      "source_commit": "e0ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27",
+      "package_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+      "recorded_provider_calls": 2,
+      "provider_calls_during_review": 0,
+      "heldout_policy": "development diagnostic"
+    },
+    {
+      "run_id": "verified-overlap",
+      "task_id": "interval-overlap",
+      "partition": "development",
+      "status": "pass",
+      "recorded_acceptance": true,
+      "frozen_evaluator_acceptance": true,
+      "f2p": {
+        "passed": 2,
+        "total": 2,
+        "case_ids": [
+          "overlap-05",
+          "overlap-06"
+        ]
+      },
+      "p2p": {
+        "passed": 6,
+        "total": 6,
+        "case_ids": [
+          "overlap-01",
+          "overlap-02",
+          "overlap-03",
+          "overlap-04",
+          "overlap-07",
+          "overlap-08"
+        ]
+      },
+      "checks": {
+        "receipt_hashes_verified": true,
+        "exact_package_identity": true,
+        "real_git_patch_applied": true,
+        "one_file_allowlist": true,
+        "accepted_matches": true,
+        "f2p_matches": true,
+        "p2p_matches": true,
+        "candidate_hash_matches": true,
+        "patch_hash_matches": true,
+        "candidate_bytes_match": true,
+        "original_repository_unchanged": true
+      },
+      "receipt_sha256": "bb087e497a4ed7ea221803871b33cb239d89ca594b84e83607c49708fd5e45ad",
+      "result_sha256": "905bbaead69f992f2e1035bf9d818d8e71da2bfb4f75121b3b70ed70afa39692",
+      "candidate_sha256": "10f0e0b4bea09a046a270a080520bffdfb4f67b3cdd8373c90dce3473f0e21f0",
+      "patch_sha256": "9bf460ac05a68516fa40412fb24f0bddc31f97b042e8d828f90b168253439380",
+      "source_commit": "e0ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27",
+      "package_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+      "recorded_provider_calls": 1,
+      "provider_calls_during_review": 0,
+      "heldout_policy": "development diagnostic"
+    },
+    {
+      "run_id": "verified-bucket",
+      "task_id": "bucket-index",
+      "partition": "heldout",
+      "status": "pass",
+      "recorded_acceptance": true,
+      "frozen_evaluator_acceptance": true,
+      "f2p": {
+        "passed": 3,
+        "total": 3,
+        "case_ids": [
+          "bucket-02",
+          "bucket-04",
+          "bucket-07"
+        ]
+      },
+      "p2p": {
+        "passed": 7,
+        "total": 7,
+        "case_ids": [
+          "bucket-01",
+          "bucket-03",
+          "bucket-05",
+          "bucket-06",
+          "bucket-08",
+          "bucket-09",
+          "bucket-10"
+        ]
+      },
+      "checks": {
+        "receipt_hashes_verified": true,
+        "exact_package_identity": true,
+        "real_git_patch_applied": true,
+        "one_file_allowlist": true,
+        "accepted_matches": true,
+        "f2p_matches": true,
+        "p2p_matches": true,
+        "candidate_hash_matches": true,
+        "patch_hash_matches": true,
+        "candidate_bytes_match": true,
+        "original_repository_unchanged": true
+      },
+      "receipt_sha256": "2eb805a2816c4e94d0122888abd514740687fea2489f65f395d6c5ca3ead4fc4",
+      "result_sha256": "b7f2df32fe019b8bf0ab9b8ee70b6c4375ec01412c22959f54287351ec0ff9cd",
+      "candidate_sha256": "03b88544bcccc65d07390abcb2a6305bee9a444aa973c13eaf0ff82a0914abc5",
+      "patch_sha256": "121f688e68cb494827900e0449a27a30155c883810b570a86505313cd5e375d0",
+      "source_commit": "e0ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27",
+      "package_manifest_canonical_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+      "recorded_provider_calls": 1,
+      "provider_calls_during_review": 0,
+      "heldout_policy": "diagnostic-only; no tuning or source/prompt changes"
+    }
+  ],
+  "original_repository_unchanged": true,
+  "original_repository_files_sha256_before": {
+    ".git/COMMIT_EDITMSG": "fdaae71773887030467da8cff89fb3c450c5f6468e216ddf43f315b106717c65",
+    ".git/config": "05becdb83bb897f6103c8d91439e2e9092144edf5b3955a746fce4975c12bfdc",
+    ".git/description": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+    ".git/HEAD": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+    ".git/hooks/applypatch-msg.sample": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+    ".git/hooks/commit-msg.sample": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+    ".git/hooks/fsmonitor-watchman.sample": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+    ".git/hooks/post-update.sample": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+    ".git/hooks/pre-applypatch.sample": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+    ".git/hooks/pre-commit.sample": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+    ".git/hooks/pre-merge-commit.sample": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+    ".git/hooks/pre-push.sample": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+    ".git/hooks/pre-rebase.sample": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+    ".git/hooks/pre-receive.sample": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+    ".git/hooks/prepare-commit-msg.sample": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+    ".git/hooks/push-to-checkout.sample": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+    ".git/hooks/sendemail-validate.sample": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+    ".git/hooks/update.sample": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+    ".git/index": "77e20a217b48dab3595b98026b99a6583d8104b66f2d7cf32ab585ab32d7d973",
+    ".git/info/exclude": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+    ".git/logs/HEAD": "58a038c5b497f61e7321158a14c05cd048943b2fbdd8a466324b6550e3784686",
+    ".git/logs/refs/heads/master": "58a038c5b497f61e7321158a14c05cd048943b2fbdd8a466324b6550e3784686",
+    ".git/objects/20/335ccecd05365038a242baa1ea11be91809f7e": "6d151476b3042a1ec29aa01142abd9309908c02db700d9f853b17fce8cc225da",
+    ".git/objects/41/7c890901c48028a15a0bdc39bf2c259d6fbdea": "001e0fd0f5e9336458788db2b4a84b828b91e1b841ce97e4db18c730082bfa5f",
+    ".git/objects/6e/dba56c848e7e7b434acdbbd5ae06eb8ee522d1": "cace0dde2875d60436971e03ec61f841fc8e4028a3d958335e96178d15497488",
+    ".git/objects/9f/ad0492bee64051472b7dcd06ebd8c40394a7c4": "fba7799d3e299a4a1339936bef4a0faecf152231106d124fa99a37b05b1c3205",
+    ".git/objects/cc/f5c54b7a046a09974fe06ec28eaa9904a702a0": "9156d68c43c414cbfe971adc55c82fd2bad62e102556e3c1a5b3007b2b9851bd",
+    ".git/objects/e0/ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27": "415e0ad9cc59738db8e3f614540972b07175c418bc6f4c735ba061d2b3110995",
+    ".git/objects/ed/dfed1e1a10a4fd78845df12b5527b1664a4683": "3ebc5eb55cfcbc1bbb8625af7340aa28bb0c4ae78a655c2a77117d5e900cb785",
+    ".git/refs/heads/master": "02f44dc4dd631662a5dd9e0ff620875c8d8475d62217cef170fea99b4740ca50",
+    "README.md": "ed12a895ae6a1ea536c22201c43d85e5c6e824aa80d8db6d530ae77f51733dcb",
+    "src/buckets.py": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+    "src/clamp.py": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+    "src/overlap.py": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e"
+  },
+  "original_repository_files_sha256_after": {
+    ".git/COMMIT_EDITMSG": "fdaae71773887030467da8cff89fb3c450c5f6468e216ddf43f315b106717c65",
+    ".git/config": "05becdb83bb897f6103c8d91439e2e9092144edf5b3955a746fce4975c12bfdc",
+    ".git/description": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+    ".git/HEAD": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+    ".git/hooks/applypatch-msg.sample": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+    ".git/hooks/commit-msg.sample": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+    ".git/hooks/fsmonitor-watchman.sample": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+    ".git/hooks/post-update.sample": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+    ".git/hooks/pre-applypatch.sample": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+    ".git/hooks/pre-commit.sample": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+    ".git/hooks/pre-merge-commit.sample": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+    ".git/hooks/pre-push.sample": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+    ".git/hooks/pre-rebase.sample": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+    ".git/hooks/pre-receive.sample": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+    ".git/hooks/prepare-commit-msg.sample": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+    ".git/hooks/push-to-checkout.sample": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+    ".git/hooks/sendemail-validate.sample": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+    ".git/hooks/update.sample": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+    ".git/index": "77e20a217b48dab3595b98026b99a6583d8104b66f2d7cf32ab585ab32d7d973",
+    ".git/info/exclude": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+    ".git/logs/HEAD": "58a038c5b497f61e7321158a14c05cd048943b2fbdd8a466324b6550e3784686",
+    ".git/logs/refs/heads/master": "58a038c5b497f61e7321158a14c05cd048943b2fbdd8a466324b6550e3784686",
+    ".git/objects/20/335ccecd05365038a242baa1ea11be91809f7e": "6d151476b3042a1ec29aa01142abd9309908c02db700d9f853b17fce8cc225da",
+    ".git/objects/41/7c890901c48028a15a0bdc39bf2c259d6fbdea": "001e0fd0f5e9336458788db2b4a84b828b91e1b841ce97e4db18c730082bfa5f",
+    ".git/objects/6e/dba56c848e7e7b434acdbbd5ae06eb8ee522d1": "cace0dde2875d60436971e03ec61f841fc8e4028a3d958335e96178d15497488",
+    ".git/objects/9f/ad0492bee64051472b7dcd06ebd8c40394a7c4": "fba7799d3e299a4a1339936bef4a0faecf152231106d124fa99a37b05b1c3205",
+    ".git/objects/cc/f5c54b7a046a09974fe06ec28eaa9904a702a0": "9156d68c43c414cbfe971adc55c82fd2bad62e102556e3c1a5b3007b2b9851bd",
+    ".git/objects/e0/ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27": "415e0ad9cc59738db8e3f614540972b07175c418bc6f4c735ba061d2b3110995",
+    ".git/objects/ed/dfed1e1a10a4fd78845df12b5527b1664a4683": "3ebc5eb55cfcbc1bbb8625af7340aa28bb0c4ae78a655c2a77117d5e900cb785",
+    ".git/refs/heads/master": "02f44dc4dd631662a5dd9e0ff620875c8d8475d62217cef170fea99b4740ca50",
+    "README.md": "ed12a895ae6a1ea536c22201c43d85e5c6e824aa80d8db6d530ae77f51733dcb",
+    "src/buckets.py": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+    "src/clamp.py": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+    "src/overlap.py": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e"
+  },
+  "template_unchanged": true,
+  "template_files_sha256": {
+    "README.md": "ed12a895ae6a1ea536c22201c43d85e5c6e824aa80d8db6d530ae77f51733dcb",
+    "src/buckets.py": "24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a",
+    "src/clamp.py": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+    "src/overlap.py": "d4807e0534572f07fa7b1baa0cde379c8f3f6c4d1ce087b192b48a06fe2b4f4e"
+  },
+  "sanitized_commands": "FINAL-INDEPENDENT-REPLAY-COMMANDS.json",
+  "heldout_remains_diagnostic_only": true
+}

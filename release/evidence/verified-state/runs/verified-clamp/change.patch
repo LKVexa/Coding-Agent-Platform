@@ -1,0 +1,9 @@
+--- a/src/clamp.py
++++ b/src/clamp.py
+@@ -2,4 +2,6 @@
+     """Return value limited to the inclusive interval lo..hi (lo <= hi)."""
+     if value < lo:
+         return lo
++    if value > hi:
++        return hi
+     return value

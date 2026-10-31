@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "adapter_id": "d0007-p2p",
+  "version": "0.1.0",
+  "component_ids": [
+    "D0007/C0322-01",
+    "D0007/C0322-02"
+  ],
+  "scope": "authored_fixture",
+  "executable": "bin/WorkbenchD7.exe",
+  "executable_sha256": "20c7988ec2865c793558e616d1652d54b86ededc5f0b1d4da91a84f3ccd6f69d",
+  "argument_template": [
+    "--component",
+    "{component_id}",
+    "--case",
+    "{case}"
+  ],
+  "allowed_cases": [
+    "all",
+    "initial",
+    "correct",
+    "regression"
+  ],
+  "default_case": "all",
+  "stdout_format": "json",
+  "expected_stdout_max_bytes": 262144,
+  "timeout_seconds": 10,
+  "reads_original_deliveries_at_runtime": false,
+  "writes_files_at_runtime": false,
+  "network_at_runtime": false,
+  "child_processes_at_runtime": false,
+  "supports_arbitrary_code": false,
+  "scientific_validation": "unverified",
+  "parent_integration": "unverified",
+  "runtime_requirement": "Windows .NET Framework runtime compatible with C# 5 compiled executable",
+  "tested_compiler": "Framework64 csc 4.8.9232.0",
+  "exit_codes": {
+    "0": "All fixture diagnostic checks passed; candidate acceptance is a separate field",
+    "1": "A fixture diagnostic expectation failed",
+    "2": "Unsupported request or execution exception"
+  },
+  "upstream_provider_version": "d0007-p2p-bounded/1.0.0",
+  "upstream_harness_version": "harness-cs/0.2.0",
+  "provenance_manifest": "SOURCE-MANIFEST.json",
+  "qualification": "evidence/ADAPTER-QUALIFICATION.json",
+  "packaging_includes": [
+    "ADAPTER.json",
+    "SOURCE-MANIFEST.json",
+    "README.md",
+    "build.ps1",
+    "verify.ps1",
+    "src/",
+    "historical/",
+    "bin/"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "C0081-03",
+ "work_type": "Measurement",
+ "checks": {
+  "known_example": {
+   "id": "known_example",
+   "description": "hand-counted trajectory: 7+3+4",
+   "expected": 14,
+   "observed": 14,
+   "result": "pass",
+   "kind": "independent"
+  },
+  "empty": {
+   "id": "empty",
+   "description": "empty trajectory counts 0",
+   "expected": 0,
+   "observed": 0,
+   "result": "pass",
+   "kind": "independent"
+  },
+  "recomputable": {
+   "id": "recomputable",
+   "description": "matches collections-free recount",
+   "expected": 605,
+   "observed": 605,
+   "result": "pass",
+   "kind": "independent"
+  },
+  "unknown_role": {
+   "id": "unknown_role",
+   "description": "unknown role rejected",
+   "expected": "raises ViolationError",
+   "observed": "ViolationError: unknown token role(s): ['sys']",
+   "result": "pass",
+   "kind": "independent"
+  }
+ },
+ "records": {
+  "estimand": "count of model-generated tokens per trajectory (observation tokens excluded)"
+ },
+ "iterations": 1,
+ "repair_log": [],
+ "fingerprint_inputs": {
+  "pair": "C0081-03",
+  "prompt_sha256": "0d63cd8645a42aff9aa37363fbc2f26694292d53d2db39076a2f02d5eb3b36c7",
+  "spec_manifest_sha256": "ecec3739e4331619e07fe634f66c71b799648256f5a4beed69330e93a2946be6",
+  "schema_sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8",
+  "policy_sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148",
+  "modules": {
+   "__init__.py": "8b6c144d66b5e7dd0ea691867ac046ddb557d2ca02662ba2e731a3da865472d1",
+   "pairkit.py": "e8811cfdd2060e1d7255ff8cf5b657651fa8344a20efe4b0ea9d641ad2c18e21",
+   "pairs_c.py": "8f6fab2725fb703803afb872c2307efc69e07fdd9e923b5bf85c0f73797e5a0d",
+   "frog.py": "9841753452220c1a55c4d10c391658249f52e118bf6a61522baf68d741e55d11",
+   "frog_sim.py": "c93cf55c92ba752e91a8bb4269ea5eb77daeb8eed808300fe90a95d73d3abc58"
+  },
+  "tools": {
+   "python": "3.14.0",
+   "numpy": "2.5.1",
+   "platform": "Windows-10",
+   "n01_kernel": "0.1.2a1"
+  },
+  "deps": {
+   "C0081-02": "12787b70b75de48fd8bb32504a5aee7c5f20d3c6631c809b9401cf314cc0ebe6"
+  }
+ }
+}

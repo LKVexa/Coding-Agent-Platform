@@ -1,0 +1,1 @@
+{"base_sha256":"24055ce03d2b406e35fbc36c3e5f297947e732bcc8371f01da7935594aba2c0a","path":"src/buckets.py","replacement":"def bucket_index(value, width):\n    \"\"\"Return the zero-based bucket for nonnegative value and positive width.\"\"\"\n    return int(value // width)\n","summary":"Use floor division instead of rounding to return an integer bucket index."}

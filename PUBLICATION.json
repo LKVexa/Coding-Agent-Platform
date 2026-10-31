@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "repository": "https://github.com/LKVexa/Coding-Agent-Platform",
+  "product_version": "0.1.0-rc.1",
+  "source_release": "Coding_Agent_Platform_v0.1.0-rc.1",
+  "release_manifest_sha256": "0199a585f9a81abfdbaebf02422429c2846a6552a948c22d83bb3881dbc02c88",
+  "release_file_count": 724,
+  "release_files_modified": false,
+  "software_license": "GPL-3.0-only",
+  "copyright": "Copyright (C) 2026 RUSSELL PHILIP SMITHSON",
+  "license_source": "https://www.gnu.org/licenses/gpl-3.0.txt",
+  "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "scope": "See NOTICE for retained third-party terms and dataset permissions."
+}

@@ -1,0 +1,21 @@
+Command: Python 3.12.14 -I -B evaluator/test_evaluator.py
+Working directory: work/component-products/products/coding-agent
+Result: exit 0; all 11 tests passed in 0.159 seconds.
+
+test_boolean_not_numeric_label ... ok
+test_branch_short_circuit ... ok
+test_candidate_does_not_execute ... ok
+test_host_access_and_unbounded_syntax_refused ... ok
+test_limits_and_errors ... ok
+test_numeric_language ... ok
+test_all_controls ... ok
+test_baseline_pin ... ok
+test_frozen_protocol_integrity ... ok
+test_public_interface_excludes_private_cases ... ok
+test_refused_candidate_cannot_pass ... ok
+
+Protocol manifest SHA256 at execution:
+996168efc53fff32f407cf947e8276373bc565fd59cc8cc08784e19cf8eddac6
+
+This is a transcription of the successful local unittest output. The detailed
+9-control baseline/candidate evidence is preserved separately in controls.json.

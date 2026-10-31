@@ -1,0 +1,28 @@
+{
+  "run_id": "verified-clamp",
+  "replay": "pass",
+  "accepted": true,
+  "f2p": {
+    "passed": 2,
+    "total": 2,
+    "case_ids": [
+      "clamp-07",
+      "clamp-08"
+    ]
+  },
+  "p2p": {
+    "passed": 8,
+    "total": 8,
+    "case_ids": [
+      "clamp-01",
+      "clamp-02",
+      "clamp-03",
+      "clamp-04",
+      "clamp-05",
+      "clamp-06",
+      "clamp-09",
+      "clamp-10"
+    ]
+  },
+  "provider_calls": 0
+}

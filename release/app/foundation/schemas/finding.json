@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:component-foundation:finding:1.0.0",
+  "title": "finding contract version 1.0.0",
+  "description": "Historical audit findings initially omit schema_version; when present it must be 1.0.0. Extra context is preserved intentionally. Resolving a finding requires evidence outside structural validation.",
+  "type": "object",
+  "required": [
+    "finding_id",
+    "category",
+    "severity",
+    "disposition",
+    "detail"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "finding_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "component_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^D[0-9]{4}/[A-Za-z0-9_-]+$"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "info",
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "open",
+        "resolved",
+        "accepted",
+        "deferred",
+        "blocked",
+        "superseded"
+      ]
+    },
+    "detail": {},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "required": [
+          "available",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "available": {
+            "type": "boolean"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "fresh_execution": {
+      "type": "boolean"
+    },
+    "owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "proposed_repair": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verification_evidence": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "required": [
+          "available",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "available": {
+            "type": "boolean"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,98 @@
+{
+  "accepted": true,
+  "candidate_sha256": "929443e4d56c50bafb375278af7ecb63871687395cfff2beb0e1b9b34317bf6a",
+  "completed_at": "2026-10-31T04:30:57.836783+00:00",
+  "cost": null,
+  "f2p": {
+    "case_ids": [
+      "clamp-07",
+      "clamp-08"
+    ],
+    "passed": 2,
+    "total": 2
+  },
+  "p2p": {
+    "case_ids": [
+      "clamp-01",
+      "clamp-02",
+      "clamp-03",
+      "clamp-04",
+      "clamp-05",
+      "clamp-06",
+      "clamp-09",
+      "clamp-10"
+    ],
+    "passed": 8,
+    "total": 8
+  },
+  "package_manifest_sha256": "a5bb9d94936cb7310c555774db478f7d9111e1f9dbcded16ed6fe08dacab8b86",
+  "partition": "development",
+  "patch_sha256": "56a5775206a5bcc039013020bfe2e7e8687d6eca5086148377a31ce18a5250f5",
+  "provider": {
+    "application_retries": 0,
+    "backend_identity_independently_verified": false,
+    "catalog_sha256": "8c88ee259973cae57cfd64953538d56c1d6b47ad22b8a7c4796bd1c69303dcda",
+    "cli_sha256": "3097c909fb6d5cd63510d44aceb1d42df9f6e85722a3e447e477def1ecf60e16",
+    "cli_version": "codex-cli 0.166.0-alpha.5.1",
+    "cost": null,
+    "duration_seconds": 8.172,
+    "expected_resolved_model": "gpt-6.1-sol",
+    "global_guidance": {
+      "contents_read": false,
+      "filename": null,
+      "present": false
+    },
+    "inherited_guidance": "global CODEX_HOME/AGENTS.md may be included; project docs/config disabled",
+    "instruction_policy": {
+      "builtin_instructions": "pinned model catalog instructions retained",
+      "global_guidance": "CLI may inherit CODEX_HOME/AGENTS.override.md or AGENTS.md",
+      "global_guidance_contents_recorded": false,
+      "project_instructions": "disabled; canary verified",
+      "pure_prompt_isolation": false,
+      "skill_catalog": "disabled; no resource entries in canary capture",
+      "user_config": "ignored; canary verified"
+    },
+    "limits": {
+      "diagnostic_bytes": 262144,
+      "prompt_bytes": 65536,
+      "response_bytes": 131072,
+      "schema_bytes": 32768,
+      "timeout_seconds": 120
+    },
+    "model": "gpt-6.1-sol",
+    "model_identity_source": "CLI header",
+    "name": "codex-chatgpt",
+    "response_sha256": "a4667cef31a299c94914619aaba1bdac7e2b2a41238bfea73ed549ae319e1874",
+    "status": "completed",
+    "tool_policy": "pinned-catalog-no-tools",
+    "transport": "existing-chatgpt-login",
+    "transport_retry_policy": "CLI defaults; all attempts bounded by the call timeout",
+    "trust_boundary": "trusted-local-cli; tool suppression is not OS file isolation",
+    "usage": {
+      "cached_input_tokens": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reported_total_tokens": 5422
+    }
+  },
+  "provider_calls": 2,
+  "repository": {
+    "blob_id": "20335ccecd05365038a242baa1ea11be91809f7e",
+    "git_sha256": "c53279919fdea03474bb23b465b3a82287157491f1bd69a5eb82dd9831582333",
+    "mode": "100644",
+    "path": "src/clamp.py",
+    "repository": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\final-repository",
+    "requested_revision": "HEAD",
+    "revision": "e0ffe49e3ab5a1a92f2b5d22f1049ceccdb57b27",
+    "source_sha256": "b342fe3549ccd8afbd430a4194b50625081941f99d09f7192d0b567e25a5114b",
+    "working_tree_policy": "committed-blob-only; working tree untouched"
+  },
+  "run_id": "verified-clamp",
+  "schema_version": "1.0.0",
+  "scientific_validation": "unverified",
+  "scope": "authored_repository_task",
+  "selected_attempt": 2,
+  "source_repository_modified": false,
+  "status": "accepted",
+  "task_id": "clamp-bounds"
+}

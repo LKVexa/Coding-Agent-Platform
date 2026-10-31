@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "expected_manifest_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "tested_manifest_sha256": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+  "test_root": "C:\\Users\\russe\\Documents\\Codex\\2026-10-30\\ple\\work\\component-products\\products\\coding-agent\\release-validation\\acceptance-824e8c1fccf6",
+  "real_model_calls": 0,
+  "package_file_count": 571,
+  "tests": [
+    {
+      "name": "release_manifest_pin",
+      "passed": true,
+      "expected": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+      "actual": "c33d66b3bc53c8b6c1028e1529d574c5eb9bfbee30d7fe732faf035db8cae5ab",
+      "files": 571
+    },
+    {
+      "name": "release_inventory_matches",
+      "passed": true
+    },
+    {
+      "name": "release_excludes_bytecode",
+      "passed": true,
+      "files": []
+    },
+    {
+      "name": "doctor",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "\"status\": \"pass\""
+    },
+    {
+      "name": "tasks",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "clamp-bounds"
+    },
+    {
+      "name": "relocated_manifest_matches",
+      "passed": true
+    },
+    {
+      "name": "relocated_tasks",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "clamp-bounds"
+    },
+    {
+      "name": "powershell_default_doctor",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "\"status\": \"pass\""
+    },
+    {
+      "name": "powershell_tasks",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "clamp-bounds"
+    },
+    {
+      "name": "powershell_demo_spaces",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "\"status\": \"created\""
+    },
+    {
+      "name": "duplicate_demo_destination",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Destination must be a new directory"
+    },
+    {
+      "name": "demo_protected_destination",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "overlaps a protected"
+    },
+    {
+      "name": "cmd_tasks",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "clamp-bounds"
+    },
+    {
+      "name": "cmd_demo_spaces",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "\"status\": \"created\""
+    },
+    {
+      "name": "refuses_nonisolated_python",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "isolated mode"
+    },
+    {
+      "name": "refuses_wrong_runtime",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Python 3.12.14"
+    },
+    {
+      "name": "invalid_command",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "invalid choice"
+    },
+    {
+      "name": "missing_required_arguments",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "required"
+    },
+    {
+      "name": "state_inside_package",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "overlaps a protected"
+    },
+    {
+      "name": "unrelated_state_rejected",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "unrelated files"
+    },
+    {
+      "name": "incompatible_state_rejected",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Incompatible state"
+    },
+    {
+      "name": "empty_state_listing",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "\"runs\": []"
+    },
+    {
+      "name": "invalid_run_id",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": null
+    },
+    {
+      "name": "unknown_run",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Unknown run"
+    },
+    {
+      "name": "state_overlaps_repository",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "overlaps a protected"
+    },
+    {
+      "name": "invalid_call_budget",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Limits:"
+    },
+    {
+      "name": "invalid_task",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": null
+    },
+    {
+      "name": "changed_package_document",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "missing_package_document",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "changed_foundation_file",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "missing_foundation_file",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "changed_evaluator_protocol",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "missing_evaluator_protocol",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Integrity mismatch"
+    },
+    {
+      "name": "unexpected_package_file",
+      "passed": true,
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "expected_text": "Unexpected or missing files"
+    },
+    {
+      "name": "disposable_tamper_copy_restored",
+      "passed": true
+    },
+    {
+      "name": "clean_removal_by_rename",
+      "passed": true,
+      "action": "Rename throwaway install only; state and repository retained unchanged"
+    },
+    {
+      "name": "rollback_after_rename",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_text": "clamp-bounds"
+    },
+    {
+      "name": "secret_filename_scan",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "name": "secret_pattern_scan",
+      "passed": true,
+      "findings": [],
+      "values_reported": false
+    },
+    {
+      "name": "original_frozen_package_unchanged",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "passed_count": 40,
+  "test_count": 40
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "P0559-03",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "label_predicate",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "interpolated_label_rule",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "empty_class_and_zero_signal",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "evaluation_outcome",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "paper_scale_tables",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/posters/P0559/P0559-03-ordinal-disease-severity-conditions.md (F08649)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "31ee389c350fa70acd7608cc5996462438756d35a84e8b119b18503138f2c266"
+    },
+    {
+      "name": "../../../../../evidence/sources/P0559.txt",
+      "state": "present",
+      "version": "retrieved 2026-10-27 (reused with provenance; see evidence/sources/SOURCES.json)",
+      "sha256": "96ab8ae1a0fac2ba604a23af67338ea075ff432fd852908cd933504e2cdefadf"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "SplitMix64 streams (CdRng; U = top 53 bits / 2^53; Normal = Box-Muller with 2 uniforms per draw) seeded by Cd.Seed(...) = FNV-1a + splitmix64 finaliser; every value is reproduced by the determinism rerun",
+      "subject": "Seed(1, subject_id)",
+      "cohort_draws": "Seed(5, subject_id, t, d)",
+      "generation": "Seed(9, subject_id)",
+      "baseline": "Seed(10, subject_id)",
+      "rdm_init": "Seed(31, 0)",
+      "tdm_init": "Seed(32, 0)",
+      "rdm_batches": "Seed(33, 0)",
+      "tdm_batches": "Seed(34, 0)",
+      "probes": "Seed(11..16, ...)",
+      "configuration": {
+        "n_subjects": 300,
+        "split": "subject id % 5 == 4 -> test (80/20 by subject)",
+        "rois": 6,
+        "stages": 4,
+        "kde_bandwidth": 0.001,
+        "ordinal_iters": 1500,
+        "ordinal_lr": 0.05,
+        "rdm_steps": 100,
+        "tdm_steps": 10,
+        "fit_steps": [
+          4000,
+          4000
+        ],
+        "batch": 64,
+        "lr": 0.001,
+        "hidden": 64,
+        "lambda": 0.1,
+        "lambda_ablation": [
+          0,
+          0.1,
+          0.5,
+          1
+        ]
+      }
+    },
+    "tools": {
+      "harness": "harness-cs/0.1.0",
+      "csc": "4.8.9037 /langversion:5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "2026-10-27"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-28T04:59:28-07:00"
+}

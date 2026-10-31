@@ -1,0 +1,152 @@
+{
+  "schema": "c0322-preservation-result/1",
+  "variant": "regression",
+  "producer_mode": "fresh_raw_fixture_no_prior_producer_accepted",
+  "producer_manifest_sha256": "3b2ce7e17d6e629e5697f452b2af1a6f4c4f0ccbab249a53c10f268bbac8cd6a",
+  "p2p_total": 11,
+  "p2p_preserved": 7,
+  "regressions": [
+    "DEV-T02",
+    "DEV-T08",
+    "FINAL-T02",
+    "FINAL-T03"
+  ],
+  "accepted": false,
+  "rows": [
+    {
+      "case_id": "DEV-T01",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "value:0",
+      "after": "value:0",
+      "preserved": true,
+      "input_sha256": "dfa37ca045777091567ac4b59af75bc228322bf566d305cd6c3df3a1b435805a",
+      "before_observation_sha256": "cc1faab96f838e02114d75bcdb8081b18ee6671609d95dfaac3201c8b02daa18",
+      "after_observation_sha256": "cc5872659b5c7ac49ee9157d4160bfd7e1efc44561dd1b33ba4a415903ba914b"
+    },
+    {
+      "case_id": "DEV-T02",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "value:3",
+      "after": "value:0",
+      "preserved": false,
+      "input_sha256": "2c4172de94f9582dfcd9f7954c0d6aa5767d491afa008383043580bc334ce8da",
+      "before_observation_sha256": "f05cf1f2bf0e08ae4f6af220513ced1d4fbfe8b14d3ac3796d8b892d614e5b0c",
+      "after_observation_sha256": "e4f90e44f458f3a8b27fad6c14b15a04f462b4c187e049996ff7b3eb4b7743fc"
+    },
+    {
+      "case_id": "DEV-T04",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "exception:ArgumentException",
+      "after": "exception:ArgumentException",
+      "preserved": true,
+      "input_sha256": "147882533732990bcf06e5f694e51b2662cf24bb2b298bfc7b4b2a83c0237f49",
+      "before_observation_sha256": "dcffeefac4a0ed589a33d5b13b4bdd1ad7948202c34001d2930f8793edaf22c2",
+      "after_observation_sha256": "512373159f20a5ffb72b7ef0951f6986b87278d57cdc6c2ae8c6cd9a133a4fcc"
+    },
+    {
+      "case_id": "DEV-T05",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "value:4",
+      "after": "value:4",
+      "preserved": true,
+      "input_sha256": "b81b20ed0c81384d4ac9312ccdc243739f51d407171b0a2e3855325c96dd2671",
+      "before_observation_sha256": "3fba1c3cc8724359f472679b1b51ada8e4bd5b29b87dbdd3913e0d5116b49674",
+      "after_observation_sha256": "96728d723983c051ee3f6a40e70dbd25055df78e194aca3654a7e2ff3be07f1d"
+    },
+    {
+      "case_id": "DEV-T06",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "value:-10",
+      "after": "value:-10",
+      "preserved": true,
+      "input_sha256": "6f9df5c06fb09002faff501e1a1b59e6a19c18887ba93fa5de75e4862a2c6178",
+      "before_observation_sha256": "30328b96b46b7ba93c34663e09cd6b2678aed75a0ab414d434b29a118c1a69fb",
+      "after_observation_sha256": "e77f3083ff50993bc02b9c86a47b3fb7b04fd54ee845f9d4dd47230c6ecde4db"
+    },
+    {
+      "case_id": "DEV-T08",
+      "task_id": "DEV-CLAMP",
+      "task_version": "clamp-v1",
+      "split": "development",
+      "before": "value:5",
+      "after": "value:0",
+      "preserved": false,
+      "input_sha256": "4c503fad2eced5c5ff59a23a45a5dbbdab121016eb6365099332b87141829bb0",
+      "before_observation_sha256": "4d3040931a1c792cf49145cf0512c1b7da4673b53e7f1fc7b3b5a5f65a8d6e27",
+      "after_observation_sha256": "ef11917629b3b2390900ac73d41281f312251996798680c1a28172f7d20334cb"
+    },
+    {
+      "case_id": "FINAL-T02",
+      "task_id": "FINAL-MAGNITUDE",
+      "task_version": "magnitude-v1",
+      "split": "final-evaluation",
+      "before": "value:5",
+      "after": "value:0",
+      "preserved": false,
+      "input_sha256": "6b878cbbefa6dd6de3c262485a7e74d96837232ca0758af627efa302f057547e",
+      "before_observation_sha256": "c07137b76fe18114df5793e20118c3875a2d428a8aed9ef5c15af4d769aaa0ba",
+      "after_observation_sha256": "c8d0ceb4b67bacf30b576198d8e28c202aea9b4d5369e1ef2065248c46759a9f"
+    },
+    {
+      "case_id": "FINAL-T03",
+      "task_id": "FINAL-MAGNITUDE",
+      "task_version": "magnitude-v1",
+      "split": "final-evaluation",
+      "before": "value:1",
+      "after": "value:0",
+      "preserved": false,
+      "input_sha256": "4353060a3461653f79d54c130556e73cf12ddeed3669fb79d269bfa0eb87d670",
+      "before_observation_sha256": "548dac279c940a4be42ab66d72ca6c27fea2ab656c44214855de0202af3847bd",
+      "after_observation_sha256": "777eb6ff2b248b2cdf1abf280679c832e0ee69de58f79994e8a7a5f8b8190ec4"
+    },
+    {
+      "case_id": "FINAL-T04",
+      "task_id": "FINAL-MAGNITUDE",
+      "task_version": "magnitude-v1",
+      "split": "final-evaluation",
+      "before": "value:0",
+      "after": "value:0",
+      "preserved": true,
+      "input_sha256": "976358ba56d2c0792a402f0bc1ef0810185785c08a52536e53cc63ef17d3a09a",
+      "before_observation_sha256": "fb07132ba442c8b47a9fb6784cf6f246c9bd294bd64bf27f98b1f8c7bd21a19b",
+      "after_observation_sha256": "630bbafa73e34f8d145fae90eb87910a708796f068f6503de1e98d27685f1ffe"
+    },
+    {
+      "case_id": "FINAL-T05",
+      "task_id": "FINAL-MAGNITUDE",
+      "task_version": "magnitude-v1",
+      "split": "final-evaluation",
+      "before": "value:1",
+      "after": "value:1",
+      "preserved": true,
+      "input_sha256": "1563363d0aff8c10d57a330ba76bb1e829557b0ddc42c1e98b162870565132e4",
+      "before_observation_sha256": "8db0b552eac3a480c04cd5e30cf913d7ec3a3d251549ef53a5c26e371aa4b6a7",
+      "after_observation_sha256": "c986d38cbd453ac26836d2daea2ca359e60414baf2f1d6c0ee07ae8723ac4a79"
+    },
+    {
+      "case_id": "FINAL-T06",
+      "task_id": "FINAL-MAGNITUDE",
+      "task_version": "magnitude-v1",
+      "split": "final-evaluation",
+      "before": "value:2147483647",
+      "after": "value:2147483647",
+      "preserved": true,
+      "input_sha256": "2054c17889e6551420f92d624c4cc3755ded6555a230430a454aa1ccf5699d3d",
+      "before_observation_sha256": "1ca629da6307e5b5105062848b5cb148bb3586d852eec18ca775737ee73ea1ed",
+      "after_observation_sha256": "990f357b955a0a2d04ea475d42abcf52ea1bb9b6141bb511c296fb7fb3161d19"
+    }
+  ],
+  "downstream_status": "reject",
+  "consumer_calls_to_candidates": 0,
+  "limits": "Finite authored P2P fixture; real parent integration unverified"
+}

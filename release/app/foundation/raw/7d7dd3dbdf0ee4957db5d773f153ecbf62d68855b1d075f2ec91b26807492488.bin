@@ -1,0 +1,76 @@
+{
+  "schema": "d0005-sources/1",
+  "author": "RUSSELL PHILIP SMITHSON",
+  "verified": "2026-10-30T12:21:24.5147588-07:00",
+  "retrieval": "Existing local files reused; previous retrieval time not independently established",
+  "article": "Copied hash-identically from D0003; page13 rendered and inspected",
+  "dataset": "SWE-bench Pro v1. Raw 731 rows complete; README also describes v2, which is not used; Parquet length/hash recorded but not decoded",
+  "cost_usd": 0,
+  "files": [
+    {
+      "path": "article-page13.png",
+      "bytes": 155842,
+      "sha256": "0b13e56d88afeafd846836a9698479fc80545a8d085ed93505219b2d980c0d65"
+    },
+    {
+      "path": "article.pdf",
+      "bytes": 4777863,
+      "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57"
+    },
+    {
+      "path": "swebench-pro-v1/info.json",
+      "bytes": 1201,
+      "sha256": "c9ffe614a757f8c72b504748fc6074b7a6a2d7f6286860f086861d41622d4f80"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-000.json",
+      "bytes": 3709665,
+      "sha256": "bf9f60442316c2e0386bf8712d431fad45321de1eed07159fed30c9f9ce9f18d"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-100.json",
+      "bytes": 3729190,
+      "sha256": "c6c219d0c3a1e84ebdc65a0c41896e0492e398429bac20ba57c3aed56d469fa6"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-200.json",
+      "bytes": 2949771,
+      "sha256": "2df6fdb032c5552e9ebd20b7c6708c6ca07809163d656dd7d1841fc4213f8fca"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-300.json",
+      "bytes": 3408177,
+      "sha256": "0755f58af862f5a7a9da2173ad6a641bdd7cc8bb725c7dedf1c4aa95874d32da"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-400.json",
+      "bytes": 3624098,
+      "sha256": "0ca00d020e02d4b85bb54fe03ffc4bfd82c4446cdfd33a8e0dda3b0c08a6dd27"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-500.json",
+      "bytes": 3151698,
+      "sha256": "45b4f34a80a8ef2ca408677a7397412b311dede1012ba38619a91815387cdfa5"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-600.json",
+      "bytes": 3512686,
+      "sha256": "3b69dbc3c155915c6dcda89661ecd5e95f0df16aa55fd81b495ff553cb0f269f"
+    },
+    {
+      "path": "swebench-pro-v1/raw/rows-700.json",
+      "bytes": 817091,
+      "sha256": "9c74634755073afb379da9406d7e28c01d8f43e711531183b484ca5234d90af6"
+    },
+    {
+      "path": "swebench-pro-v1/README.md",
+      "bytes": 9812,
+      "sha256": "243f51de326a4502f0e353eb3e25cb712c465e78d80e15cdaac4db70e5a9b83f"
+    },
+    {
+      "path": "swebench-pro-v1/v1-test-00000-of-00001.parquet",
+      "bytes": 7816820,
+      "sha256": "c8cd7115496ad4e9a8b21d088cef576a65bf821bb542b24336f13f714cef13f8"
+    }
+  ]
+}

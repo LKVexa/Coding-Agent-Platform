@@ -1,0 +1,135 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0140-04",
+  "prompt_version": "3.0.0",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Original Stage1 source-method inspection/specification remains unfinished; authored diagnostics are separate"
+  },
+  "earliest_unfinished_native_stage": 1,
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "full_mixture_literal",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "normalized_weight_sum",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "literal_branch_contributions",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "permutation_invariance",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "branch_scale_control",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "duplicate_input",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "strict_missing_branch",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "shape_mismatch",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "nonfinite_input",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "zero_mass",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "normalization_mass_overflow",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "unknown_mixture_branch",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "final_mixture_input",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "literal_full_and_reduced_distances",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_stage1_exact_method_specification",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    },
+    {
+      "name": "original_source_method_and_parent_validation",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    }
+  ],
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "native_identity": {
+    "bytes": 23173,
+    "contract_sha256": "dd61851bead0c5bb8c0f3a9acbaef20b7b57f9a0eac2f951671cc89550f15453",
+    "file": "C0140-04.md",
+    "original_path": "component-prompts-workflows/core/C0140/C0140-04-addition-to-the-consolidation-mixture.md",
+    "pair": "C0140-04",
+    "parent_focus": "Incorporate documented failure-analysis information into consolidation.",
+    "parent_id": "C0140",
+    "parent_title": "GPT-5.6-Sol negative-information generation",
+    "parent_validation": "Verify provenance and separate privileged training information from evaluation inputs.",
+    "payload": "F05121",
+    "sha256": "4e5fcabd82a9be82a29e4a66662cfcfa1635cd12d20db285319f94b500fe109c",
+    "work_type": "Combination, aggregation, mixture, or information-fusion operation."
+  },
+  "source_availability": {
+    "article": "present",
+    "exact_method": "unverified",
+    "runtime_inputs": "unverified"
+  },
+  "accepted_native_dependencies": [],
+  "fixture_substitution": "Shared authored raw fixture; no partial native producer accepted",
+  "updated": "2026-10-30T19:15:59-07:00"
+}

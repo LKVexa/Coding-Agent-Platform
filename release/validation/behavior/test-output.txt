@@ -1,0 +1,20 @@
+test_cancel_between_precheck_and_receipt_cannot_corrupt_run (__main__.Boundaries.test_cancel_between_precheck_and_receipt_cannot_corrupt_run) ... ok
+test_candidate_code_never_executes (__main__.Boundaries.test_candidate_code_never_executes) ... ok
+test_custom_cases_validation (__main__.Boundaries.test_custom_cases_validation) ... ok
+test_custom_task_end_to_end_private_values_absent (__main__.Boundaries.test_custom_task_end_to_end_private_values_absent) ... ok
+test_dirty_tree_preserved_committed_source_used (__main__.Boundaries.test_dirty_tree_preserved_committed_source_used) ... ok
+test_git_commondir_indirection_refused (__main__.Boundaries.test_git_commondir_indirection_refused) ... ok
+test_junction_source_rejected (__main__.Boundaries.test_junction_source_rejected) ... ok
+test_patch_replay_rejects_redirect_and_context_change (__main__.Boundaries.test_patch_replay_rejects_redirect_and_context_change) ... ok
+test_path_escape_and_baseline_substitution_rejected (__main__.Boundaries.test_path_escape_and_baseline_substitution_rejected) ... ok
+test_private_failure_does_not_trigger_another_call (__main__.Boundaries.test_private_failure_does_not_trigger_another_call) ... ok
+test_provider_context_contains_public_only (__main__.Boundaries.test_provider_context_contains_public_only) ... ok
+test_receipt_tampering_rejected (__main__.Boundaries.test_receipt_tampering_rejected) ... ok
+test_resume_partial_terminal_must_validate_patch (__main__.Boundaries.test_resume_partial_terminal_must_validate_patch) ... ok
+test_resume_unknown_remote_outcome_never_reissues (__main__.Boundaries.test_resume_unknown_remote_outcome_never_reissues) ... ok
+test_two_attempt_repair_uses_public_feedback_only (__main__.Boundaries.test_two_attempt_repair_uses_public_feedback_only) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 16.796s
+
+OK

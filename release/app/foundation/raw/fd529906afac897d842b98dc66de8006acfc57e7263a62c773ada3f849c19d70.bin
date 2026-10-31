@@ -1,0 +1,95 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0175-02",
+  "prompt_version": "3.0.0",
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "status": "partial",
+  "stage": {
+    "last_completed": 4,
+    "total": 8,
+    "label": "validation incomplete"
+  },
+  "integration_status": "fixture_tested",
+  "checks": [
+    {
+      "name": "candidate_loading_patch_and_identity",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "candidate_alignment_and_split_boundary",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "trained_verifier_and_real_candidate_evaluation",
+      "result": "unverified",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    },
+    {
+      "name": "determinism_rerun",
+      "result": "pass",
+      "evidence": "evidence/records.json",
+      "iterations": 1
+    }
+  ],
+  "inputs": [
+    {
+      "name": "prompt component-prompts-workflows/core/C0175/C0175-02-second-candidate-patch.md (F05274)",
+      "state": "present",
+      "version": "original pre-v3 (PROMPT-VERSION-MISMATCH: original pre-v3 source used)",
+      "sha256": "d24b105345b40de8b43a1ab99d596e29ef8b062c7516100ce2da46f0d85f685a"
+    },
+    {
+      "name": "../../../../../evidence/sources/article.pdf",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "7525acec53ef16f472c26211c1843d53b9476b8c90c0c6aba336f6aa10e30c57"
+    },
+    {
+      "name": "../../../../../evidence/sources/article-page07.png",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "127eb6701411105848526b12dc6af274d5261481d2269fad659701b36a3ebc93"
+    },
+    {
+      "name": "../../../../../evidence/sources/SOURCES.C0175.json",
+      "state": "present",
+      "version": "local source; provenance and versions recorded in evidence/sources/SOURCES.json",
+      "sha256": "197ff34267e5da897646f8bdca72fdad320dc2c5aec33e9b4f44b4cead3d7aef"
+    },
+    {
+      "name": "POLICY/status.schema.json",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "308bc7f76369a081660b893fa388d799259690a8a5a3c49af4e2dec3a2d714e8"
+    },
+    {
+      "name": "POLICY/HARDENING-POLICY.md",
+      "state": "present",
+      "version": "3.0.0 (recovered copy)",
+      "sha256": "1a3f9db611795e8d618cf4f5ad2500ac211c09fc67bd35c765c4914554b32148"
+    }
+  ],
+  "determinism": {
+    "seeds": {
+      "policy": "no randomness; deterministic literal fixtures"
+    },
+    "tools": {
+      "harness": "harness-cs/0.2.0",
+      "csc": "4.8.9232.0 built by: NET481REL1LAST_C",
+      "csc_sha256": "aae1db57f898ca8bda18590c56f86ced6d0ead80c22033b76fdfe9119706f116",
+      "langversion": "5",
+      "clr": "4.0.30319.42000"
+    },
+    "retrieved": {
+      "sources": "see evidence/sources/SOURCES.json; preserved provenance"
+    }
+  },
+  "blocked_reason": null,
+  "updated": "2026-10-30T12:54:20-07:00"
+}

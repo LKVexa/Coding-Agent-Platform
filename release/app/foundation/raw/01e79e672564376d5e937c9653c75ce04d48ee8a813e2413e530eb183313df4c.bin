@@ -1,0 +1,93 @@
+{
+  "schema": "catalog-status/3.0",
+  "collection": "COMP",
+  "id": "C0129-02",
+  "prompt_version": "3.0.0",
+  "status": "partial",
+  "stage": {
+    "last_completed": 0,
+    "total": 8,
+    "label": "Original Stage1 source-method inspection/specification remains unfinished; authored diagnostics are separate"
+  },
+  "earliest_unfinished_native_stage": 1,
+  "integration_status": "not_attempted",
+  "checks": [
+    {
+      "name": "authored_annotation_evidence",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "missing_evidence",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "conflicting_task_evidence",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "contradictory_observation",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "independent_candidate_oracles",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "authored_no_solution_constraints",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "reduced_stage_local_correctness",
+      "result": "pass",
+      "evidence": "evidence/diagnostics.json",
+      "iterations": 1
+    },
+    {
+      "name": "original_stage1_exact_method_specification",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    },
+    {
+      "name": "original_source_method_and_parent_validation",
+      "result": "unverified",
+      "evidence": "evidence/UNVERIFIED.json",
+      "iterations": 0
+    }
+  ],
+  "prompt_source_label": "PROMPT-VERSION-MISMATCH: original pre-v3 source used",
+  "native_identity": {
+    "bytes": 23290,
+    "contract_sha256": "f950539ec82add15a6dbe8b26baed7cb30f78f0e979d57a96f5d512048fdf203",
+    "file": "C0129-02.md",
+    "original_path": "component-prompts-workflows/core/C0129/C0129-02-failure-analysis-by-gpt-5-6-sol.md",
+    "pair": "C0129-02",
+    "parent_focus": "Incorporate documented failure-analysis information into consolidation.",
+    "parent_id": "C0129",
+    "parent_title": "Contrastive learning from failures",
+    "parent_validation": "Verify provenance and separate privileged training information from evaluation inputs.",
+    "payload": "F05077",
+    "sha256": "0415121af29cb238771786661544db71edac60df40bd378f62ed5dd17b435bb2",
+    "work_type": "Planning, reasoning, proposal, critique, or evidence-processing stage."
+  },
+  "source_availability": {
+    "article": "present",
+    "exact_method": "unverified",
+    "runtime_inputs": "unverified"
+  },
+  "accepted_native_dependencies": [],
+  "fixture_substitution": "Shared authored raw fixture; no partial native producer accepted",
+  "updated": "2026-10-30T19:00:54-07:00"
+}
